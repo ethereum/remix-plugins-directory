@@ -1,0 +1,59 @@
+#!/usr/bin/env node
+
+const ipfsClient = require('ipfs-http-client')
+const prompt = require('prompt');
+
+const folder = process.argv.length > 2 ? process.argv[2] : process.cwd()
+console.warn('uploading ' + folder + ' ...')
+
+const host = 'ipfs.komputing.org' // ethdev berlin ipfs node
+const ipfs = ipfsClient({ host, port: 443, protocol: 'https' })
+
+const schema = {
+    properties: {
+      name: {
+        required: true
+      },
+      displayName: {
+        required: true
+      },
+      events: {
+        message: 'Comma separated list of all the events that this plugin is triggering',
+        required: true,
+        before: (value) => { return value.split(',') }
+      },
+      methods: {
+        message: 'Comma separated list of all the functions that this plugin is triggering',
+        required: true,
+        before: (value) => { return value.split(',') }
+      },
+      description: {
+        message: 'Description of this plugin',
+      },
+      kind: {
+        message: '(optional) Type of plugin. compiler/editor/network/filesystem/udapp',  
+      },
+      icon: {
+        message: 'icon address (url) or BASE64 value',
+        required: true
+      },
+      location: {
+        message: '(optional) plugin location in the user interface. can be sidepanel/mainpanel or none if the plugin does not have view'
+      }
+    }
+  };
+
+ipfs.addFromFs(folder, {recursive: true, pin: true}, (error, result) => {
+  if (error) return console.log(error)
+  console.warn('uploaded')
+  const remoteFolder = result[result.length - 1]
+  const folderUrl = 'ipfs://' + remoteFolder.hash
+  console.log('app ipfs URL', folderUrl)
+  console.log('plugin profile generation:')
+  prompt.start()
+  prompt.get(schema, function (error, result) {
+      if (error) return console.log(error)
+      result.url = folderUrl
+      console.log(JSON.stringify(result, null, 1))
+  })
+})

@@ -1,0 +1,17 @@
+{
+  "name": "upload-remix-plugin",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "ipfs-api": "^26.1.2",
+    "ipfs-http-client": "^35.1.0",
+    "ipfs-mini": "^1.1.5",
+    "prompt": "^1.0.0"
+  }
+}

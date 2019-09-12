@@ -1,9 +1,9 @@
 #!/usr/bin/env node
 
-const ipfsClient = require('ipfs-mini')
+const ipfsClient = require('ipfs-http-client')
 
-
-const ipfs = new ipfsClient({ host: 'ipfs.infura.io', port: 5001, protocol: 'https' })
-const content = ' ok ok great !! ' 
+const host = 'ipfs.komputing.org' // ethdev berlin ipfs node
+const ipfs = ipfsClient({ host, port: 443, protocol: 'https' })
+const content = ' - ' 
 
 ipfs.add(content).then(console.log).catch(console.log)

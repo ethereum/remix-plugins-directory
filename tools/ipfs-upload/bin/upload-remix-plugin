@@ -43,17 +43,26 @@ const schema = {
     }
   };
 
-ipfs.addFromFs(folder, {recursive: true, pin: true}, (error, result) => {
-  if (error) return console.log(error)
-  console.warn('uploaded')
+const uploadToIpfsAndGenerateProfile = async () => {
+  let result
+  try {
+    result = await ipfs.addFromFs(folder, {recursive: true, pin: true}) 
+    console.warn('uploaded')
+  } catch (e) {
+    return console.log(e)
+  }
+  
   const remoteFolder = result[result.length - 1]
   const folderUrl = 'ipfs://' + remoteFolder.hash
   console.log('app ipfs URL', folderUrl)
-  console.log('plugin profile generation:')
+
+  console.log('creation of plugin profile:')
   prompt.start()
   prompt.get(schema, function (error, result) {
       if (error) return console.log(error)
       result.url = folderUrl
       console.log(JSON.stringify(result, null, 1))
   })
-})
+}
+
+uploadToIpfsAndGenerateProfile()

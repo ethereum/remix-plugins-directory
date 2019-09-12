@@ -1,7 +1,8 @@
 #!/usr/bin/env node
 
 const ipfsClient = require('ipfs-http-client')
-const prompt = require('prompt');
+const prompt = require('prompt')
+const semver = require('semver')
 
 const folder = process.argv.length > 2 ? process.argv[2] : process.cwd()
 console.warn('uploading ' + folder + ' ...')
@@ -17,18 +18,21 @@ const schema = {
       displayName: {
         required: true
       },
-      events: {
-        message: 'Comma separated list of all the events that this plugin is triggering',
+      version : {
         required: true,
-        before: (value) => { return value.split(',') }
+        message: 'semver version number',
+        before: (value) => { if (!semver.valid(value)) throw new Error('not semver ' + value) }
+      },
+      events: {
+        message: '(optional) Comma separated list of all the events that this plugin is triggering',
+        before: (value) => { return value ? value.split(',') : [] }
       },
       methods: {
-        message: 'Comma separated list of all the functions that this plugin is triggering',
-        required: true,
-        before: (value) => { return value.split(',') }
+        message: '(optional) Comma separated list of all the functions that this plugin is triggering',
+        before: (value) => { return value ? value.split(',') : [] }
       },
       description: {
-        message: 'Description of this plugin',
+        message: '(optional) Description of this plugin',
       },
       kind: {
         message: '(optional) Type of plugin. compiler/editor/network/filesystem/udapp',  
@@ -43,26 +47,31 @@ const schema = {
     }
   };
 
-const uploadToIpfsAndGenerateProfile = async () => {
-  let result
-  try {
-    result = await ipfs.addFromFs(folder, {recursive: true, pin: true}) 
-    console.warn('uploaded')
-  } catch (e) {
-    return console.log(e)
-  }
-  
-  const remoteFolder = result[result.length - 1]
-  const folderUrl = 'ipfs://' + remoteFolder.hash
-  console.log('app ipfs URL', folderUrl)
+const uploadToIpfsAndGenerateProfile = () => {
+  return new Promise( async (resolve, reject) => {
+    let result
+    try {
+      result = await ipfs.addFromFs(folder, {recursive: true, pin: true}) 
+      console.warn('uploaded')
 
-  console.log('creation of plugin profile:')
-  prompt.start()
-  prompt.get(schema, function (error, result) {
-      if (error) return console.log(error)
-      result.url = folderUrl
-      console.log(JSON.stringify(result, null, 1))
+      const remoteFolder = result[result.length - 1]
+      const folderUrl = 'ipfs://' + remoteFolder.hash
+      console.log('app ipfs URL', folderUrl)
+
+      console.log('creation of plugin profile:')
+      prompt.start()
+      prompt.get(schema, function (error, result) {
+          if (error) throw error
+          result.url = folderUrl
+          resolve(result)
+      })
+    } catch (e) {
+      reject(e)
+    }
   })
 }
 
-uploadToIpfsAndGenerateProfile()
+uploadToIpfsAndGenerateProfile().then((result) => {
+  console.log('plugin profile')
+  console.log(JSON.stringify(result, null, 1))
+}).catch(console.log)

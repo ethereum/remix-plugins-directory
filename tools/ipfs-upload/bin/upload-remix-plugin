@@ -25,11 +25,11 @@ const schema = {
       },
       events: {
         message: '(optional) Comma separated list of all the events that this plugin is triggering',
-        before: (value) => { return value ? value.split(',') : [] }
+        before: value => value ? value.split(',') : []
       },
       methods: {
         message: '(optional) Comma separated list of all the functions that this plugin is triggering',
-        before: (value) => { return value ? value.split(',') : [] }
+        before: value => value ? value.split(',') : []
       },
       description: {
         message: '(optional) Description of this plugin',

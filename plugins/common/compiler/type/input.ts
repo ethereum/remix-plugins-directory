@@ -1,6 +1,6 @@
 export interface CompilationInput {
   /** Source code language */
-  language: 'Solidity' | 'Vyper' | 'lll' | 'assembly'
+  language: 'Solidity' | 'Vyper' | 'lll' | 'assembly' | 'yul'
   sources: SourcesInput
   settings?: CompilerSettings
   outputSelection?: CompilerOutputSelection
@@ -50,7 +50,7 @@ export interface CompilerSettings {
   /** Metadata settings */
   metadata?: CompilerMetadata
   /** Addresses of the libraries. If not all libraries are given here, it can result in unlinked objects whose output data is different. */
-  libraries: CompilerLibrarie
+  libraries: CompilerLibraries
 }
 
 export interface CompilerOptimizer {
@@ -73,7 +73,7 @@ export interface CompilerMetadata {
  * If remappings are used, this source file should match the global path after remappings were applied.
  * If this key is an empty string, that refers to a global level.
  */
-export interface CompilerLibrarie {
+export interface CompilerLibraries {
   [contractName: string]: {
     [libName: string]: string
   }

@@ -1,6 +1,6 @@
 import { CompilationFileSources, CompilationResult } from './type';
 
-export interface CompilerApi {
+export interface EVMCompilerApi {
   events: {
     compilationFinished: (
       fileName: string,

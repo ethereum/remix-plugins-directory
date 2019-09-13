@@ -1,4 +1,4 @@
-import { Position } from "./type";
+import { Position, Annotation } from "./type";
 
 export interface EditorApi {
   methods: {
@@ -8,5 +8,7 @@ export interface EditorApi {
       hexColor: string,
     ): void
     discardHighlight(): void
+    addAnnotation(annotation: Annotation): void;
+    clearAnnotations(): void
   }
 }

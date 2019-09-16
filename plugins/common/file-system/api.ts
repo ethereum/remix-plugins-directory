@@ -1,4 +1,21 @@
+import { Folder } from "./type";
+
+/** @deprecated: current version in Remix IDE. To improve to match Node API  */
 export interface FileSystemApi {
+  events: {
+    currentFileChanged: (file: string) => void
+  }
+  methods: {
+    getFolder(path: string): Folder
+    getCurrentFile(): string
+    getFile(path: string): string
+    setFile(path: string, content: string): void
+    switchFile(path: string): void
+  }
+}
+
+/** API based on node fs */
+export interface NextFileSystemApi {
   methods: {
     /** Open the content of the file in the context (eg: Editor) */
     open(path: string): void;

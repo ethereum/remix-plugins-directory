@@ -1,0 +1,21 @@
+{
+  "name": "remix-plugins-directory-actions",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc src/index.ts || ncc build src/index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@actions/core": "^1.1.1",
+    "@actions/github": "^1.1.0"
+  },
+  "devDependencies": {
+    "@types/node": "^12.7.8",
+    "@zeit/ncc": "^0.20.5",
+    "typescript": "^3.6.3"
+  }
+}

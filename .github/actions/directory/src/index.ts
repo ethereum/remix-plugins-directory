@@ -22,7 +22,7 @@ async function createFile() {
       const buff = Buffer.from(JSON.stringify(profiles), 'utf8');
       const content = buff.toString('base64');
   
-      const path = 'directory/index.js';
+      const path = 'build/profile.json';
       const file = await repos.getContents({ ...context.repo, path });
       await repos.createOrUpdateFile({
         ...context.repo,

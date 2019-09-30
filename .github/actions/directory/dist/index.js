@@ -7846,7 +7846,7 @@ function createFile() {
                     profiles = _a.sent();
                     buff = Buffer.from(JSON.stringify(profiles), 'utf8');
                     content = buff.toString('base64');
-                    path = 'directory/index.js';
+                    path = 'build/profile.json';
                     return [4 /*yield*/, repos_1.getContents(__assign(__assign({}, github_1.context.repo), { path: path }))];
                 case 4:
                     file = _a.sent();

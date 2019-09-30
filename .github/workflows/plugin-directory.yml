@@ -1,10 +1,10 @@
-name: Pushed
+name: 'Add Plugin Profile'
 on:
   push:
     branches:
       - master
     paths:
-      - 'plugins/*'
+      - 'plugins/*/profile.json'
 
 jobs:
   build:

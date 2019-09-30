@@ -1,0 +1,12 @@
+{
+ "name": "htt",
+ "displayName": "frfr",
+ "description": "",
+ "version": "1.0.0",
+ "events": [],
+ "methods": [],
+ "kind": "compiler",
+ "icon": "http://fr.fr",
+ "location": "sidepanel",
+ "url": "ipfs://Qmb5cg7p1taMFtPzksJ1t1DUrMLA7QnMyirs7Li4gsi3py"
+}

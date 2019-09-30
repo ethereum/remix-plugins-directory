@@ -4,6 +4,15 @@ const ipfsClient = require('ipfs-http-client')
 const signale = require('signale')
 const generateProfile = require('../generateProfile')
 
+var program = require('commander')
+var fs = require('fs')
+var path = require('path')
+
+program
+.description('Upload resources to IPFS and generate a profile.')
+.option('--profile-path  <path>', 'Path where the profile.json should be generated. Default to current path')
+.parse(process.argv)
+
 const host = 'ipfs.komputing.org' // ethdev berlin ipfs node
 const ipfs = ipfsClient({ host, port: 443, protocol: 'https' })
 
@@ -20,10 +29,12 @@ const uploadToIpfsAndGenerateProfile = async () => {
   const answers = await generateProfile()
   answers.url = ipfsURL
   
+  const targetDir = program.profilePath || __dirname
+  fs.writeFileSync(path.join(targetDir, 'profile.json'), JSON.stringify(answers, null, 1))
+  signale.success(`profile.json generated at ${targetDir}`)
   return answers
 }
 
 uploadToIpfsAndGenerateProfile().then((result) => {
-  signale.success('profile.json generated')
   signale.success(JSON.stringify(result, null, 1))
 }).catch(signale.error)

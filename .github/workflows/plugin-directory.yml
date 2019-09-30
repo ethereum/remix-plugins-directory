@@ -1,0 +1,19 @@
+name: Pushed
+on:
+  push:
+    branches:
+      - master
+    paths:
+      - 'plugins/*'
+
+jobs:
+  build:
+    name: Push job
+    runs-on: ubuntu-latest
+    steps: 
+      - name: Checkout
+        uses: actions/checkout@v1
+      - name: Create plugins directory
+        uses: ./.github/actions/directory
+        with:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

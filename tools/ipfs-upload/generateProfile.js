@@ -57,7 +57,7 @@ const questions = [
     type: 'list',
     name: 'location',
     message: "(optional) plugin location in the user interface. can be or none if the plugin does not have view",
-    choices: ["sidepanel", "mainpanel", "none"]
+    choices: ["sidePanel", "mainPanel", "none"]
   },
 ]
 

@@ -14,6 +14,6 @@
     "is-url": "^1.2.4",
     "semver": "^6.3.0",
     "signale": "^1.4.0",
-    "ipfs-http-client": "^35.1.0",
+    "ipfs-http-client": "^35.1.0"
   }
 }

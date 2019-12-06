@@ -1,12 +1,12 @@
 {
   "name": "mythx",
-  "displayName": "MythX Security VerificationMythX Security Verification",
+  "displayName": "MythX Security Verification",
   "description": "Perform Static and Dynamic Security Analysis using the MythX Cloud Service",
-  "version": "0.2.0",
+  "version": "0.2.4",
   "events": [],
   "methods": [],
   "kind": "none",
   "icon": "https://remix-mythx-plugin.surge.sh/logo.png",
   "location": "sidePanel",
-  "url": "ipfs://QmZdGbv99CzgkexaTE6UCKzW9suW4pKGrEgJpjDiZrvvHk"
+  "url": "ipfs://Qma5ADeW7MZjRamyhKnwnZSXH2SwBX781nbKGkmZ4krkui"
 }

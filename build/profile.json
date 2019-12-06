@@ -48,9 +48,9 @@
   },
   {
     "name": "mythx",
-    "displayName": "MythX Security VerificationMythX Security Verification",
+    "displayName": "MythX Security Verification",
     "description": "Perform Static and Dynamic Security Analysis using the MythX Cloud Service",
-    "version": "0.2.0",
+    "version": "0.2.4",
     "events": [],
     "methods": [],
     "kind": "none",

@@ -10,7 +10,7 @@ var path = require('path')
 
 program
 .description('Upload resources to IPFS and generate a profile.')
-.option('--profile-path  <path>', 'Path where the profile.json should be generated. Default to current path')
+.option('--profile-path <path>', 'Path where the profile.json should be generated. Default to current path')
 .parse(process.argv)
 
 const host = 'ipfs.komputing.org' // ethdev berlin ipfs node

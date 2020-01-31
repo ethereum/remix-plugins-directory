@@ -13,8 +13,12 @@ jobs:
       # CircleCI maintains a library of pre-built images
       # documented at https://circleci.com/docs/2.0/circleci-images/
       # - image: circleci/mongo:3.4.4
-
+    
     working_directory: ~/repo
+
+    environment:
+      - COMMIT_AUTHOR_EMAIL: "yann@ethereum.org"
+      - COMMIT_AUTHOR: "Circle CI"
 
     steps:
       - checkout
@@ -33,5 +37,11 @@ jobs:
             - node_modules
           key: v1-dependencies-{{ checksum "package.json" }}
 
-      # build directory
-      # - run: 
+      # build profiles
+      - run: 
+          name: Build_Profiles
+          command: |
+            if [ "${CIRCLE_BRANCH}" == "master" ]; then
+              ./.circleci/build_profiles.sh;
+            fi
+       

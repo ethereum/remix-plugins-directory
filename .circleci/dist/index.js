@@ -40,7 +40,7 @@ var fs = require("fs-extra");
 var buildProfiles = function () { return __awaiter(void 0, void 0, void 0, function () {
     var path;
     return __generator(this, function (_a) {
-        path = '../plugins';
+        path = './plugins';
         fs.readdir(path, function (error, files) { return __awaiter(void 0, void 0, void 0, function () {
             var profilesPromises, profiles, target;
             return __generator(this, function (_a) {
@@ -53,7 +53,7 @@ var buildProfiles = function () { return __awaiter(void 0, void 0, void 0, funct
                             var jsonProfile;
                             return __generator(this, function (_a) {
                                 switch (_a.label) {
-                                    case 0: return [4 /*yield*/, readFile("../plugins/" + path + "/profile.json")];
+                                    case 0: return [4 /*yield*/, readFile("./plugins/" + path + "/profile.json")];
                                     case 1:
                                         jsonProfile = _a.sent();
                                         return [2 /*return*/, JSON.parse(jsonProfile)];
@@ -64,7 +64,7 @@ var buildProfiles = function () { return __awaiter(void 0, void 0, void 0, funct
                     case 1:
                         profiles = _a.sent();
                         console.log('built', JSON.stringify(profiles, null, '\t'));
-                        target = "../build/profile_test.json";
+                        target = "./build/metadata.json";
                         fs.writeFile(target, JSON.stringify(profiles, null, '\t'), 'utf8', function (error) {
                             if (error)
                                 return console.error(error);

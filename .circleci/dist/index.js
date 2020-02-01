@@ -84,4 +84,5 @@ var readFile = function (path) {
         });
     });
 };
+console.log('branch', process.env.CIRCLE_BRANCH);
 buildProfiles();

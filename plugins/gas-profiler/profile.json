@@ -1,0 +1,11 @@
+{
+    "name": "gasProfiler",
+    "displayName": "Gas Profiler",
+    "events": [],
+    "methods": [],
+    "version": "0.1.0-alpha",
+    "url": "https://remix-gas-profiler.surge.sh",
+    "description": "Profile gas costs",
+    "icon": "https://res.cloudinary.com/key-solutions/image/upload/v1565781702/gas-profiler_nxmsal.png",
+    "location": "sidePanel"
+  }

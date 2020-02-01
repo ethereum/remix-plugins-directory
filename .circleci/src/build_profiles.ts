@@ -1,17 +1,17 @@
 import * as fs from 'fs-extra';
 
 const buildProfiles = async () => {
-  const path = '../plugins'
+  const path = './plugins'
   fs.readdir(path, async (error, files) => {
     if (error) return console.error(error)
     console.log('profiles', files)
     const profilesPromises = files.map(async (path) => {
-      const jsonProfile: any = await readFile(`../plugins/${path}/profile.json`)
+      const jsonProfile: any = await readFile(`./plugins/${path}/profile.json`)
       return JSON.parse(jsonProfile)
     })
     const profiles = await Promise.all(profilesPromises)
     console.log('built', JSON.stringify(profiles, null, '\t'))
-    const target = `../build/profile_test.json`
+    const target = `./build/metadata.json`
     fs.writeFile(target, JSON.stringify(profiles, null, '\t'), 'utf8', (error) => { 
       if (error) return console.error(error)
       console.log('done', target)

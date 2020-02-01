@@ -11,11 +11,14 @@ const buildProfiles = async () => {
     })
     const profiles = await Promise.all(profilesPromises)
     console.log('built', JSON.stringify(profiles, null, '\t'))
-    const target = `./build/metadata.json`
-    fs.writeFile(target, JSON.stringify(profiles, null, '\t'), 'utf8', (error) => { 
-      if (error) return console.error(error)
-      console.log('done', target)
-    })
+
+    if (process.env.CIRCLE_BRANCH === 'master') {
+      const target = `./build/metadata.json`
+      fs.writeFile(target, JSON.stringify(profiles, null, '\t'), 'utf8', (error) => { 
+        if (error) return console.error(error)
+        console.log('done', target)
+      })
+    }
   })
 }
 
@@ -26,5 +29,6 @@ const readFile = (path) => {
     })  
   })
 }
+
 console.log('branch', process.env.CIRCLE_BRANCH)
 buildProfiles()

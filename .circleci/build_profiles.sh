@@ -10,6 +10,6 @@ git config user.email "$COMMIT_AUTHOR_EMAIL"
 node ./.circleci/dist/index.js
 
 git add ./build/metadata.json
-git commit -m "Built profiles from {$SHA}."
+git commit -m "Built profiles from {$SHA}." --allow-empty
 
 git push origin master

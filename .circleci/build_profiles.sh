@@ -12,7 +12,7 @@ echo "# Automatic build" > README.md
 # echo "Built website from \`$SHA\`. See https://github.com/ethereum/remix-ide/ for details." >> README.md
 # echo "To use an offline copy, download \`remix-$SHA.zip\`." >> README.md
 
-node ./dist/index.js
+node ./.circleci/dist/index.js
 
 git add build/profile_test.json
 git commit -m "Built profiles from {$SHA}."

@@ -9,9 +9,9 @@ var fs = require('fs')
 var path = require('path')
 
 program
-.description('Upload resources to IPFS and generate a profile.')
-.option('--profile-path <path>', 'Path where the profile.json should be generated. Default to current path')
-.parse(process.argv)
+  .description('Upload resources to IPFS and generate a profile.')
+  .option('--profile-path <path>', 'Path where the profile.json should be generated. Default to current path')
+  .parse(process.argv)
 
 const host = 'ipfs.komputing.org' // ethdev berlin ipfs node
 const ipfs = ipfsClient({ host, port: 443, protocol: 'https' })
@@ -21,8 +21,8 @@ const targetDir = program.profilePath || __dirname
 const uploadToIpfsAndGenerateProfile = async () => {
   const folder = process.argv.length > 2 ? process.argv[2] : process.cwd()
   signale.await('uploading ' + folder)
-  let result = await ipfs.addFromFs(folder, {recursive: true, pin: true}) 
-    
+  let result = await ipfs.addFromFs(folder, {recursive: true, pin: true})
+
   const remoteFolder = result[result.length - 1]
   const ipfsURL = 'ipfs://' + remoteFolder.hash
   signale.success('plugin URL', ipfsURL)
@@ -30,9 +30,9 @@ const uploadToIpfsAndGenerateProfile = async () => {
   signale.await('creation of plugin profile')
   const answers = await generateProfile.run()
   answers.url = ipfsURL
-  
+
   fs.writeFileSync(path.join(targetDir, 'profile.json'), JSON.stringify(answers, null, 1))
-  
+
   return answers
 }
 
@@ -42,4 +42,5 @@ uploadToIpfsAndGenerateProfile().then((result) => {
   if (result.icon === generateProfile.BASE64_DEFAULT_IMG) {
     signale.warn('The default BASE64 icon has been sure. Please set your own.')
   }
+  return process.exit()
 }).catch(signale.error)

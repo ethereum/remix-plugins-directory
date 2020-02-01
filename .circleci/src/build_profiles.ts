@@ -26,5 +26,5 @@ const readFile = (path) => {
     })  
   })
 }
-
+console.log('branch', process.env.CIRCLE_BRANCH)
 buildProfiles()

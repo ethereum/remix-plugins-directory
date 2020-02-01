@@ -14,7 +14,7 @@ echo "# Automatic build" > README.md
 
 node ./.circleci/dist/index.js
 
-git add build/profile_test.json
+git add build/metadata.json
 git commit -m "Built profiles from {$SHA}."
 
 git push -f git@github.com:ethereum/remix-plugins-directory.git master

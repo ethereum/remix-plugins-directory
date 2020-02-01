@@ -42,7 +42,7 @@ var buildProfiles = function () { return __awaiter(void 0, void 0, void 0, funct
     return __generator(this, function (_a) {
         path = './plugins';
         fs.readdir(path, function (error, files) { return __awaiter(void 0, void 0, void 0, function () {
-            var profilesPromises, profiles, target;
+            var profilesPromises, profiles, target_1;
             return __generator(this, function (_a) {
                 switch (_a.label) {
                     case 0:
@@ -64,12 +64,14 @@ var buildProfiles = function () { return __awaiter(void 0, void 0, void 0, funct
                     case 1:
                         profiles = _a.sent();
                         console.log('built', JSON.stringify(profiles, null, '\t'));
-                        target = "./build/metadata.json";
-                        fs.writeFile(target, JSON.stringify(profiles, null, '\t'), 'utf8', function (error) {
-                            if (error)
-                                return console.error(error);
-                            console.log('done', target);
-                        });
+                        if (process.env.CIRCLE_BRANCH === 'master') {
+                            target_1 = "./build/metadata.json";
+                            fs.writeFile(target_1, JSON.stringify(profiles, null, '\t'), 'utf8', function (error) {
+                                if (error)
+                                    return console.error(error);
+                                console.log('done', target_1);
+                            });
+                        }
                         return [2 /*return*/];
                 }
             });

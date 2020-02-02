@@ -1,4 +1,7 @@
-import * as fs from 'fs-extra';
+import * as fs from 'fs-extra'
+import * as util from 'util'
+import * as child_process from 'child_process'
+const promisifyExec = util.promisify(child_process.exec)
 
 const buildProfiles = () => {
   return new Promise((resolve, reject) => {
@@ -40,9 +43,12 @@ async function run () {
   const profiles = await buildProfiles()
   if (process.env.CIRCLE_BRANCH === 'master' && process.env.CIRCLE_PULL_REQUEST) {
     const target = `./build/metadata.json`
-    fs.writeFile(target, JSON.stringify(profiles, null, '\t'), 'utf8', (error) => { 
+    fs.writeFile(target, JSON.stringify(profiles, null, '\t'), 'utf8', async (error) => { 
       if (error) return console.error(error)
       console.log('done', target)
+      await promisifyExec('git add ./build/metadata.json')
+      await promisifyExec('git commit -m "Built profiles from {$SHA}." --allow-empty')
+      await promisifyExec('git push origin master')
     })    
   }
 }

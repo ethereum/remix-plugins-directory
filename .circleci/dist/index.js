@@ -56,13 +56,20 @@ var buildProfiles = function () {
                         case 1:
                             _a.trys.push([1, 3, , 4]);
                             profilesPromises = files.map(function (path) { return __awaiter(void 0, void 0, void 0, function () {
-                                var jsonProfile;
+                                var jsonProfile, e_2;
                                 return __generator(this, function (_a) {
                                     switch (_a.label) {
-                                        case 0: return [4 /*yield*/, readFile("./plugins/" + path + "/profile.json")];
+                                        case 0:
+                                            _a.trys.push([0, 2, , 3]);
+                                            return [4 /*yield*/, readFile("./plugins/" + path + "/profile.json")];
                                         case 1:
                                             jsonProfile = _a.sent();
                                             return [2 /*return*/, JSON.parse(jsonProfile)];
+                                        case 2:
+                                            e_2 = _a.sent();
+                                            reject(e_2);
+                                            return [3 /*break*/, 3];
+                                        case 3: return [2 /*return*/];
                                     }
                                 });
                             }); });
@@ -97,16 +104,26 @@ console.log('branch', process.env.CIRCLE_BRANCH);
 console.log('pull request', process.env.CIRCLE_PULL_REQUEST);
 function run() {
     return __awaiter(this, void 0, void 0, function () {
-        var profiles, target_1;
+        var profiles, target_1, profileAsString, currentMetadata, e_3;
         var _this = this;
         return __generator(this, function (_a) {
             switch (_a.label) {
-                case 0: return [4 /*yield*/, buildProfiles()];
+                case 0:
+                    _a.trys.push([0, 4, , 5]);
+                    return [4 /*yield*/, buildProfiles()];
                 case 1:
                     profiles = _a.sent();
-                    if (process.env.CIRCLE_BRANCH === 'master' && process.env.CIRCLE_PULL_REQUEST) {
-                        target_1 = "./build/metadata.json";
-                        fs.writeFile(target_1, JSON.stringify(profiles, null, '\t'), 'utf8', function (error) { return __awaiter(_this, void 0, void 0, function () {
+                    if (!(process.env.CIRCLE_BRANCH === 'master')) return [3 /*break*/, 3];
+                    target_1 = "./build/metadata.json";
+                    profileAsString = JSON.stringify(profiles, null, '\t');
+                    return [4 /*yield*/, readFile("./build/metadata.json")
+                        // check if we need to update it
+                    ];
+                case 2:
+                    currentMetadata = _a.sent();
+                    // check if we need to update it
+                    if (!currentMetadata || currentMetadata !== profileAsString) {
+                        fs.writeFile(target_1, profileAsString, 'utf8', function (error) { return __awaiter(_this, void 0, void 0, function () {
                             return __generator(this, function (_a) {
                                 switch (_a.label) {
                                     case 0:
@@ -127,7 +144,14 @@ function run() {
                             });
                         }); });
                     }
-                    return [2 /*return*/];
+                    _a.label = 3;
+                case 3: return [3 /*break*/, 5];
+                case 4:
+                    e_3 = _a.sent();
+                    console.error(e_3);
+                    process.exit(1);
+                    return [3 /*break*/, 5];
+                case 5: return [2 /*return*/];
             }
         });
     });

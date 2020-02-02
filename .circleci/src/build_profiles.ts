@@ -12,8 +12,12 @@ const buildProfiles = () => {
         console.log('profiles', files)
         try {
           const profilesPromises = files.map(async (path) => {
-            const jsonProfile: any = await readFile(`./plugins/${path}/profile.json`)
-            return JSON.parse(jsonProfile)
+            try {
+              const jsonProfile: any = await readFile(`./plugins/${path}/profile.json`)
+              return JSON.parse(jsonProfile)
+            } catch (e) {
+              reject(e)
+            }
           })
           const profiles = await Promise.all(profilesPromises)
           console.log('built', JSON.stringify(profiles, null, '\t'))
@@ -40,21 +44,26 @@ console.log('branch', process.env.CIRCLE_BRANCH)
 console.log('pull request', process.env.CIRCLE_PULL_REQUEST)
 
 async function run () {
-  const profiles = await buildProfiles()
-  if (process.env.CIRCLE_BRANCH === 'master') {
-    const target = `./build/metadata.json`
-    const profileAsString = JSON.stringify(profiles, null, '\t')
-    const currentMetadata = await readFile(`./build/metadata.json`)
-    // check if we need to update it
-    if (!currentMetadata || currentMetadata !== profileAsString) {
-      fs.writeFile(target, profileAsString, 'utf8', async (error) => { 
-        if (error) return console.error(error)
-        console.log('done', target)
-        await promisifyExec('git add ./build/metadata.json')
-        await promisifyExec('git commit -m "Built profiles from {$SHA}." --allow-empty')
-        await promisifyExec('git push origin master')
-      })    
+  try {
+    const profiles = await buildProfiles()
+    if (process.env.CIRCLE_BRANCH === 'master') {
+      const target = `./build/metadata.json`
+      const profileAsString = JSON.stringify(profiles, null, '\t')
+      const currentMetadata = await readFile(`./build/metadata.json`)
+      // check if we need to update it
+      if (!currentMetadata || currentMetadata !== profileAsString) {
+        fs.writeFile(target, profileAsString, 'utf8', async (error) => { 
+          if (error) return console.error(error)
+          console.log('done', target)
+          await promisifyExec('git add ./build/metadata.json')
+          await promisifyExec('git commit -m "Built profiles from {$SHA}." --allow-empty')
+          await promisifyExec('git push origin master')
+        })    
+      }
     }
+  } catch (e) {
+    console.error(e)
+    process.exit(1)
   }
 }
 

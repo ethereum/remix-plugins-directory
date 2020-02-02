@@ -52,6 +52,7 @@ async function run () {
       const currentMetadata = await readFile(`./build/metadata.json`)
       // check if we need to update it
       if (!currentMetadata || currentMetadata !== profileAsString) {
+        console.log('building and pushing metadata.json')
         fs.writeFile(target, profileAsString, 'utf8', async (error) => { 
           if (error) return console.error(error)
           console.log('done', target)
@@ -59,7 +60,7 @@ async function run () {
           await promisifyExec('git commit -m "Built profiles from {$SHA}." --allow-empty')
           await promisifyExec('git push origin master')
         })    
-      }
+      } else console.log('no need to rebuild metadata.json')
     }
   } catch (e) {
     console.error(e)

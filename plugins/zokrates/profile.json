@@ -1,0 +1,12 @@
+{
+    "name": "ZoKrates",
+    "displayName": "ZoKrates",
+    "description": "ZoKrates toolbox for zkSNARKs on Ethereum",
+    "documentation": "https://zokrates.github.io/",
+    "methods": [],
+    "events": [],
+    "version": "0.1.0-alpha",
+    "url": "https://zokrates.blockchain-it.hr/",
+    "icon": "https://zokrates.blockchain-it.hr/zokrates.svg",
+    "location": "sidePanel"
+  }

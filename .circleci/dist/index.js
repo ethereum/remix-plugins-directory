@@ -125,20 +125,25 @@ function run() {
                     if (!currentMetadata || currentMetadata !== profileAsString) {
                         console.log('building and pushing metadata.json');
                         fs.writeFile(target_1, profileAsString, 'utf8', function (error) { return __awaiter(_this, void 0, void 0, function () {
+                            var rev, revHash;
                             return __generator(this, function (_a) {
                                 switch (_a.label) {
                                     case 0:
                                         if (error)
                                             return [2 /*return*/, console.error(error)];
                                         console.log('done', target_1);
-                                        return [4 /*yield*/, promisifyExec('git add ./build/metadata.json')];
+                                        return [4 /*yield*/, promisifyExec('git rev-parse --short --verify HEAD')];
                                     case 1:
-                                        _a.sent();
-                                        return [4 /*yield*/, promisifyExec('git commit -m "Built profiles from {$SHA}." --allow-empty')];
+                                        rev = _a.sent();
+                                        revHash = rev.stdout.replace('\n', '');
+                                        return [4 /*yield*/, promisifyExec('git add ./build/metadata.json')];
                                     case 2:
                                         _a.sent();
-                                        return [4 /*yield*/, promisifyExec('git push origin master')];
+                                        return [4 /*yield*/, promisifyExec("git commit -m \"Built profiles from " + revHash + "\" --allow-empty")];
                                     case 3:
+                                        _a.sent();
+                                        return [4 /*yield*/, promisifyExec('git push origin master')];
+                                    case 4:
                                         _a.sent();
                                         return [2 /*return*/];
                                 }

@@ -56,8 +56,10 @@ async function run () {
         fs.writeFile(target, profileAsString, 'utf8', async (error) => { 
           if (error) return console.error(error)
           console.log('done', target)
+          const rev = await promisifyExec('git rev-parse --short --verify HEAD')
+          const revHash = rev.stdout.replace('\n', '')
           await promisifyExec('git add ./build/metadata.json')
-          await promisifyExec('git commit -m "Built profiles from {$SHA}." --allow-empty')
+          await promisifyExec(`git commit -m "Built profiles from ${revHash}" --allow-empty`)
           await promisifyExec('git push origin master')
         })    
       } else console.log('no need to rebuild metadata.json')

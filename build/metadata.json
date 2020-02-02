@@ -47,6 +47,22 @@
 		"url": "ipfs://QmUgzBsgqGXDq5pPLCvgeg5MSaeHKh7eE9ctQN4m3VGKRF"
 	},
 	{
+		"name": "ethPM",
+		"displayName": "ethPM",
+		"events": [],
+		"methods": [],
+		"notifications": {
+			"solidity": [
+				"compilationFinished"
+			]
+		},
+		"url": "https://ethpm.surge.sh",
+		"description": "Generate and import ethPM packages.",
+		"documentation": "https://docs.ethpm.com/ethpm-developer-guide/ethpm-and-remix-ide",
+		"icon": "https://ethpm.surge.sh/ethpmlogo.png",
+		"location": "mainPanel"
+	},
+	{
 		"name": "flattener",
 		"displayName": "Flattener",
 		"events": [],

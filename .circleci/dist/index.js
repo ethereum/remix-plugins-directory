@@ -123,6 +123,7 @@ function run() {
                     currentMetadata = _a.sent();
                     // check if we need to update it
                     if (!currentMetadata || currentMetadata !== profileAsString) {
+                        console.log('building and pushing metadata.json');
                         fs.writeFile(target_1, profileAsString, 'utf8', function (error) { return __awaiter(_this, void 0, void 0, function () {
                             return __generator(this, function (_a) {
                                 switch (_a.label) {
@@ -144,6 +145,8 @@ function run() {
                             });
                         }); });
                     }
+                    else
+                        console.log('no need to rebuild metadata.json');
                     _a.label = 3;
                 case 3: return [3 /*break*/, 5];
                 case 4:

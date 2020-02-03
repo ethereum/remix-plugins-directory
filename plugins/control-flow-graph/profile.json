@@ -1,0 +1,11 @@
+{
+  "name": "cfg",
+  "displayName": "Control Flow Graph",
+  "events": [],
+  "methods": [],
+  "version": "0.1.0-alpha",
+  "url": "https://remix-control-flow-gas.surge.sh",
+  "description": "Visualise the execution of a program",
+  "icon": "https://res.cloudinary.com/key-solutions/image/upload/v1580673791/solid/diagram.png",
+  "location": "sidePanel"
+}

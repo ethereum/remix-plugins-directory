@@ -1,5 +1,5 @@
 {
- "name": "script-runner",
+ "name": "scriptRunner",
  "displayName": "Script Runner",
  "description": "Execute script and emit logs",
  "version": "1.0.0-alpha.1",

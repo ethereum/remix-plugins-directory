@@ -1,4 +1,4 @@
-# remix-plugins-directory
+# Remix Plugins Directory
 
 This repository hosts a plugins directory.
 The directory is used by [Remix IDE](https://remix.ethereum.org) for loading the list of available plugins.

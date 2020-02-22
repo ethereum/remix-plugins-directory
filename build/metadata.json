@@ -115,8 +115,8 @@
 		"methods": [],
 		"events": [],
 		"version": "0.1.0-alpha",
-		"url": "https://staging.ink-remix.blockchain-it.hr/",
-		"icon": "https://staging.ink-remix.blockchain-it.hr/ink.svg",
+		"url": "https://ink-remix.blockchain-it.hr/",
+		"icon": "https://ink-remix.blockchain-it.hr/ink.svg",
 		"location": "sidePanel"
 	},
 	{

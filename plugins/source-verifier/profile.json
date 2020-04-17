@@ -2,7 +2,7 @@
  "name": "sourceVerifier",
  "displayName": "Source Verifier",
  "description": "Decentralized Metadata and Source Code Repository",
- "methods": ["verify, fetch"],
+ "methods": ["verify", "fetch"],
  "version": "0.1.0-alpha",
  "url": "https://verification.komputing.org/",
  "icon": "",

@@ -25,7 +25,10 @@ The `tools` folder contains utilities that can be used for
  - uploading a single file to IPFS - `upload-single-file`
  - uploading a plugin and generating `profile.json` - `upload-remix-plugin`
  
- For uploading a plugin to IPFS and generating a `profile.json`, execute `./upload-remix-plugin <path to index.html>`
+ For uploading a plugin to IPFS and generating a `profile.json`: 
+  - go to the folder `tools/ipfs-upload` 
+  - install dependencies with `npm install`
+  - execute `./bin/upload-remix-plugin <path to index.html>`
  
  # community
  

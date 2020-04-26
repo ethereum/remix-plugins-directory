@@ -1,6 +1,6 @@
 {
-  "name": "workshops",
-  "displayName": "Remix Workshops",
+  "name": "LearnEth",
+  "displayName": "LearnEth",
   "description": "Learn Ethereum with Remix !",
   "version": "0.1.0-beta.2",
   "events": [],
@@ -8,5 +8,5 @@
   "kind": "none",
   "icon": "https://image.flaticon.com/icons/svg/1570/1570493.svg",
   "location": "sidePanel",
-  "url": "ipfs://Qmbvpaz1FUgfVNG4V9RP2iLrg6pufradBYgcL6FSBqXveP"
+  "url": "ipfs://Qmc4CnQcNWnUQsZ1f1hYVLREo4uRptjR5LA55J6xjrqV6a"
 }

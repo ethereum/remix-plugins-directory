@@ -1,15 +1,10 @@
 {
-  "name": "remix-plugins-directory",
+  "name": "upload-remix-plugin",
   "version": "1.0.0",
-  "description": "This repository hosts a plugins directory. The directory is used by [Remix IDE](https://remix.ethereum.org) for loading the list of available plugins.",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/bunsenstraat/remix-plugins-directory.git"
   },
-  "author": "",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/bunsenstraat/remix-plugins-directory/issues"

@@ -1,0 +1,29 @@
+{
+  "name": "remix-plugins-directory",
+  "version": "1.0.0",
+  "description": "This repository hosts a plugins directory. The directory is used by [Remix IDE](https://remix.ethereum.org) for loading the list of available plugins.",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bunsenstraat/remix-plugins-directory.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bunsenstraat/remix-plugins-directory/issues"
+  },
+  "homepage": "https://github.com/bunsenstraat/remix-plugins-directory#readme",
+  "dependencies": {
+    "commander": "^5.1.0",
+    "fs": "0.0.1-security",
+    "inquirer": "^7.1.0",
+    "ipfs-http-client": "^44.0.1",
+    "is-base64": "^1.1.0",
+    "is-url": "^1.2.4",
+    "semver": "^7.3.2",
+    "signale": "^1.4.0",
+    "yesno": "^0.3.1"
+  }
+}

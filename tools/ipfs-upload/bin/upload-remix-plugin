@@ -1,37 +1,108 @@
 #!/usr/bin/env node
 
-const ipfsClient = require('ipfs-http-client')
+const yesno = require('yesno');
 const signale = require('signale')
 const generateProfile = require('../generateProfile')
+const uploadOptions = require('../uploadOptions')
+const IpfsHttpClient = require('ipfs-http-client')
+const {
+  globSource
+} = IpfsHttpClient
 
 var program = require('commander')
 var fs = require('fs')
 var path = require('path')
 
 program
+  .usage(`upload-remix-plugin <path-to-plugin-code> --profile-path <path-to-profile>`)
   .description('Upload resources to IPFS and generate a profile.')
   .option('--profile-path <path>', 'Path where the profile.json should be generated. Default to current path')
   .parse(process.argv)
 
-const host = 'ipfs.komputing.org' // ethdev berlin ipfs node
-const ipfs = ipfsClient({ host, port: 443, protocol: 'https' })
+
+program.outputHelp()
+
+const defaultHost = 'ipfs.komputing.org' // ethdev berlin ipfs node
+const defaultPort = '443'
+const defaultProtocol = 'https'
 
 const targetDir = program.profilePath || __dirname
 
 const uploadToIpfsAndGenerateProfile = async () => {
-  const folder = process.argv.length > 2 ? process.argv[2] : process.cwd()
-  signale.await('uploading ' + folder)
-  let result = await ipfs.addFromFs(folder, {recursive: true, pin: true})
+
+  let host = defaultHost
+  let protocol = defaultProtocol
+  let port = defaultPort
+
+  let pluginPath = process.argv.length > 2 ? process.argv[2] : process.cwd()
+  let profilePath = targetDir
+
+  // ask confirmation options
+  const options = await uploadOptions.run({
+    pluginPath: pluginPath,
+    profilePath: profilePath,
+    host: host,
+    port: port,
+    protocol: protocol
+  })
+  pluginPath = options.pluginPath
+  profilePath = options.profilePath
+  host = options.host
+  protocol = options.protocol
+  port = options.port
+  // check paths
+  if (!fs.existsSync(pluginPath)) {
+    signale.error("Plugin path not found: ", pluginPath)
+    process.exit(1)
+  }
+  if (!fs.existsSync(profilePath)) {
+    signale.error("Profile path not found: ", profilePath)
+    const ok = await yesno({
+      question: 'Do you want to create this folder?'
+    });
+    if (ok) {
+      fs.mkdirSync(profilePath)
+    } else {
+      process.exit(1)
+    }
+
+  }
+  // check profile.json
+  profilePath = path.join(targetDir, 'profile.json')
+  let profile = {}
+  if (fs.existsSync(profilePath)) {
+    let rawdata = fs.readFileSync(profilePath);
+    profile = JSON.parse(rawdata)
+    signale.info("Existing profile found: ", profile)
+  } else {
+    signale.warn(`No existing profile found at ${profilePath}`)
+    signale.info(`Use the --profile-path <path> option to use a previously created profile`)
+  }
+
+  // upload files  
+  const ipfs = IpfsHttpClient({
+    host,
+    port: port,
+    protocol: protocol
+  })
+  signale.await('uploading ' + pluginPath)
+  let result = []
+  // addFromFs deprecated see https://github.com/ipfs-inactive/js-ipfs-http-client/blob/master/CHANGELOG.md
+  for await (const file of ipfs.add(globSource(pluginPath, {
+    recursive: true
+  }))) {
+    result.push(file)
+  }
 
   const remoteFolder = result[result.length - 1]
-  const ipfsURL = 'ipfs://' + remoteFolder.hash
+  const ipfsURL = 'ipfs://' + remoteFolder.cid
   signale.success('plugin URL', ipfsURL)
 
-  signale.await('creation of plugin profile')
-  const answers = await generateProfile.run()
+  signale.await(`creation of plugin profile at ${profilePath}`)
+  const answers = await generateProfile.run(profile)
   answers.url = ipfsURL
 
-  fs.writeFileSync(path.join(targetDir, 'profile.json'), JSON.stringify(answers, null, 1))
+  fs.writeFileSync(profilePath, JSON.stringify(answers, null, 1))
 
   return answers
 }
@@ -40,7 +111,7 @@ uploadToIpfsAndGenerateProfile().then((result) => {
   signale.success(JSON.stringify(result, null, 1))
   signale.success(`profile.json generated at ${targetDir}`)
   if (result.icon === generateProfile.BASE64_DEFAULT_IMG) {
-    signale.warn('The default BASE64 icon has been sure. Please set your own.')
+    signale.warn('A default BASE64 icon has been set. Please set your own.')
   }
   return process.exit()
 }).catch(signale.error)

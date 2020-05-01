@@ -22,73 +22,60 @@ program
 
 program.outputHelp()
 
-const defaultHost = 'ipfs.komputing.org' // ethdev berlin ipfs node
-const defaultPort = '443'
-const defaultProtocol = 'https'
+let options = {}
+options.host = 'ipfs.komputing.org' // ethdev berlin ipfs node
+options.port = '443'
+options.protocol = 'https'
 
 const targetDir = program.profilePath || __dirname
 
 const uploadToIpfsAndGenerateProfile = async () => {
 
-  let host = defaultHost
-  let protocol = defaultProtocol
-  let port = defaultPort
-
-  let pluginPath = process.argv.length > 2 ? process.argv[2] : process.cwd()
-  let profilePath = targetDir
+  options.pluginPath = process.argv.length > 2 ? process.argv[2] : process.cwd()
+  options.profilePath = targetDir
 
   // ask confirmation options
-  const options = await uploadOptions.run({
-    pluginPath: pluginPath,
-    profilePath: profilePath,
-    host: host,
-    port: port,
-    protocol: protocol
-  })
-  pluginPath = options.pluginPath
-  profilePath = options.profilePath
-  host = options.host
-  protocol = options.protocol
-  port = options.port
+  options = await uploadOptions.run(options)
+
   // check paths
-  if (!fs.existsSync(pluginPath)) {
-    signale.error("Plugin path not found: ", pluginPath)
+  if (!fs.existsSync(options.pluginPath)) {
+    signale.error("Plugin path not found: ", options.pluginPath)
     process.exit(1)
   }
-  if (!fs.existsSync(profilePath)) {
-    signale.error("Profile path not found: ", profilePath)
+  if (!fs.existsSync(options.profilePath)) {
+    signale.error("Profile path not found: ", options.profilePath)
     const ok = await yesno({
       question: 'Do you want to create this folder?'
     });
     if (ok) {
-      fs.mkdirSync(profilePath)
+      fs.mkdirSync(options.profilePath)
     } else {
       process.exit(1)
     }
 
   }
   // check profile.json
-  profilePath = path.join(targetDir, 'profile.json')
+  options.profilePath = path.join(targetDir, 'profile.json')
   let profile = {}
-  if (fs.existsSync(profilePath)) {
-    let rawdata = fs.readFileSync(profilePath);
+  if (fs.existsSync(options.profilePath)) {
+    let rawdata = fs.readFileSync(options.profilePath);
     profile = JSON.parse(rawdata)
     signale.info("Existing profile found: ", profile)
   } else {
-    signale.warn(`No existing profile found at ${profilePath}`)
+    signale.warn(`No existing profile found at ${options.profilePath}`)
     signale.info(`Use the --profile-path <path> option to use a previously created profile`)
   }
 
   // upload files  
   const ipfs = IpfsHttpClient({
-    host,
-    port: port,
-    protocol: protocol
+    host: options.host,
+    port: options.port,
+    protocol: options.protocol
   })
-  signale.await('uploading ' + pluginPath)
+  signale.await('uploading ' + options.pluginPath)
   let result = []
   // addFromFs deprecated see https://github.com/ipfs-inactive/js-ipfs-http-client/blob/master/CHANGELOG.md
-  for await (const file of ipfs.add(globSource(pluginPath, {
+  for await (const file of ipfs.add(globSource(options.pluginPath, {
     recursive: true
   }))) {
     result.push(file)
@@ -98,11 +85,11 @@ const uploadToIpfsAndGenerateProfile = async () => {
   const ipfsURL = 'ipfs://' + remoteFolder.cid
   signale.success('plugin URL', ipfsURL)
 
-  signale.await(`creation of plugin profile at ${profilePath}`)
+  signale.await(`creation of plugin profile at ${options.profilePath}`)
   const answers = await generateProfile.run(profile)
   answers.url = ipfsURL
 
-  fs.writeFileSync(profilePath, JSON.stringify(answers, null, 1))
+  fs.writeFileSync(options.profilePath, JSON.stringify(answers, null, 1))
 
   return answers
 }

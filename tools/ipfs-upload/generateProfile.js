@@ -3,12 +3,15 @@ const semver = require('semver')
 const isUrl = require('is-url')
 const isBase64 = require('is-base64')
 
+function isUndefined(value){
+  return(typeof value == "undefined" || value=="undefined")
+}
 
 let questions = [
   {
     type: 'input',
     name: 'name',
-    message: "plugin name",
+    message: "plugin name"
   },
   {
     type: 'input',
@@ -39,6 +42,7 @@ let questions = [
     name: 'methods',
     message: "(optional) Comma separated list of all the functions that this plugin is triggering",
     filter: function(value) {
+      if ( isUndefined(value) ) value = ''
       return value ? value.split(',') : []
     }
   },
@@ -72,7 +76,7 @@ const BASE64_DEFAULT_IMG = 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAgAAAA
 module.exports = {
   run: async (defaults) => {
     questions.map((val)=>{
-      val.default = String(defaults[val.name])
+      val.default = !isUndefined(defaults[val.name]) ? String(defaults[val.name]) : ''
     })
     // if default questions from the profile are not in questions add them
     Object.keys(defaults).map((val)=>{

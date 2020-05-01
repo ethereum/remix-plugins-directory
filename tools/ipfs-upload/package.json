@@ -1,15 +1,12 @@
 {
   "name": "upload-remix-plugin",
-  "version": "1.0.0",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/bunsenstraat/remix-plugins-directory.git"
+  "version": "1.0.1",
+  "description": "",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/bunsenstraat/remix-plugins-directory/issues"
-  },
-  "homepage": "https://github.com/bunsenstraat/remix-plugins-directory#readme",
+  "author": "Remix team",
+  "license": "MIT",
   "dependencies": {
     "commander": "^5.1.0",
     "fs": "0.0.1-security",

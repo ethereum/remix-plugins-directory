@@ -1,5 +1,5 @@
 export interface Network {
-  name: 'ropsten' | 'mainnet' | 'rinkeby' | 'goerli'
+  name: 'ropsten' | 'mainnet' | 'rinkeby' | 'goerli' | 'kovan'
   id: number  
 }
 
@@ -11,6 +11,6 @@ export interface VerifiedArtifacts {
 export interface SourceVerifyApi {
   methods: {
     fetch(address: string, network: Network): VerifiedArtifacts
-    verify(verifyData: any): void
+    verify(verifyData: any): void //TODO: should this return success/error?
   }
 }

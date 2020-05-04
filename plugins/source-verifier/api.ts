@@ -4,6 +4,7 @@ export interface VerifiedArtifacts {
 }
 
 export interface VerifyResponse {
+  match: 'partial' | 'perfect' | 'no match',
   success: boolean,
   message: string
 }
@@ -16,7 +17,7 @@ export interface SourceVerifyApi {
      * @param {string | number} network - should be either network name or network id; both number and string types are accepted.
      * @return {VerifiedArtifacts} - map containing a metadata.json and source files.
      */
-    fetch(address: string, network: string | number): VerifiedArtifacts
+    fetch(address: string, network: string | Number): VerifiedArtifacts
     /**
      * verify a contract. the network is retrieved from the application context.
      * @param {verifyData} any - map containing a metadata.json and source files

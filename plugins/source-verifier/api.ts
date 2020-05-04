@@ -8,9 +8,10 @@ export interface VerifyResponse {
   message: string
 }
 
+// network should be either network name or network id; both number and string types are accepted
 export interface SourceVerifyApi {
   methods: {
-    fetch(address: string, network: string): VerifiedArtifacts
+    fetch(address: string, network: string | number): VerifiedArtifacts
     verify(verifyData: any): VerifyResponse
   }
 }

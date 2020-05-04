@@ -136,13 +136,13 @@
 		"name": "mythx",
 		"displayName": "MythX Security Verification",
 		"description": "Perform Static and Dynamic Security Analysis using the MythX Cloud Service",
-		"version": "0.3.2",
+		"version": "0.3.3",
 		"events": [],
 		"methods": [],
 		"kind": "none",
 		"icon": "https://remix-mythx-plugin.surge.sh/logo.png",
 		"location": "sidePanel",
-		"url": "ipfs://QmQYE8p9oRPs9nzS1tsrzNsZWmrkVmRqKvMqEXpx2HQgdp"
+		"url": "ipfs://QmWvCTaEt8VCoNsz1enZZPKQJAT1nxzNvNqonuQ46svkGG"
 	},
 	{
 		"name": "oneClickDapp",

@@ -9,6 +9,12 @@ export interface VerifyResponse {
   message: string
 }
 
+export interface VerifyData {
+  address: string,
+  chain: string | number,
+  files: Record<string, any> 
+}
+
 export interface SourceVerifyApi {
   methods: {
     /**
@@ -17,12 +23,12 @@ export interface SourceVerifyApi {
      * @param {string | number} network - should be either network name or network id; both number and string types are accepted.
      * @return {VerifiedArtifacts} - map containing a metadata.json and source files.
      */
-    fetch(address: string, network: string | Number): VerifiedArtifacts
+    fetch(address: string, network: string | number): VerifiedArtifacts
     /**
      * verify a contract. the network is retrieved from the application context.
-     * @param {verifyData} any - map containing a metadata.json and source files
+     * @param {verifyData} VerifyData - map containing a metadata.json and source files
      * @return {VerifyResponse}
      */
-    verify(verifyData: any): VerifyResponse
+    verify(verifyData: VerifyData): VerifyResponse
   }
 }

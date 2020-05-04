@@ -19,7 +19,7 @@ export interface SourceVerifyApi {
     fetch(address: string, network: string | number): VerifiedArtifacts
     /**
      * verify a contract. the network is retrieved from the application context.
-     * @param {verifyData} any - contract address.
+     * @param {verifyData} any - map containing a metadata.json and source files
      * @return {VerifyResponse}
      */
     verify(verifyData: any): VerifyResponse

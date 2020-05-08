@@ -1,0 +1,12 @@
+{
+    "name": "workshops",
+    "displayName": "Remix Workshops",
+    "description": "Learn Ethereum with Remix !",
+    "version": "0.1.0-beta.2",
+    "events": [],
+    "methods": [],
+    "kind": "none",
+    "icon": "https://image.flaticon.com/icons/svg/1570/1570493.svg",
+    "location": "sidePanel",
+    "url": "ipfs://Qmbvpaz1FUgfVNG4V9RP2iLrg6pufradBYgcL6FSBqXveP"
+  }

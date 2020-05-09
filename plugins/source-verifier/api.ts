@@ -3,7 +3,7 @@ export interface VerifiedArtifacts {
   contracts: any
 }
 
-export interface VerifyResponse {
+export interface VerifyResult {
   match: 'partial' | 'perfect' | 'no match',
   success: boolean,
   message: string
@@ -29,6 +29,6 @@ export interface SourceVerifyApi {
      * @param {verifyData} - map containing a metadata.json, source files, address and chain
      * @return {VerifyResponse}
      */
-    verify(verifyData: VerifyData): VerifyResponse
+    verify(verifyData: VerifyData): VerifyResult
   }
 }

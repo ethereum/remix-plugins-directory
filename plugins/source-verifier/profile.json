@@ -2,10 +2,13 @@
     "name": "source-verification",
     "displayName": "Source Verifier",
     "description": "Source metadata fetcher and validator",
-    "version": "0.1.8-beta",
+    "version": "0.2.0-beta",
     "methods": [
-     "fetch",
-     "verify"
+        "fetch",
+        "fetchAndSave",
+        "fetchByNetwork",
+        "verify",
+        "verifyByNetwork"
     ],
     "icon": "https://raw.githubusercontent.com/Shard-Labs/remix-contract-getter/master/public/source-verify.png",
     "location": "sidePanel",

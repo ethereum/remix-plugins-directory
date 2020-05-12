@@ -236,6 +236,16 @@
 		"url": "ipfs://Qmcvr9exnMmVDX9E6oc1b84D2yg5Pvp4yphcBCHyURiRci"
 	},
 	{
+		"name": "solhint",
+		"displayName": "Solhint",
+		"methods": [],
+		"version": "0.0.1",
+		"url": "https://protofire.github.io/remix-solhint-plugin/",
+		"description": "Run Solhint in your Remix project",
+		"icon": "https://raw.githubusercontent.com/protofire/solhint/master/solhint-icon.png",
+		"location": "sidePanel"
+	},
+	{
 		"name": "source-verification",
 		"displayName": "Source Verifier",
 		"description": "Source metadata fetcher and validator",

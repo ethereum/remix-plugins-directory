@@ -12,7 +12,7 @@ export interface VerifyResult {
 export interface VerifyData {
   address: string,
   chain: string | number,
-  files: Record<string, any> 
+  files: Record<string, string> 
 }
 
 export interface SourceVerifyApi {
@@ -45,14 +45,14 @@ export interface SourceVerifyApi {
      * @param {verifyData} - map containing a metadata.json, source files, address and chain
      * @return {VerifyResponse}
      */
-    verify(address: string, files: any): VerifyResult
+    verifyByNetwork(address: string, files: any): VerifyResult
     
      /**
      * Verify a contract. the network is retrieved from the application context.
      * @param {verifyData} - map containing a metadata.json, source files, address and chain
      * @return {VerifyResponse}
      */
-    verifyByNetwork(verifyData: VerifyData): VerifyResult
+    verify(verifyData: VerifyData): VerifyResult
     
   }
 }

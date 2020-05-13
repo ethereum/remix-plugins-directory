@@ -40,19 +40,20 @@ export interface SourceVerifyApi {
      */
     fetchByNetwork(address: string, chain: any): VerifiedArtifacts
     
-    /**
-     * verify a contract. the network is retrieved from the application context.
-     * @param {verifyData} - map containing a metadata.json, source files, address and chain
-     * @return {VerifyResponse}
-     */
-    verifyByNetwork(address: string, files: any): VerifyResult
-    
      /**
      * Verify a contract. the network is retrieved from the application context.
-     * @param {verifyData} - map containing a metadata.json, source files, address and chain
-     * @return {VerifyResponse}
+     * @param {address} - address of the contract
+     * @param {files} - map containing a metadata.json and source files
+     * @return {VerifyResult}
      */
-    verify(verifyData: VerifyData): VerifyResult
+    verify(address: string, files: any): VerifyResult
+    
+    /**
+     * verify a contract. 
+     * @param {verifyData} - map containing a metadata.json, source files, address and chain
+     * @return {VerifyResult}
+     */
+    verifyByNetwork(verifyData: VerifyData): VerifyResult
     
   }
 }

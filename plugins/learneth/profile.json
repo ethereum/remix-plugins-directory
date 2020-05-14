@@ -1,7 +1,7 @@
 {
  "name": "LearnEth",
  "displayName": "LearnEth",
- "description": "Learn Ethereum with Remix !",
+ "description": "Learn Ethereum with Remix!",
  "documentation": "https://github.com/bunsenstraat/remix-learneth-plugin",
  "version": "0.1.0-beta.3",
  "methods": [],

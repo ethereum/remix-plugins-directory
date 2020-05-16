@@ -9,12 +9,6 @@ export interface VerifyResult {
   message: string
 }
 
-export interface VerifyData {
-  address: string,
-  chain: string | number,
-  files: Record<string, string> 
-}
-
 export interface SourceVerifyApi {
   methods: {
     /**
@@ -50,10 +44,12 @@ export interface SourceVerifyApi {
     
     /**
      * verify a contract. 
-     * @param {verifyData} - map containing a metadata.json, source files, address and chain
+     * @param {address} - address of the contract
+     * @param {chain} - use this chain/network to verify if, should be chain id (1,3,4...) or chain name (mainnet, rinkeby, goerli...)
+     * @param {files} - map containing a metadata.json and source files
      * @return {VerifyResult}
      */
-    verifyByNetwork(verifyData: VerifyData): VerifyResult
+    verifyByNetwork(address: string, chain: string | number, files: any): VerifyResult
     
   }
 }

@@ -249,7 +249,7 @@
 		"name": "source-verification",
 		"displayName": "Source Verifier",
 		"description": "Source metadata fetcher and validator",
-		"version": "0.2.1-beta",
+		"version": "0.2.2-beta",
 		"methods": [
 			"fetch",
 			"fetchAndSave",
@@ -259,7 +259,7 @@
 		],
 		"icon": "https://raw.githubusercontent.com/Shard-Labs/remix-contract-getter/master/public/source-verify.png",
 		"location": "sidePanel",
-		"url": "ipfs://QmcpxXUyXV4TYgBErMyVicPuypS2Ts2H7Jdx1sxRHNLbDM"
+		"url": "ipfs://QmS5KAR1PVJqDgDXccnJ51pxHKhbpvaZtKAD4xW7UxM4Ck"
 	},
 	{
 		"name": "vyper",

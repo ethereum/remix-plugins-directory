@@ -6,7 +6,7 @@
  "version": "0.1.0-beta.3",
  "methods": [],
  "kind": "none",
- "icon": "https://ipfsgw.komputing.org/ipfs/QmPfdBf6knFETeCWkT2en5yrM4n7STfLU3781BJ7JYdhGA",
+ "icon": "https://raw.githubusercontent.com/bunsenstraat/remix-learneth-plugin/master/src/assets/Font_Awesome_5_solid_book-reader.svg",
  "location": "sidePanel",
  "url": "ipfs://QmV3QsNeUfBQK2SXQtaQuMJbPrGDBq8czHrUB2m5dBmfDc"
 }

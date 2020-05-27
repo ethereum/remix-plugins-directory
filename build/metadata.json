@@ -89,7 +89,7 @@
 		"events": [],
 		"methods": [],
 		"version": "0.1.0",
-		"url": "https://remix-flattener.netlify.com",
+		"url": "https://remix-flattener.netlify.app",
 		"description": "Flattens compiled smart contracts",
 		"documentation": "https://github.com/Destiner/remix-flattener",
 		"icon": "https://remix-flattener.netlify.com/logo.svg",
@@ -236,17 +236,30 @@
 		"url": "ipfs://Qmcvr9exnMmVDX9E6oc1b84D2yg5Pvp4yphcBCHyURiRci"
 	},
 	{
+		"name": "solhint",
+		"displayName": "Solhint",
+		"methods": [],
+		"version": "0.0.1",
+		"url": "https://protofire.github.io/remix-solhint-plugin/",
+		"description": "Run Solhint in your Remix project",
+		"icon": "https://raw.githubusercontent.com/protofire/solhint/master/solhint-icon.png",
+		"location": "sidePanel"
+	},
+	{
 		"name": "source-verification",
 		"displayName": "Source Verifier",
 		"description": "Source metadata fetcher and validator",
-		"version": "0.1.7-beta",
+		"version": "0.2.3-beta",
 		"methods": [
 			"fetch",
-			"verify"
+			"fetchAndSave",
+			"fetchByNetwork",
+			"verify",
+			"verifyByNetwork"
 		],
 		"icon": "https://raw.githubusercontent.com/Shard-Labs/remix-contract-getter/master/public/source-verify.png",
 		"location": "sidePanel",
-		"url": "ipfs://QmQYBmLLsEEoLdkk5mMdWG3baSz74auiAdjkDRiRPRXFqg"
+		"url": "ipfs://QmWkCqQVjVvnvhJkSQ44hEZ49iQZdghcSGcK7Etf8GqnDw"
 	},
 	{
 		"name": "vyper",

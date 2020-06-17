@@ -6,6 +6,13 @@ export interface CompilationInput {
   outputSelection?: CompilerOutputSelection
 }
 
+export interface CondensedCompilationInput {
+  language: 'Solidity' | 'Vyper' | 'lll' | 'assembly' | 'yul'
+  optimize: boolean
+  version: string // e.g: 0.6.8+commit.0bbfe453
+  evmVersion?: 'istanbul' | 'petersburg' | 'constantinople' | 'byzantium' | 'spuriousDragon' | 'tangerineWhistle' | 'homestead'
+}
+
 /////////////
 // SOURCES //
 /////////////

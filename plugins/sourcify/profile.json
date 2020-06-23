@@ -1,0 +1,16 @@
+{
+    "name": "sourcify",
+    "displayName": "Sourcify",
+    "description": "Source metadata fetcher and validator",
+    "version": "0.3.0-beta",
+    "methods": [
+        "fetch",
+        "fetchAndSave",
+        "fetchByNetwork",
+        "verify",
+        "verifyByNetwork"
+    ],
+    "icon": "https://raw.githubusercontent.com/Shard-Labs/remix-contract-getter/master/public/sourcify.png",
+    "location": "sidePanel",
+    "url": "ipfs://QmZLmbX4JPiYZYdPNYKbprtcjk2mRAevh3AZ39AiWN5vw5"
+}

@@ -258,10 +258,10 @@
 		"location": "sidePanel"
 	},
 	{
-		"name": "source-verification",
-		"displayName": "Source Verifier",
+		"name": "sourcify",
+		"displayName": "Sourcify",
 		"description": "Source metadata fetcher and validator",
-		"version": "0.2.3-beta",
+		"version": "0.3.0-beta",
 		"methods": [
 			"fetch",
 			"fetchAndSave",
@@ -269,9 +269,9 @@
 			"verify",
 			"verifyByNetwork"
 		],
-		"icon": "https://raw.githubusercontent.com/Shard-Labs/remix-contract-getter/master/public/source-verify.png",
+		"icon": "https://raw.githubusercontent.com/Shard-Labs/remix-contract-getter/master/public/sourcify.png",
 		"location": "sidePanel",
-		"url": "ipfs://QmWkCqQVjVvnvhJkSQ44hEZ49iQZdghcSGcK7Etf8GqnDw"
+		"url": "ipfs://QmZLmbX4JPiYZYdPNYKbprtcjk2mRAevh3AZ39AiWN5vw5"
 	},
 	{
 		"name": "vyper",

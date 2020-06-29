@@ -1,5 +1,5 @@
 {
-    "name": "source-verifier",
+    "name": "source-verification",
     "displayName": "Sourcify",
     "description": "Source metadata fetcher and validator",
     "version": "0.3.0-beta",

@@ -15,7 +15,7 @@ export interface CompilationResult {
   errors?: CompilationError[]
   /** This contains the file-level outputs. In can be limited/filtered by the outputSelection settings */
   sources: {
-    [contractName: string]: CompilationSource
+    [fileName: string]: CompilationSource
   }
   /** This contains the contract-level outputs. It can be limited/filtered by the outputSelection settings */
   contracts: {

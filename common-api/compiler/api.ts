@@ -1,4 +1,4 @@
-import { CompilationFileSources, CompilationResult } from './type';
+import { CompilationFileSources, CompilationResult, CondensedCompilationInput, SourcesInput } from './type';
 
 export interface EVMCompilerApi {
   events: {
@@ -12,5 +12,7 @@ export interface EVMCompilerApi {
   methods: {
     getCompilationResult(): CompilationResult
     compile(fileName: string): void
+    setCompilerConfig(settings: CondensedCompilationInput): void
+    compileWithParameters(targets: SourcesInput, settings: CondensedCompilationInput): CompilationResult
   }
 }

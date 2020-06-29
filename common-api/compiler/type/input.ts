@@ -9,7 +9,8 @@ export interface CompilationInput {
 export interface CondensedCompilationInput {
   language: 'Solidity' | 'Vyper' | 'lll' | 'assembly' | 'yul'
   optimize: boolean
-  version: string // e.g: 0.6.8+commit.0bbfe453
+  /** e.g: 0.6.8+commit.0bbfe453 */
+  version: string
   evmVersion?: 'istanbul' | 'petersburg' | 'constantinople' | 'byzantium' | 'spuriousDragon' | 'tangerineWhistle' | 'homestead'
 }
 

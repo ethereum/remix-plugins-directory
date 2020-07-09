@@ -2,6 +2,7 @@
   "name": "mythx",
   "displayName": "MythX Security Verification",
   "description": "Perform Static and Dynamic Security Analysis using the MythX Cloud Service",
+  "documentation": "https://docs.mythx.io/tools-integrations/remix",
   "version": "0.3.3",
   "events": [],
   "methods": [],

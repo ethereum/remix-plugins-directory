@@ -5,7 +5,7 @@
     "documentation": "https://zokrates.github.io/",
     "methods": [],
     "events": [],
-    "version": "0.1.0-alpha",
+    "version": "0.1.0-beta",
     "url": "https://zokrates-remix-plugin.netlify.app/",
     "icon": "https://zokrates-remix-plugin.netlify.app/zokrates.svg",
     "location": "sidePanel"

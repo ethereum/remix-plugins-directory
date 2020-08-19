@@ -3,7 +3,7 @@
 This repository hosts a plugins directory.
 The directory is used by [Remix IDE](https://remix.ethereum.org) for loading the list of available plugins.
 
-# how to reference a plugin
+# How to reference a plugin in Remix IDE
 
 Simply propose a PR which add a new entry in the `plugins` folder.
 This folder should contain at least a `profile.json`:

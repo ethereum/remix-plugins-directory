@@ -24,6 +24,12 @@ export interface CompilationResult {
       [contract: string]: CompiledContract
     }
   }
+  metadata: {
+    /** Return metadata if exists */
+    [fileName: string]: {
+      [metadata: string]: CompiledMetadata
+    }
+  }
 }
 
 ///////////
@@ -161,6 +167,14 @@ export interface CompiledContract {
     /** Binary format (hex string) */
     wasm: string
   }
+}
+
+///////////////
+// METADATA //
+//////////////
+export interface CompiledMetadata {
+  // Compiled metadata
+  solidityMetadata: string
 }
 
 /////////

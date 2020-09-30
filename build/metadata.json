@@ -276,7 +276,7 @@
 		"name": "source-verification",
 		"displayName": "Sourcify",
 		"description": "Source metadata fetcher and validator",
-		"version": "0.4.1-beta",
+		"version": "0.5.0-beta",
 		"methods": [
 			"fetch",
 			"fetchAndSave",
@@ -286,7 +286,7 @@
 		],
 		"icon": "https://raw.githubusercontent.com/Shard-Labs/remix-contract-getter/master/public/sourcify.png",
 		"location": "sidePanel",
-		"url": "ipfs://QmPQARNGZnxLuxoDnJFB3G4LutCG9s5qpvn6TYDVV8xjuV"
+		"url": "ipfs://QmYGG4bGPXqhs3DKddTZwnR7GzSNMrmddyTFuj2NcMiUMs"
 	},
 	{
 		"name": "vyper",

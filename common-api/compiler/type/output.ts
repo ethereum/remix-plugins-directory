@@ -70,8 +70,6 @@ export interface CompilationSource {
   id: number
   /** The AST object */
   ast: AstNode
-  /** The legacy AST object */
-  legacyAST: AstNodeLegacy
 }
 
 /////////
@@ -90,14 +88,6 @@ export interface AstNode {
   sourceUnit?: number
   symbolAliases?: Array<string>
   [x: string]: any
-}
-
-export interface AstNodeLegacy {
-  id: number
-  name: string
-  src: string
-  children?: Array<AstNodeLegacy>
-  attributes?: AstNodeAtt
 }
 
 export interface AstNodeAtt {

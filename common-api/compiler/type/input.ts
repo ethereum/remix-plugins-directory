@@ -93,7 +93,6 @@ export interface CompilerLibraries {
 export type OutputType =
   | 'abi'
   | 'ast'
-  | 'legacyAST'
   | 'devdoc'
   | 'userdoc'
   | 'metadata'

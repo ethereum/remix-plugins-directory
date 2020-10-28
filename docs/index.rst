@@ -6,11 +6,15 @@
 Remix Plugin development
 ==================================================
 
+Using the Remix Plugin system is an easy way to extend the functionality of the Remix IDE.
+
 .. toctree::
    :maxdepth: 2
    :caption: Contents:
 
+   getting_started
    guidelines
+
 
 
 

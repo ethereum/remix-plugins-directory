@@ -1,0 +1,262 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html4" lang="en" >
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Remix Plugin development &mdash; Remix Plugin Directory  documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+
+  
+  
+  
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+        <script type="text/javascript" src="_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="#" class="icon icon-home" alt="Documentation Home"> Remix Plugin Directory
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <!-- Local TOC -->
+              <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">Remix Plugin development</a><ul>
+<li><a class="reference internal" href="#documentation-guidelines">Documentation guidelines</a></li>
+<li><a class="reference internal" href="#ui-guidelines">UI guidelines</a></li>
+</ul>
+</li>
+</ul>
+</div>
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="#">Remix Plugin Directory</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="#" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>Remix Plugin development</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/index.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="remix-plugin-development">
+<h1>Remix Plugin development<a class="headerlink" href="#remix-plugin-development" title="Permalink to this headline">¶</a></h1>
+<div class="toctree-wrapper compound">
+</div>
+<div class="section" id="documentation-guidelines">
+<h2>Documentation guidelines<a class="headerlink" href="#documentation-guidelines" title="Permalink to this headline">¶</a></h2>
+<p>Great documentation is crucial to the success of your plugin. We encourage you to publish your docs on <a class="reference external" href="https://readthedocs.org/">Read the docs</a>.</p>
+<p>We have some great tips on how to make your documentation effective.</p>
+<p><strong>Clearly state the purpose of your plugin</strong></p>
+<blockquote>
+<div>Describe in detail what the plugin does. Do not assume any knowledge on the part of your user, introduce all the concepts and technologies.
+Use external links to anything related to your plugin.</div></blockquote>
+<p><strong>Who is your plugin for?</strong></p>
+<blockquote>
+<div>Define who your user is, what they might need and what they might get out of using your plugin.</div></blockquote>
+<p><strong>Requirements</strong></p>
+<blockquote>
+<div><p>What is needed to successfully run the plugin? Some plugins might need other software or services to run. Provide information, links and step by step guides to setting those up.</p>
+<p>In some cases certain functionalities or settings in the Remix environment are needed. Clearly state the knowledge and steps needed. If possible provide links to sections in the <a class="reference external" href="https://remix-ide.readthedocs.io/en/latest/index.html">Remix documentation</a> that explain what the user needs to know.</p>
+</div></blockquote>
+<p><strong>Installation and configuration</strong></p>
+<blockquote>
+<div>Tell your user where to find your plugin the Remix directory and how to set it up. Your plugin will have an icon in the sidebar of Remix, show your user what it is.</div></blockquote>
+<p><strong>Set by step demonstration</strong></p>
+<blockquote>
+<div>The best way to explain your plugin is by demonstration. Provide a detailed step by step tutorial on how to use it. Dummy data that leads to results is a great way to help your user. Try to avoid an empty state.</div></blockquote>
+<p><strong>Use screenshots</strong></p>
+<blockquote>
+<div>A picture is worth a thousand words.</div></blockquote>
+<p><strong>Be available for troubleshooting</strong></p>
+<blockquote>
+<div>Always assume something can go wrong. Provide a place where users can go with their issues. This can be done on github, gitter, any chat channel or e-mail.</div></blockquote>
+<p><strong>Introduce yourself</strong></p>
+<blockquote>
+<div>Link to any websites, companies, repositories you are involved with. This can greatly help the user to engage with your plugin and maybe encourage them to assist in development and feedback.</div></blockquote>
+<p><strong>Always be up to date</strong></p>
+<blockquote>
+<div>Be accurate in every detail, update the documentation when your plugin has an update.</div></blockquote>
+</div>
+<div class="section" id="ui-guidelines">
+<h2>UI guidelines<a class="headerlink" href="#ui-guidelines" title="Permalink to this headline">¶</a></h2>
+<p>A great user experience needs a good interface. Here are some requirements for a successfull plugin.</p>
+<p><strong>Clear navigation</strong></p>
+<blockquote>
+<div>Really guide your user through all the steps. Provide dummy or mockup data if possible to generate a useful result. There should not be an empty state. Use tooltips or links to the documentation.</div></blockquote>
+<p><strong>Feedback</strong></p>
+<blockquote>
+<div>Every step should have feedback concerning errors, successes or requirements. If a step requires the user to do something in another part of the Remix environment this should be
+clearly indicated. If files are not loading correctly or the Remix IDE returns errors on calls this should be made clear. Your user should never be stuck. Point your user to the results
+generated, tell them what to do if the results fail.</div></blockquote>
+<p><strong>Dependencies</strong></p>
+<blockquote>
+<div>If there are dependencies on other services or software clearly tell the user where to look or what to do. If certain service providers or functionalities in Remix have not been actived your plugin
+should test for them and provide feedback.</div></blockquote>
+<p><strong>Tooltips and documentation</strong></p>
+<blockquote>
+<div>Always refer to any documentation you have on all input fields and steps. Use tooltips whenever possible. Just a form with some input fields is not a good user experience. Don’t assume your user knows what to do.</div></blockquote>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        
+        &copy; Copyright 2020, Remix Team
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

@@ -134,18 +134,6 @@
 		"location": "sidePanel"
 	},
 	{
-		"name": "Ink",
-		"displayName": "Ink",
-		"description": "ink! is a Rust-based embedded domain specific language (eDSL) for writing WebAssembly smart contracts specifically on Substrate",
-		"documentation": "https://docs-ink.blockchain-it.hr/",
-		"methods": [],
-		"events": [],
-		"version": "0.1.0-alpha",
-		"url": "https://ink-remix.blockchain-it.hr/",
-		"icon": "https://ink-remix.blockchain-it.hr/ink.svg",
-		"location": "sidePanel"
-	},
-	{
 		"name": "LearnEth",
 		"displayName": "LearnEth",
 		"description": "Learn Ethereum with Remix!",

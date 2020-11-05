@@ -1,0 +1,12 @@
+{
+  "name": "celo-remix-plugin",
+  "displayName": "Celo",
+  "description": "Deploy and Run Transactions with Celo.",
+  "events": [],
+  "methods": [],
+  "url": "https://dexfair.github.io/celo-remix-plugin",
+  "icon": "https://dexfair.github.io/celo-remix-plugin/icon.png",
+  "documentation": "https://github.com/dexfair/celo-remix-plugin",
+  "version": "0.1.0-beta",
+  "location": "sidePanel"
+}

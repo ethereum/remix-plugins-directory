@@ -13,5 +13,5 @@ export interface Annotation  {
   row: number
   column: number
   text: string
-  type: 'error' | 'warning' | 'information'
+  type: 'error' | 'warning' | 'info'
  }

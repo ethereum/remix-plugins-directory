@@ -3,6 +3,7 @@
     "displayName": "Sourcify",
     "description": "Source metadata fetcher and validator",
     "version": "0.5.2-beta",
+    "documentation":"https://github.com/sourcifyeth/remix-sourcify",
     "methods": [
         "fetch",
         "fetchAndSave",

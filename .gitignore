@@ -1,0 +1,5 @@
+.vscode
+.vscode/settings.json
+.DS_store
+docs/_build
+tools/ipfs-upload/bin/plugins-directory-docs.code-workspace

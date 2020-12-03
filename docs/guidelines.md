@@ -14,7 +14,6 @@ A great user experience needs a good interface. Here are some requirements for a
 > * Use buttons for buttons and form-control elements for forms and so on. 
 > * Look at the Remix interface to get a feel for the components used. 
 
-
 **Clear navigation**
 
 > Really guide your user through all the steps. Provide dummy or mockup data if possible to generate a useful result. There should not be an empty state. Use tooltips or links to the documentation.

@@ -68,6 +68,10 @@ You can expose methods in your app to other plugins or call methods on other plu
 
 **You should include those methods in your profile.json which you create to <a href='publishing_your_plugin.html'>publish your plugin.</a>**
 
+### Calling your plugin & methods directly from a URL
+
+<a href='https://remix-ide.readthedocs.io/en/latest/locations.html'>Read the documentation here.</a>
+
 ### More API
 
 Check out <a href='https://github.com/ethereum/remix-plugin/tree/master/packages/api/doc' target=_blank>these docs</a> to find out what more you can do with the plugin.

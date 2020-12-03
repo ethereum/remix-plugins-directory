@@ -64,7 +64,7 @@ You can interact with the solidity compiler. Follow these methods <a href='https
 
 ### Exposing methods
 
-You can expose methods in your app to other plugins. It is described in <a href='https://github.com/ethereum/remix-plugin/tree/master/packages/plugin/webview' target=_blank>plugin-webview</a>.
+You can expose methods in your app to other plugins or call methods on other plugins. It is described in <a href='https://github.com/ethereum/remix-plugin/tree/master/packages/plugin/webview' target=_blank>plugin-webview</a>.
 
 **You should include those methods in your profile.json which you create to <a href='publishing_your_plugin.html'>publish your plugin.</a>**
 

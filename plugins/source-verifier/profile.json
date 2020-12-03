@@ -2,7 +2,8 @@
     "name": "source-verification",
     "displayName": "Sourcify",
     "description": "Source metadata fetcher and validator",
-    "version": "0.5.1-beta",
+    "version": "0.5.2-beta",
+    "documentation":"https://github.com/sourcifyeth/remix-sourcify",
     "methods": [
         "fetch",
         "fetchAndSave",
@@ -12,5 +13,5 @@
     ],
     "icon": "https://raw.githubusercontent.com/Shard-Labs/remix-contract-getter/master/public/sourcify.png",
     "location": "sidePanel",
-    "url": "ipfs://QmfWuhR6j7z8wvafcxt7tGoFp2gpsMz5JvwCSzj2BCETm1"
+    "url": "ipfs://QmVdhCSphBm91pvTaEjAS68RuUiUqfVYdeTtZUCV1W6L35"
 }

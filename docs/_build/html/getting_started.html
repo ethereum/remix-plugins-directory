@@ -36,7 +36,7 @@
     
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Guidelines" href="guidelines.html" />
+    <link rel="next" title="Guidelines for documentation and styling" href="guidelines.html" />
     <link rel="prev" title="Remix Plugin development" href="index.html" /> 
 </head>
 
@@ -84,8 +84,24 @@
             
               <p class="caption"><span class="caption-text">Contents:</span></p>
 <ul class="current">
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Getting started</a></li>
-<li class="toctree-l1"><a class="reference internal" href="guidelines.html">Guidelines</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Getting started</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#basic-concepts-of-a-simple-remix-plugin">Basic concepts of a simple Remix plugin</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#loading-the-library">Loading the library</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#the-onload-event">The onload event</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#bootstrap-css">Bootstrap CSS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#the-plugin-api">The plugin API</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#files">Files</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#importing-content">Importing content</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#the-solidity-compiler">The solidity compiler</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#exposing-methods">Exposing methods</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#more-api">More API</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#installing-the-plugin-locally">Installing the plugin locally</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="guidelines.html">Guidelines for documentation and styling</a></li>
+<li class="toctree-l1"><a class="reference internal" href="publishing_your_plugin.html">Publishing your plugin</a></li>
 </ul>
 
             
@@ -138,7 +154,7 @@
       <li class="wy-breadcrumbs-aside">
         
             
-            <a href="_sources/getting_started.rst.txt" rel="nofollow"> View page source</a>
+            <a href="_sources/getting_started.md.txt" rel="nofollow"> View page source</a>
           
         
       </li>
@@ -153,6 +169,87 @@
             
   <div class="section" id="getting-started">
 <h1>Getting started<a class="headerlink" href="#getting-started" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="basic-concepts-of-a-simple-remix-plugin">
+<h2>Basic concepts of a simple Remix plugin<a class="headerlink" href="#basic-concepts-of-a-simple-remix-plugin" title="Permalink to this headline">¶</a></h2>
+<p>A remix plugin in its simplest form is a webapp running in an iFrame on the Remix IDE.</p>
+<p>To interact with Remix you will need to use the Remix plugin code. This will provide:</p>
+<ul class="simple">
+<li>making calls to Remix, for example to load a file</li>
+<li>listen to events from Remix, for example when a user has compiled a sol file</li>
+<li>loading the currently active CSS theme in your plugin</li>
+<li>interacting with other plugins</li>
+<li>helper functions like loading content</li>
+</ul>
+<p>You can use any framework you like, React, Webpack, Angular …</p>
+</div>
+<div class="section" id="loading-the-library">
+<h2>Loading the library<a class="headerlink" href="#loading-the-library" title="Permalink to this headline">¶</a></h2>
+<p>The library you have to use for an iFrame plugin is called plugin-webview.</p>
+<p>Install the library with your package manager a described in <a href='https://github.com/ethereum/remix-plugin/tree/master/packages/plugin/webview' target=_blank>plugin-webview</a>.</p>
+<p>Using the library you create an instance of the plugin <em>client</em>, you can have your own class extend the plugin or just instanciate a plugin client.</p>
+<p>The client can listen to events and call methods.</p>
+</div>
+<div class="section" id="the-onload-event">
+<h2>The onload event<a class="headerlink" href="#the-onload-event" title="Permalink to this headline">¶</a></h2>
+<p>The onload event is the signal in your app communication is setup with Remix. In case you don’t see that event happening something is wrong.
+You should check the console to find out.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">client</span><span class="o">.</span><span class="n">onload</span><span class="p">(</span><span class="k">async</span> <span class="p">()</span> <span class="o">=&gt;</span> <span class="p">{</span>
+<span class="p">})</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="bootstrap-css">
+<h2>Bootstrap CSS<a class="headerlink" href="#bootstrap-css" title="Permalink to this headline">¶</a></h2>
+<p>When the client is loaded Remix will provide your iFrame with a theme, the current theme choosen by the user.</p>
+<p>If that onload event doesn’t happen, the theme won’t be loaded and neither will the client be ready to interact with
+Remix.</p>
+<p><strong>You should not load your own bootstrap css!</strong> It is not necessary. When using bootstrap JS functions however, you should load them in your codebase.</p>
+<p>Your styling should always directed towards compliance with the look &amp; feel of Remix. Use the standard buttons, like primary, secondary, success, danger and so on.
+They will be styled by the Remix CSS that is loaded on your iFrame. You should follow the general guidelines outlined in this manual.</p>
+</div>
+<div class="section" id="the-plugin-api">
+<h2>The plugin API<a class="headerlink" href="#the-plugin-api" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="files">
+<h3>Files<a class="headerlink" href="#files" title="Permalink to this headline">¶</a></h3>
+<p>By simply calling the fileManager method on the client you can interact with the Remix filesystem.</p>
+<p>Read about those file methods and events here <a href='https://github.com/ethereum/remix-plugin/blob/master/packages/api/doc/file-system.md' target=_blank>https://github.com/ethereum/remix-plugin/blob/master/packages/api/doc/file-system.md</a>.</p>
+</div>
+<div class="section" id="importing-content">
+<h3>Importing content<a class="headerlink" href="#importing-content" title="Permalink to this headline">¶</a></h3>
+<p>You can have Remix handle importing content for you. It can load data from various sources and also write it to file: <a href='https://github.com/ethereum/remix-plugin/blob/master/packages/api/doc/content-import.md' target=_blank>https://github.com/ethereum/remix-plugin/blob/master/packages/api/doc/content-import.md</a></p>
+</div>
+<div class="section" id="the-solidity-compiler">
+<h3>The solidity compiler<a class="headerlink" href="#the-solidity-compiler" title="Permalink to this headline">¶</a></h3>
+<p>You can interact with the solidity compiler. Follow these methods <a href='https://github.com/ethereum/remix-plugin/blob/master/packages/api/doc/solidity.md' target=_blank>https://github.com/ethereum/remix-plugin/blob/master/packages/api/doc/solidity.md</a></p>
+</div>
+<div class="section" id="exposing-methods">
+<h3>Exposing methods<a class="headerlink" href="#exposing-methods" title="Permalink to this headline">¶</a></h3>
+<p>You can expose methods in your app to other plugins. It is described in <a href='https://github.com/ethereum/remix-plugin/tree/master/packages/plugin/webview' target=_blank>plugin-webview</a>.</p>
+<p><strong>You should include those methods in your profile.json which you create to <a href='publishing_your_plugin.html'>publish your plugin.</a></strong></p>
+</div>
+<div class="section" id="more-api">
+<h3>More API<a class="headerlink" href="#more-api" title="Permalink to this headline">¶</a></h3>
+<p>Check out <a href='https://github.com/ethereum/remix-plugin/tree/master/packages/api/doc' target=_blank>these docs</a> to find out what more you can do with the plugin.
+These include networking, unit testing and much more.</p>
+</div>
+</div>
+<div class="section" id="installing-the-plugin-locally">
+<h2>Installing the plugin locally<a class="headerlink" href="#installing-the-plugin-locally" title="Permalink to this headline">¶</a></h2>
+<p>When you’ve developed your app you can run locally and install it in Remix.</p>
+<ol class="simple">
+<li>Click on the plugin icon</li>
+</ol>
+<p><img alt="_images/plugin.png" src="_images/plugin.png" /></p>
+<ol class="simple">
+<li>Click on add local plugin</li>
+</ol>
+<p><img alt="_images/pluginmanager.png" src="_images/pluginmanager.png" /></p>
+<p>You can load your plugin either in the main panel, or on the side.</p>
+<ol class="simple">
+<li>Specify your plugin URL</li>
+</ol>
+<p><img alt="_images/loadplugin.png" src="_images/loadplugin.png" /></p>
+</div>
 </div>
 
 
@@ -163,7 +260,7 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="guidelines.html" class="btn btn-neutral float-right" title="Guidelines" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="guidelines.html" class="btn btn-neutral float-right" title="Guidelines for documentation and styling" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
         <a href="index.html" class="btn btn-neutral float-left" title="Remix Plugin development" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>

@@ -7,7 +7,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Guidelines &mdash; Remix Plugin Directory  documentation</title>
+  <title>Guidelines for documentation and styling &mdash; Remix Plugin Directory  documentation</title>
   
 
   
@@ -36,7 +36,8 @@
     
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="prev" title="Remix Plugin development" href="index.html" /> 
+    <link rel="next" title="Publishing your plugin" href="publishing_your_plugin.html" />
+    <link rel="prev" title="Getting started" href="getting_started.html" /> 
 </head>
 
 <body class="wy-body-for-nav">
@@ -83,11 +84,14 @@
             
               <p class="caption"><span class="caption-text">Contents:</span></p>
 <ul class="current">
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Guidelines</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#documentation-guidelines">Documentation guidelines</a></li>
+<li class="toctree-l1"><a class="reference internal" href="getting_started.html">Getting started</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Guidelines for documentation and styling</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#ui-guidelines">UI guidelines</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#documentation-guidelines">Documentation guidelines</a></li>
 </ul>
 </li>
+<li class="toctree-l1"><a class="reference internal" href="publishing_your_plugin.html">Publishing your plugin</a></li>
+<li class="toctree-l1"><a class="reference internal" href="getting_help.html">Getting help</a></li>
 </ul>
 
             
@@ -134,13 +138,13 @@
     
       <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
         
-      <li>Guidelines</li>
+      <li>Guidelines for documentation and styling</li>
     
     
       <li class="wy-breadcrumbs-aside">
         
             
-            <a href="_sources/guidelines.rst.txt" rel="nofollow"> View page source</a>
+            <a href="_sources/guidelines.md.txt" rel="nofollow"> View page source</a>
           
         
       </li>
@@ -153,9 +157,33 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="guidelines">
-<h1>Guidelines<a class="headerlink" href="#guidelines" title="Permalink to this headline">¶</a></h1>
-<div class="toctree-wrapper compound">
+  <div class="section" id="guidelines-for-documentation-and-styling">
+<h1>Guidelines for documentation and styling<a class="headerlink" href="#guidelines-for-documentation-and-styling" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="ui-guidelines">
+<h2>UI guidelines<a class="headerlink" href="#ui-guidelines" title="Permalink to this headline">¶</a></h2>
+<p>A great user experience needs a good interface. Here are some requirements for a successfull plugin.</p>
+<p><strong>Boostrap CSS</strong></p>
+<blockquote>
+<div>As mentioned in the <a href='getting_started.html#bootstrap-css'>getting started part of these docs</a>, Remix loads a Bootstrap CSS theme for you in your plugin. You want to try <strong>not to write CSS yourself</strong> and just <strong>use the bootstrap components and layout</strong>.</div></blockquote>
+<blockquote>
+<div><ul class="simple">
+<li>Use the bootstrap sizing, padding, margin and styling classes.</li>
+<li>Use buttons for buttons and form-control elements for forms and so on.</li>
+<li>Look at the Remix interface to get a feel for the components used.</li>
+</ul>
+</div></blockquote>
+<p><strong>Clear navigation</strong></p>
+<blockquote>
+<div>Really guide your user through all the steps. Provide dummy or mockup data if possible to generate a useful result. There should not be an empty state. Use tooltips or links to the documentation.</div></blockquote>
+<p><strong>Feedback</strong></p>
+<blockquote>
+<div>Every step should have feedback concerning errors, successes or requirements. If a step requires the user to do something in another part of the Remix environment this should be clearly indicated. If files are not loading correctly or the Remix IDE returns errors on calls this should be made clear. Your user should never be stuck. Point your user to the results generated, tell them what to do if the results fail.</div></blockquote>
+<p><strong>Dependencies</strong></p>
+<blockquote>
+<div>If there are dependencies on other services or software clearly tell the user where to look or what to do. If certain service providers or functionalities in Remix have not been actived your plugin should test for them and provide feedback.</div></blockquote>
+<p><strong>Tooltips and documentation</strong></p>
+<blockquote>
+<div>Always refer to any documentation you have on all input fields and steps. Use tooltips whenever possible. Just a form with some input fields is not a good user experience. Don’t assume your user knows what to do.</div></blockquote>
 </div>
 <div class="section" id="documentation-guidelines">
 <h2>Documentation guidelines<a class="headerlink" href="#documentation-guidelines" title="Permalink to this headline">¶</a></h2>
@@ -163,8 +191,7 @@
 <p>We have some great tips on how to make your documentation effective.</p>
 <p><strong>Clearly state the purpose of your plugin</strong></p>
 <blockquote>
-<div>Describe in detail what the plugin does. Do not assume any knowledge on the part of your user, introduce all the concepts and technologies.
-Use external links to anything related to your plugin.</div></blockquote>
+<div>Describe in detail what the plugin does. Do not assume any knowledge on the part of your user, introduce all the concepts and technologies. Use external links to anything related to your plugin.</div></blockquote>
 <p><strong>Who is your plugin for?</strong></p>
 <blockquote>
 <div>Define who your user is, what they might need and what they might get out of using your plugin.</div></blockquote>
@@ -192,25 +219,6 @@ Use external links to anything related to your plugin.</div></blockquote>
 <blockquote>
 <div>Be accurate in every detail, update the documentation when your plugin has an update.</div></blockquote>
 </div>
-<div class="section" id="ui-guidelines">
-<h2>UI guidelines<a class="headerlink" href="#ui-guidelines" title="Permalink to this headline">¶</a></h2>
-<p>A great user experience needs a good interface. Here are some requirements for a successfull plugin.</p>
-<p><strong>Clear navigation</strong></p>
-<blockquote>
-<div>Really guide your user through all the steps. Provide dummy or mockup data if possible to generate a useful result. There should not be an empty state. Use tooltips or links to the documentation.</div></blockquote>
-<p><strong>Feedback</strong></p>
-<blockquote>
-<div>Every step should have feedback concerning errors, successes or requirements. If a step requires the user to do something in another part of the Remix environment this should be
-clearly indicated. If files are not loading correctly or the Remix IDE returns errors on calls this should be made clear. Your user should never be stuck. Point your user to the results
-generated, tell them what to do if the results fail.</div></blockquote>
-<p><strong>Dependencies</strong></p>
-<blockquote>
-<div>If there are dependencies on other services or software clearly tell the user where to look or what to do. If certain service providers or functionalities in Remix have not been actived your plugin
-should test for them and provide feedback.</div></blockquote>
-<p><strong>Tooltips and documentation</strong></p>
-<blockquote>
-<div>Always refer to any documentation you have on all input fields and steps. Use tooltips whenever possible. Just a form with some input fields is not a good user experience. Don’t assume your user knows what to do.</div></blockquote>
-</div>
 </div>
 
 
@@ -221,8 +229,10 @@ should test for them and provide feedback.</div></blockquote>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
+        <a href="publishing_your_plugin.html" class="btn btn-neutral float-right" title="Publishing your plugin" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
-        <a href="index.html" class="btn btn-neutral float-left" title="Remix Plugin development" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+        <a href="getting_started.html" class="btn btn-neutral float-left" title="Getting started" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   

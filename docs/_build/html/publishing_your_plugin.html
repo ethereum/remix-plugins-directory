@@ -1,0 +1,282 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html4" lang="en" >
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Publishing your plugin &mdash; Remix Plugin Directory  documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+
+  
+  
+  
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+        <script type="text/javascript" src="_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Getting help" href="getting_help.html" />
+    <link rel="prev" title="Guidelines for documentation and styling" href="guidelines.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home" alt="Documentation Home"> Remix Plugin Directory
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="getting_started.html">Getting started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="guidelines.html">Guidelines for documentation and styling</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Publishing your plugin</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#profile-json">Profile.json</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#profile-tools-hosting">Profile tools &amp; Hosting</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#testing-your-app-in-ipfs">Testing your app in IPFS</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="getting_help.html">Getting help</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Remix Plugin Directory</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>Publishing your plugin</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/publishing_your_plugin.md.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="publishing-your-plugin">
+<h1>Publishing your plugin<a class="headerlink" href="#publishing-your-plugin" title="Permalink to this headline">¶</a></h1>
+<p>The repo <a href='https://github.com/ethereum/remix-plugins-directory'>ethereum/plugins-directory</a> holds a directory called plugins.
+Each plugin has its own directory.</p>
+<div class="section" id="profile-json">
+<h2>Profile.json<a class="headerlink" href="#profile-json" title="Permalink to this headline">¶</a></h2>
+<p>To publish a plugin you need to create a pull request there that publishes a JSON profile.json file describing your plugin.</p>
+<p>Mandatory fields are:</p>
+<blockquote>
+<div><ul class="simple">
+<li>name</li>
+<li>displayName</li>
+<li>version</li>
+<li>URL</li>
+<li>icon</li>
+<li>location</li>
+<li>documentation</li>
+</ul>
+</div></blockquote>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+  <span class="s2">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;&lt;name of the plugin&gt;&quot;</span><span class="p">,</span>
+  <span class="s2">&quot;displayName&quot;</span><span class="p">:</span> <span class="s2">&quot;&lt;display name of the plugin&gt;&quot;</span><span class="p">,</span>
+  <span class="s2">&quot;methods&quot;</span><span class="p">:</span> <span class="p">[],</span> <span class="o">//</span> <span class="nb">list</span> <span class="n">of</span> <span class="n">methods</span> <span class="n">that</span> <span class="n">the</span> <span class="n">plugin</span> <span class="ow">is</span> <span class="n">making</span> <span class="n">available</span> <span class="n">to</span> <span class="n">other</span> <span class="n">plugins</span>
+  <span class="s2">&quot;version&quot;</span><span class="p">:</span> <span class="s2">&quot;1.0.0-alpha&quot;</span><span class="p">,</span> <span class="o">//</span> <span class="n">semver</span> <span class="n">version</span>
+  <span class="s2">&quot;url&quot;</span><span class="p">:</span> <span class="s2">&quot;&lt;URL&gt;&quot;</span><span class="p">,</span> <span class="o">//</span> <span class="n">can</span> <span class="n">be</span> <span class="n">an</span> <span class="n">https</span> <span class="ow">or</span> <span class="n">ipfs</span> <span class="n">URL</span> <span class="o">-</span> <span class="n">ipfs</span><span class="p">:</span><span class="o">//&lt;</span><span class="n">ipfs_hash</span><span class="o">&gt;</span>
+  <span class="s2">&quot;description&quot;</span><span class="p">:</span> <span class="s2">&quot;&lt;description&gt;&quot;</span><span class="p">,</span>
+  <span class="s2">&quot;icon&quot;</span><span class="p">:</span> <span class="s2">&quot;&lt;link to image&gt;&quot;</span><span class="p">,</span> <span class="o">//</span> <span class="n">https</span> <span class="n">link</span> <span class="n">to</span> <span class="n">image</span> <span class="ow">or</span> <span class="n">BASE64</span> <span class="n">value</span>
+  <span class="s2">&quot;location&quot;</span><span class="p">:</span> <span class="s2">&quot;&lt;panel where the plugin should be rendered&gt;&quot;</span><span class="p">,</span> <span class="o">//</span> <span class="n">can</span> <span class="n">be</span> <span class="n">sidePanel</span><span class="p">,</span> <span class="n">mainPanel</span> <span class="ow">or</span> <span class="n">hidden</span>
+  <span class="s2">&quot;documentation&quot;</span><span class="p">:</span><span class="s2">&quot;&lt;URL&gt;&quot;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p>When the plugin is approved it will be published to the plugin directory in Remix.</p>
+</div>
+<div class="section" id="profile-tools-hosting">
+<h2>Profile tools &amp; Hosting<a class="headerlink" href="#profile-tools-hosting" title="Permalink to this headline">¶</a></h2>
+<p>You can host your plugin anywhere you want. We provide tools to upload your plugin to our own IPFS gateway.</p>
+<p>This tool will guide you through the process. You can have it create the profile file directly into the plugins directory so you can push your PR to us.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">git</span> <span class="n">clone</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">github</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">ethereum</span><span class="o">/</span><span class="n">remix</span><span class="o">-</span><span class="n">plugins</span><span class="o">-</span><span class="n">directory</span>
+<span class="n">cd</span> <span class="n">remix</span><span class="o">-</span><span class="n">plugins</span><span class="o">-</span><span class="n">directory</span><span class="o">/</span><span class="n">tools</span>
+<span class="n">npm</span> <span class="n">i</span>
+<span class="n">node</span> <span class="n">ipfs</span><span class="o">-</span><span class="n">upload</span><span class="o">/</span><span class="nb">bin</span><span class="o">/</span><span class="n">upload</span><span class="o">-</span><span class="n">remix</span><span class="o">-</span><span class="n">plugin</span>
+</pre></div>
+</div>
+<p>You will get an IPFS link to your app you can copy/paste to Remix to test it.</p>
+</div>
+<div class="section" id="testing-your-app-in-ipfs">
+<h2>Testing your app in IPFS<a class="headerlink" href="#testing-your-app-in-ipfs" title="Permalink to this headline">¶</a></h2>
+<p>Before you push your PR you should always test your build. Running locally or on IPFS can be different, depending how you setup your app.</p>
+<ol class="simple">
+<li>Click on the plugin icon</li>
+</ol>
+<p><img alt="_images/plugin.png" src="_images/plugin.png" /></p>
+<ol class="simple">
+<li>Click on add local plugin</li>
+</ol>
+<p><img alt="_images/pluginmanager.png" src="_images/pluginmanager.png" /></p>
+<p>You can load your plugin either in the main panel, or on the side.</p>
+<ol class="simple">
+<li>Specify your plugin URL, for example ipfs://xxxxx</li>
+</ol>
+<p><img alt="_images/ipfs.png" src="_images/ipfs.png" /></p>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="getting_help.html" class="btn btn-neutral float-right" title="Getting help" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="guidelines.html" class="btn btn-neutral float-left" title="Guidelines for documentation and styling" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        
+        &copy; Copyright 2020, Remix Team
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

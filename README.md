@@ -3,34 +3,12 @@
 This repository hosts a plugins directory.
 The directory is used by [Remix IDE](https://remix.ethereum.org) for loading the list of available plugins.
 
-# How to reference a plugin in Remix IDE
+# Getting started with plugin development
 
-Simply propose a PR which add a new entry in the `plugins` folder.
-This folder should contain at least a `profile.json`:
-
-```
-{
-  "name": "<name of the plugin>",
-  "displayName": "<display name of the plugin>",
-  "methods": [], // list of methods that the plugin is making available to other plugins
-  "version": "1.0.0-alpha", // semver version
-  "url": "<URL>", // can be an https or ipfs URL - ipfs://<ipfs_hash>
-  "description": "<description>",
-  "icon": "<link to image>", // https link to image or BASE64 value
-  "location": "<panel where the plugin should be rendered>" // can be sidePanel, mainPanel or hidden
-}
-```
-
-The `tools` folder contains utilities that can be used for
- - uploading a single file to IPFS - `upload-single-file`
- - uploading a plugin and generating `profile.json` - `upload-remix-plugin`
+Read all about getting started with plugin development and guidelines how to make it work for you 
+<a href='https://readthedocs.org/projects/remix-plugins-directory/' target=_blank>https://readthedocs.org/projects/remix-plugins-directory/</a>
  
- For uploading a plugin to IPFS and generating a `profile.json`: 
-  - go to the folder `tools/ipfs-upload` 
-  - install dependencies with `npm install`
-  - execute `./bin/upload-remix-plugin <path to index.html>`
- 
- # community
+ # Community
  
  Feel free to join our gitter chat if you have any question
  

@@ -14,6 +14,9 @@ Using the Remix Plugin system is an easy way to extend the functionality of the 
 
    getting_started
    guidelines
+   publishing_your_plugin
+   getting_help
+   
 
 
 

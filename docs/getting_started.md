@@ -17,7 +17,7 @@ You can use any framework you like, React, Webpack, Angular ...
 
 The library you have to use for an iFrame plugin is called plugin-webview.
 
-Install the library with your package manager a described in <a href='https://github.com/ethereum/remix-plugin/tree/master/packages/plugin/webview' target=_blank>plugin-webview</a>.
+Install the library with your package manager as described in <a href='https://github.com/ethereum/remix-plugin/tree/master/packages/plugin/webview' target=_blank>plugin-webview</a>.
 
 Using the library you create an instance of the plugin *client*, you can have your own class extend the plugin or just instanciate a plugin client.
 

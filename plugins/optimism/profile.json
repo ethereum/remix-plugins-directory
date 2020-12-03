@@ -1,0 +1,12 @@
+{
+    "name": "optimism-compiler",
+    "displayName": "Optimism Compiler",
+    "description": "Compile optimism supported contracts",
+    "version": "0.1.0",
+    "events": [],
+    "methods": [],
+    "kind": "none",
+    "icon": "",
+    "location": "sidePanel",
+    "url": "https://machinalabs-remix-optimism-compiler-plugin.surge.sh"
+}

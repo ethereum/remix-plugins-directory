@@ -2,6 +2,7 @@
   "name": "sol2uml",
   "displayName": "Solidity 2 UML",
   "description": "Unified Modeling Language (UML) class diagram generator for Solidity contracts",
+  "documentation": "https://github.com/aquiladev/remix-sol2uml",
   "version": "0.1.0",
   "events": [],
   "methods": [],

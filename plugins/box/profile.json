@@ -1,10 +1,11 @@
 {
   "name": "box",
   "displayName": "3Box Spaces",
-  "description": "A decentralized storage for everything that happen on Remix",
+  "description": "A decentralized storage for everything that happens on Remix",
   "methods": ["login", "isEnabled", "getUserAddress", "openSpace", "closeSpace", "isSpaceOpened", "getSpacePrivateValue", "setSpacePrivateValue", "getSpacePublicValue", "setSpacePublicValue", "getSpacePublicData"],
-  "events": [],
+  "events": ["enabled","loggedIn","loggedOut","spaceOpened","spaceClosed"],
   "version": "0.1.0-beta",
+  "documenation":"https://github.com/bunsenstraat/remix-3box-plugin/blob/master/README.md",
   "url": "ipfs://QmWpuxZVKq8qW815Bjvd5EUiDwf1RtfUE4SC73SJKPPGzM",
   "icon": "https://raw.githubusercontent.com/3box/3box-dapp/master/public/3Box3.png",
   "location": "sidePanel"

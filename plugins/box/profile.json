@@ -6,7 +6,7 @@
   "events": ["enabled","loggedIn","loggedOut","spaceOpened","spaceClosed"],
   "version": "0.1.0-beta",
   "documenation":"https://github.com/bunsenstraat/remix-3box-plugin/blob/master/README.md",
-  "url": "ipfs://QmWpuxZVKq8qW815Bjvd5EUiDwf1RtfUE4SC73SJKPPGzM",
+  "url": "https://boxplugin.web.app/",
   "icon": "https://raw.githubusercontent.com/3box/3box-dapp/master/public/3Box3.png",
   "location": "sidePanel"
 }

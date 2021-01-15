@@ -1,11 +1,11 @@
 {
   "name": "solhint",
-  "displayName": "Solhint",
+  "displayName": "Solhint Linter",
   "methods": [],
   "version": "0.0.1",
-  "documentation":"https://github.com/protofire/remix-solhint-plugin",
+  "documentation":"https://protofire.github.io/solhint/docs/rules.html",
   "url": "https://protofire.github.io/remix-solhint-plugin/",
-  "description": "Run Solhint in your Remix project",
+  "description": "Linter for Solidity",
   "icon": "https://raw.githubusercontent.com/protofire/solhint/master/solhint-icon.png",
   "location": "sidePanel"
 }

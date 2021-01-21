@@ -273,9 +273,9 @@
 		"name": "solhint",
 		"displayName": "Solhint Linter",
 		"methods": [],
-		"version": "0.0.1",
+		"version": "0.0.2",
 		"documentation": "https://protofire.github.io/solhint/docs/rules.html",
-		"url": "https://protofire.github.io/remix-solhint-plugin/",
+		"url": "https://solhint.web.app",
 		"description": "Linter for Solidity",
 		"icon": "https://raw.githubusercontent.com/protofire/solhint/master/solhint-icon.png",
 		"location": "sidePanel"

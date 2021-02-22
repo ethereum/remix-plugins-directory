@@ -296,8 +296,7 @@
 		"name": "source-verification",
 		"displayName": "Sourcify",
 		"description": "Source metadata fetcher and validator",
-		"version": "0.5.2-beta",
-		"documentation": "https://github.com/sourcifyeth/remix-sourcify",
+		"version": "0.6.0-beta",
 		"methods": [
 			"fetch",
 			"fetchAndSave",
@@ -305,9 +304,11 @@
 			"verify",
 			"verifyByNetwork"
 		],
+		"kind": "network",
 		"icon": "https://raw.githubusercontent.com/Shard-Labs/remix-contract-getter/master/public/sourcify.png",
 		"location": "sidePanel",
-		"url": "ipfs://QmVdhCSphBm91pvTaEjAS68RuUiUqfVYdeTtZUCV1W6L35"
+		"url": "ipfs://QmUYEy8H4HLCdkaWmitwiVmyKofXJ7TCazr7V3cMvB5SJL",
+		"documentation": "https://github.com/ethereum/sourcify"
 	},
 	{
 		"name": "tenderly",

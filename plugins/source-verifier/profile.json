@@ -1,18 +1,17 @@
 {
- "name": "source-verification",
- "displayName": "Sourcify",
- "description": "Source metadata fetcher and validator",
- "version": "0.6.0-beta",
- "methods": [
-  "fetch",
-  "fetchAndSave",
-  "fetchByNetwork",
-  "verify",
-  "verifyByNetwork"
- ],
- "kind": "network",
- "icon": "https://raw.githubusercontent.com/Shard-Labs/remix-contract-getter/master/public/sourcify.png",
- "location": "sidePanel",
- "url": "ipfs://QmUYEy8H4HLCdkaWmitwiVmyKofXJ7TCazr7V3cMvB5SJL",
- "documentation": "https://github.com/ethereum/sourcify"
+	"name": "source-verification",
+	"displayName": "Sourcify",
+	"description": "Source metadata fetcher and validator",
+	"version": "0.6.0-beta",
+	"methods": [
+		"fetch",
+		"fetchAndSave",
+		"fetchByNetwork",
+		"verify",
+		"verifyByNetwork"
+	],
+	"icon": "https://raw.githubusercontent.com/Shard-Labs/remix-contract-getter/master/public/sourcify.png",
+	"location": "sidePanel",
+	"url": "ipfs://QmUYEy8H4HLCdkaWmitwiVmyKofXJ7TCazr7V3cMvB5SJL",
+	"documentation": "https://github.com/ethereum/sourcify"
 }

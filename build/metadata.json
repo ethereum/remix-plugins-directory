@@ -79,6 +79,18 @@
 		"url": "https://machinalabs-remix-defi-explorer-plugin.surge.sh"
 	},
 	{
+		"name": "defiTutorials",
+		"displayName": "Defi Tutorials",
+		"events": [],
+		"methods": [],
+		"version": "0.1.0-alpha",
+		"url": "https://machinalabs-remix-defi-tutorials-explorer-plugin.surge.sh/",
+		"documentation": "",
+		"description": "Learn about Defi",
+		"icon": "https://res.cloudinary.com/key-solutions/image/upload/v1609808588/remix/owl-icon.svg",
+		"location": "mainPanel"
+	},
+	{
 		"name": "ethdoc",
 		"displayName": "Ethdoc - Documentation Generator",
 		"description": "Generate Solidity documentation (as md) using Natspec",

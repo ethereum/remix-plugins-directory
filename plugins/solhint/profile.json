@@ -7,5 +7,6 @@
   "url": "https://solhint.web.app",
   "description": "Linter for Solidity",
   "icon": "https://raw.githubusercontent.com/protofire/solhint/master/solhint-icon.png",
-  "location": "sidePanel"
+  "location": "sidePanel",
+  "targets":["remix","vscode"]
 }

@@ -215,7 +215,7 @@
 				"compilationFinished"
 			]
 		},
-		"url": "https://remix.oneclickdapp.com",
+		"url": "https://oneclickdapp.web.app/",
 		"description": "A free tool to generate smart contract interfaces.",
 		"documentation": "https://github.com/oneclickdapp/remix-plugin-one-click-dapp",
 		"icon": "https://remix.oneclickdapp.com/icon.png",
@@ -233,7 +233,7 @@
 		"events": [],
 		"methods": [],
 		"kind": "none",
-		"icon": "https://res.cloudinary.com/key-solutions/image/upload/v1607010714/remix/circle-ring.svg",
+		"icon": "https://res.cloudinary.com/key-solutions/image/upload/v1615455026/remix/optimism-logo.svg",
 		"location": "sidePanel",
 		"documentation": "https://remix-optimism-compiler-plugin.readthedocs.io/en/latest/",
 		"url": "https://machinalabs-remix-optimism-compiler-plugin.surge.sh"

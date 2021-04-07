@@ -1,0 +1,13 @@
+{
+    "name": "restorebackupzip",
+    "displayName": "Restore Backup Zip",
+    "description": "Use this to restore your Remix backup zip files to the new workspaces.",
+    "documentation": "",
+    "version": "0.1.0",
+    "events": [],
+    "methods": [],
+    "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/OOjs_UI_icon_upload.svg/20px-OOjs_UI_icon_upload.svg.png",
+    "location": "mainPanel",
+    "url": "https://restorebackupremix.web.app",
+    "targets":["remix"]
+}

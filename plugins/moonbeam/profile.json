@@ -1,0 +1,12 @@
+{
+  "name": "moonbeam-remix-plugin",
+  "displayName": "Moonbeam Plugin",
+  "description": "Deploy and interact with Moonbeam.",
+  "events": [],
+  "methods": [],
+  "url": "https://purestake.github.io/moonbeam-remix-plugin",
+  "icon": "https://purestake.github.io/moonbeam-remix-plugin/icon.png",
+  "documentation": "https://github.com/purestake/moonbeam-remix-plugin",
+  "version": "0.0.1",
+  "location": "sidePanel"
+}

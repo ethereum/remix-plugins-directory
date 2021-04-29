@@ -3,7 +3,7 @@
     "kind": "provider",
     "displayName": "Wallet Connect",
     "events": [],
-    "version": "2.0",
+    "version": "2.0.0",
     "methods": ["sendAsync"],
     "url": "https://walletconnect.web.app/",
     "description": "Use an external wallet for transacting",

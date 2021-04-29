@@ -1,0 +1,11 @@
+{
+    "name": "walletconnect2",
+    "kind": "provider",
+    "displayName": "Wallet Connect v2",
+    "events": [],
+    "methods": ["sendAsync"],
+    "url": "https://walletconnect.web.app/",
+    "description": "Use an external wallet for deploying and transactions.",
+    "icon": "https://example.walletconnect.org/favicon.ico",
+    "location": "mainPanel"
+  }

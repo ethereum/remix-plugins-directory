@@ -6,5 +6,6 @@
   "url": "https://remix.ethcode.dev/",
   "description": "Load compiled results into ETHcode",
   "icon": "https://remix.ethcode.dev/logo.png",
-  "location": "sidePanel"
+  "location": "sidePanel",
+  "targets":["vscode"]
 }

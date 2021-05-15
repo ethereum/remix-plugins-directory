@@ -1,0 +1,11 @@
+{
+  "name": "ethcode-remix-plugin",
+  "displayName": "ETHcode",
+  "methods": ["exec"],
+  "version": "0.0.1",
+  "url": "https://remix.ethcode.dev/",
+  "description": "Load compiled results into ETHcode",
+  "icon": "https://remix.ethcode.dev/logo.png",
+  "location": "sidePanel",
+  "targets":["vscode"]
+}

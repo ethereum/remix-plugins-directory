@@ -1,0 +1,13 @@
+{
+    name: "vscodeudapp",
+    displayName: "Deploy & Run",
+    methods: ["displayUri"],
+    version: "0.0.1-dev",
+    url: "https://vscoderemixudapp.web.app/",
+    description: "Connect to a network to run and deploy.",
+    icon: "https://remix.ethereum.org/assets/img/deployAndRun.webp",
+    location: "sidePanel",
+    kind: "",
+    canActivate: [],
+    targets: ['vscode']
+  }

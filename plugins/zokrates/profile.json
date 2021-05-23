@@ -6,7 +6,7 @@
     "methods": [],
     "events": [],
     "version": "0.1.0-beta",
-    "url": "https://zokrates-remix-plugin.netlify.app/",
-    "icon": "https://zokrates-remix-plugin.netlify.app/zokrates.svg",
+    "url": "https://zokrates.github.io/zokrates-remix-plugin/",
+    "icon": "https://zokrates.github.io/zokrates-remix-plugin/zokrates.svg",
     "location": "sidePanel"
   }

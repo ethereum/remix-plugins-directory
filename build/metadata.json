@@ -420,6 +420,23 @@
 		"location": "mainPanel"
 	},
 	{
+		"name": "vscodeudapp",
+		"displayName": "Deploy & Run",
+		"events": [],
+		"methods": [
+			"displayUri"
+		],
+		"version": "0.1.0",
+		"url": "https://vscoderemixudapp.web.app/",
+		"documentation": "https://github.com/bunsenstraat/remix-vscode-walletconnect",
+		"description": "Connect to a network to run and deploy.",
+		"icon": "https://remix.ethereum.org/assets/img/deployAndRun.webp",
+		"location": "sidePanel",
+		"targets": [
+			"vscode"
+		]
+	},
+	{
 		"name": "vyper",
 		"displayName": "Vyper",
 		"methods": [

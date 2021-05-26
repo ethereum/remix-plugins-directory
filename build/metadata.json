@@ -434,7 +434,10 @@
 		"location": "sidePanel",
 		"targets": [
 			"vscode"
-		]
+		],
+		"targetVersion": {
+			"vscode": ">=0.0.8"
+		}
 	},
 	{
 		"name": "vyper",

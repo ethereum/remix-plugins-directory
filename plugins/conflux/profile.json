@@ -1,0 +1,13 @@
+{
+    "name": "conflux-remix-plugin",
+    "displayName": "Conflux",
+    "description": "Deploy and Run Transactions with Conflux.",
+    "events": [],
+    "methods": [],
+    "url": "https://conflux.xuanwugate.com",
+    "icon": "https://conflux.xuanwugate.com/icon.png",
+    "documentation": "https://github.com/conflux-dao-toc/conflux-remix-plugin",
+    "version": "0.1.0-beta",
+    "location": "sidePanel"
+  }
+  

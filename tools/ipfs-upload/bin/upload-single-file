@@ -2,7 +2,7 @@
 
 const ipfsClient = require('ipfs-http-client')
 
-const host = 'ipfs.komputing.org' // ethdev berlin ipfs node
+const host = 'ipfs.remixproject.org'
 const ipfs = ipfsClient({ host, port: 443, protocol: 'https' })
 const content = ' - ' 
 

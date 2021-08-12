@@ -157,7 +157,9 @@
 		"name": "flattener",
 		"displayName": "Flattener",
 		"events": [],
-		"methods": [],
+		"methods": [
+			"flattenAndSave"
+		],
 		"version": "0.1.0",
 		"url": "https://remix-flattener.netlify.app",
 		"description": "Flattens compiled smart contracts",

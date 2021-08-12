@@ -4,7 +4,7 @@
     "description": "Compile optimism supported contracts",
     "version": "0.1.0",
     "events": [],
-    "methods": [],
+    "methods": ["compile"],
     "kind": "none",
     "icon": "https://res.cloudinary.com/key-solutions/image/upload/v1615455026/remix/optimism-logo.svg",
     "location": "sidePanel",

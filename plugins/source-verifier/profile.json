@@ -13,7 +13,7 @@
 	"kind":"none",
 	"icon": "https://raw.githubusercontent.com/Shard-Labs/remix-contract-getter/master/public/sourcify.png",
 	"location": "sidePanel",
-	"url": "ipfs://QmdLgwngiHwK67722kuaK1FYksVM16rXJinBJnAPkeLQUS",
+	"url": "ipfs://QmNhVyMxaWMVM6RTDwWnEUJ7kiasVetdvm2kCg8FAh9zzQ",
 	"documentation": "https://github.com/ethereum/sourcify",
 	"targets":["remix","vscode"]
 }

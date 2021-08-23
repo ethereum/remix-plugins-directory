@@ -42,18 +42,6 @@
 		"location": "sidePanel"
 	},
 	{
-		"name": "cfg",
-		"displayName": "Control Flow Graph",
-		"events": [],
-		"methods": [],
-		"version": "1.0.0-alpha",
-		"url": "https://remix-control-flow-gas.surge.sh",
-		"documentation": "https://github.com/Machinalabs/remix-control-flow-graph",
-		"description": "Visualise the execution of a program",
-		"icon": "https://res.cloudinary.com/key-solutions/image/upload/v1580673791/solid/diagram.png",
-		"location": "sidePanel"
-	},
-	{
 		"name": "defiexplorer",
 		"displayName": "Defi Explorer",
 		"description": "Explore Defi smart contracts",
@@ -69,18 +57,6 @@
 			"remix",
 			"vscode"
 		]
-	},
-	{
-		"name": "defiTutorials",
-		"displayName": "Defi Tutorials",
-		"events": [],
-		"methods": [],
-		"version": "0.1.0-alpha",
-		"url": "https://machinalabs-remix-defi-tutorials-explorer-plugin.surge.sh/",
-		"documentation": "",
-		"description": "Learn about Defi",
-		"icon": "https://res.cloudinary.com/key-solutions/image/upload/v1609808588/remix/owl-icon.svg",
-		"location": "mainPanel"
 	},
 	{
 		"name": "dgit",

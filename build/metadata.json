@@ -158,12 +158,15 @@
 		"displayName": "Flattener",
 		"events": [],
 		"methods": [
-			"flattenAndSave"
+			"flattenAndSave",
+			"flatten",
+			"flattenFile",
+			"flattenFileCustomAction"
 		],
 		"version": "0.1.0",
-		"url": "https://remix-flattener.netlify.app",
+		"url": "ipfs://QmYtKBDvr52htkFmUeMpcFasT4KN7vj6hBbFi39H8gddWw",
 		"description": "Flattens compiled smart contracts",
-		"documentation": "https://github.com/Destiner/remix-flattener",
+		"documentation": "https://github.com/bunsenstraat/flattener",
 		"icon": "https://remix-flattener.netlify.com/logo.svg",
 		"location": "sidePanel"
 	},

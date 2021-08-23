@@ -156,7 +156,10 @@
 		"documentation": "https://github.com/EdsonAlcala/remix-gas-profiler",
 		"description": "Profile gas costs",
 		"icon": "https://res.cloudinary.com/key-solutions/image/upload/v1565781702/gas-profiler_nxmsal.png",
-		"location": "sidePanel"
+		"location": "sidePanel",
+		"canActivate": [
+			"debugger"
+		]
 	},
 	{
 		"name": "LearnEth",

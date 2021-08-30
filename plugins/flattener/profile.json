@@ -4,7 +4,7 @@
     "events": [],
     "methods": ["flattenAndSave", "flatten", "flattenFile", "flattenFileCustomAction"],
     "version": "0.1.0",
-    "url": "ipfs://QmYtKBDvr52htkFmUeMpcFasT4KN7vj6hBbFi39H8gddWw",
+    "url": "ipfs://QmfLi3Ke3mqfsMqisLAvqVPYpZt5niMzrupfKHSTKD771e",
     "description": "Flattens compiled smart contracts",
     "documentation": "https://github.com/bunsenstraat/flattener",
     "icon": "https://remix-flattener.netlify.com/logo.svg",

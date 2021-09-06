@@ -5,8 +5,9 @@
     "documentation": "https://zokrates.github.io/",
     "methods": [],
     "events": [],
-    "version": "0.1.0-beta",
+    "version": "0.2.0-beta",
     "url": "https://zokrates.github.io/zokrates-remix-plugin/",
     "icon": "https://zokrates.github.io/zokrates-remix-plugin/zokrates.svg",
-    "location": "sidePanel"
+    "location": "sidePanel",
+    "targets": ["remix", "vscode"]
   }

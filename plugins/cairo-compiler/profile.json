@@ -1,0 +1,11 @@
+{
+    "name": "cairo_compiler",
+    "displayName": "Cairo Compiler",
+    "methods": [],
+    "version": "0.1.0",
+    "url": "https://cairo-compiler-plugin.surge.sh/",
+    "description": "Write and compile contratcts with cairo and compile them with Cairo Compiler plugin.",
+    "icon": "https://www.cairo-lang.org/wp-content/uploads/2020/12/cropped-favicon-32x32.png",
+    "location": "sidePanel",
+    "documentation": ""
+  }

@@ -1,0 +1,12 @@
+{
+    "name": "nahmii-compiler",
+    "displayName": "Nahmii Compiler",
+    "description": "Compiler for Nahmii 2.0.",
+    "version": "0.1.0",
+    "events": [],
+    "methods": [],
+    "kind": "none",
+    "icon": "https://cdn-images-1.medium.com/max/140/1*d5P-r_Ax5zx-Q70plxwIfQ@2x.png",
+    "location": "sidePanel",
+    "url": "https://remix-nahmii-compiler-plugin.surge.sh"
+}

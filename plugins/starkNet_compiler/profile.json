@@ -1,0 +1,11 @@
+{
+    "name": "starkNet_compiler",
+    "displayName": "StarkNet",
+    "methods": [],
+    "version": "0.1.0-alpha",
+    "url": "https://cairo-compiler-plugin.surge.sh/",
+    "description": "Compile and deploy contracts with Cairo, a native smart contract language for StarkNet.",
+    "icon": "https://res.cloudinary.com/lianahus/image/upload/v1642679478/webp/StarkNetLogo_wvyh2a.webp",
+    "location": "sidePanel",
+    "documentation": "https://github.com/hexdivision/starkware-remix-plugin"
+  }

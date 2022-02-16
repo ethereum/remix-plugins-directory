@@ -388,7 +388,7 @@
 		"name": "sourcify",
 		"displayName": "Sourcify",
 		"description": "Solidity contract and metadata verification service",
-		"version": "0.8.3",
+		"version": "0.8.4",
 		"methods": [
 			"fetch",
 			"fetchAndSave",
@@ -399,7 +399,7 @@
 		"kind": "none",
 		"icon": "https://github.com/sourcifyeth/assets/raw/master/logo-assets-png/sourcify-black-transparent.png",
 		"location": "sidePanel",
-		"url": "ipfs://Qme1vMuT1FjKJpjo8JEKr373jBRsuejjmGToPWXsvpRgSp",
+		"url": "ipfs://QmYkkosN8VVWLTQU5SJQgsovJg4ifbke98D3K2E61enYrw",
 		"documentation": "https://github.com/ethereum/sourcify",
 		"targets": [
 			"remix",

@@ -4,7 +4,7 @@
     "methods": [],
     "version": "0.1.0-alpha",
     "url": "https://contract-deployer-plugin.surge.sh/",
-    "description": "Deploy compiled contracts to multiple networks",
+    "description": "Deploy a compiled contract to the same address on multiple networks",
     "icon": "https://contract-deployer-plugin.surge.sh/smart-contracts-gray.svg",
     "location": "sidePanel",
     "documentation": "https://github.com/hexdivision/remix-contract-deployer-plugin"

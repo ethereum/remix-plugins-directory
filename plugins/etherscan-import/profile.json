@@ -1,0 +1,13 @@
+{
+  "name": "etherscan-import",
+  "displayName": "Import for Etherscan",
+  "description": "Import Contracts from Etherscan websites.",
+  "version": "0.1.0",
+  "events": [],
+  "methods": [],
+  "kind": "none",
+  "icon": "https://radiantgradient.org/remix/plugins/etherscan-import/img/icon.svg",
+  "location": "sidePanel",
+  "documentation": "https://github.com/world177/Etherscan-Import-for-Remix",
+  "url": "https://radiantgradient.org/remix/plugins/etherscan-import/"
+}

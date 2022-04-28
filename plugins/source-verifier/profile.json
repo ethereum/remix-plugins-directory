@@ -13,7 +13,7 @@
 	"kind":"none",
 	"icon": "https://github.com/sourcifyeth/assets/raw/master/logo-assets-png/sourcify-black-transparent.png",
 	"location": "sidePanel",
-	"url": "ipfs://QmTNaZwWptKaSGRfheZmpMY8TTVANkqhJ34jTD3c4bbgHu",
+	"url": "ipfs://QmRxBixQBAtUpYUygoWfoc4ayKngwf59rg27LGNoXs59DU",
 	"documentation": "https://github.com/ethereum/sourcify",
 	"targets":["remix","vscode"]
 }

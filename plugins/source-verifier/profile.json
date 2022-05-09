@@ -11,7 +11,7 @@
 		"verifyByNetwork"
 	],
 	"kind":"none",
-	"icon": "https://raw.githubusercontent.com/sourcifyeth/assets/master/logo-assets-svg/standalone.svg",
+	"icon": "https://raw.githubusercontent.com/sourcifyeth/assets/master/logo-assets-png/standalone_square.png",
 	"location": "sidePanel",
 	"url": "ipfs://QmRxBixQBAtUpYUygoWfoc4ayKngwf59rg27LGNoXs59DU",
 	"documentation": "https://github.com/ethereum/sourcify",

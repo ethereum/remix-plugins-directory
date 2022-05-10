@@ -7,6 +7,6 @@
     "url": "ipfs://QmTX5ktywUaHSiEzdxf91C5gpE2MShpD1KxNmCd3Dzy1pR",
     "description": "Flattens compiled smart contracts",
     "documentation": "https://github.com/bunsenstraat/flattener",
-    "icon": "https://remix-flattener.netlify.com/logo.svg",
+    "icon": "https://raw.githubusercontent.com/Destiner/remix-flattener/master/logo.svg",
     "location": "sidePanel"
   }

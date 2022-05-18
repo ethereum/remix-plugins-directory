@@ -11,5 +11,7 @@
    "canActivate":[
       "dGitProvider",
       "gitdiff"
-   ]
+   ],
+   "repo":"https://github.com/bunsenstraat/remix-storage-plugin",
+   "issues":"https://github.com/bunsenstraat/remix-storage-plugin/issues"
 }

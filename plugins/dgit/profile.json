@@ -10,6 +10,8 @@
       "dGitProvider",
       "gitdiff"
    ],
+   "verified":true,
+   "url":"https://dgit3remix.web.app/",
    "repo":"https://github.com/bunsenstraat/remix-storage-plugin",
    "issues":"https://github.com/bunsenstraat/remix-storage-plugin/issues",
    "documentation":"https://github.com/bunsenstraat/remix-storage-plugin",

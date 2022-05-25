@@ -13,5 +13,6 @@
   "issues":"https://github.com/Machinalabs/remix-ethdoc-plugin/issues",
   "author_email":"",
   "url": "https://machinalabs-remix-ethdoc-plugin-v2.surge.sh",
+  "verified":false,
   "targets":["remix","vscode"]
 }

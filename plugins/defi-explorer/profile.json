@@ -10,5 +10,8 @@
   "location": "sidePanel",
   "documentation": "https://remix-defi-explorer-plugin.readthedocs.io/en/latest/",
   "url": "https://machinalabs-remix-defi-explorer-plugin.surge.sh",
+  "repo":"https://github.com/Machinalabs/remix-defi-explorer-plugin",
+  "issues": "https://github.com/Machinalabs/remix-defi-explorer-plugin/issues",
+  "author_email":"",
   "targets":["remix","vscode"]
 }

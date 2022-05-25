@@ -6,6 +6,11 @@
     "events": [],
     "version": "0.1.0-alpha",
     "url": "https://remix-debug-a.surge.sh",
+    "documentation": "https://github.com/pldespaigne/remix-debug-plugin#-instalation",
+    "url": "https://machinalabs-remix-defi-explorer-plugin.surge.sh",
+    "repo":"https://github.com/pldespaigne/remix-debug-plugin",
+    "issues": "https://github.com/pldespaigne/remix-debug-plugin/issues",
+    "author_email":"",
     "icon": "https://remix-debug-a.surge.sh/icon.png",
     "location": "sidePanel"
   }

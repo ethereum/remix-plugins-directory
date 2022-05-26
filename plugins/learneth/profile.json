@@ -9,5 +9,9 @@
  "icon": "https://raw.githubusercontent.com/bunsenstraat/remix-learneth-plugin/master/src/assets/Font_Awesome_5_solid_book-reader.svg",
  "location": "sidePanel",
  "url": "https://learneth.web.app",
+ "repo":"https://github.com/bunsenstraat/remix-learneth-plugin",
+ "issues": "https://github.com/bunsenstraat/remix-learneth-plugin/issues",
+ "author_email":"",
+ "verified":true,
  "targets":["remix","vscode"]
 }

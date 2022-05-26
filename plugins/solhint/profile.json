@@ -8,5 +8,9 @@
   "description": "Linter for Solidity",
   "icon": "https://raw.githubusercontent.com/protofire/solhint/master/solhint-icon.png",
   "location": "sidePanel",
-  "targets":["remix","vscode"]
+  "targets":["remix","vscode"],
+  "repo":"https://github.com/protofire/remix-solhint-plugin",
+  "issues":"https://github.com/protofire/remix-solhint-plugin/issues",
+  "author_email":"",
+  "verified":false
 }

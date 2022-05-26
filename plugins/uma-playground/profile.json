@@ -8,5 +8,9 @@
     "documentation": "",
     "description": "Interactive playground for the UMA protocol",
     "icon": "https://res.cloudinary.com/key-solutions/image/upload/v1609705155/remix/uma-logo.svg",
-    "location": "mainPanel"
+    "location": "mainPanel",
+    "repo": "https://github.com/Machinalabs/remix-uma-playground",
+    "issues": "https://github.com/Machinalabs/remix-uma-playground/issues",
+    "author_email": "",
+    "verified": false
 }

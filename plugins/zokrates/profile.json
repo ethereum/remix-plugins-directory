@@ -9,5 +9,9 @@
     "url": "https://zokrates.github.io/zokrates-remix-plugin/",
     "icon": "https://zokrates.github.io/zokrates-remix-plugin/zokrates.svg",
     "location": "sidePanel",
-    "targets": ["remix", "vscode"]
+    "targets": ["remix", "vscode"],
+    "repo": "https://github.com/Zokrates/zokrates-remix-plugin",
+    "issues": "https://github.com/Zokrates/zokrates-remix-plugin/issues",
+    "author_email": "",
+    "verified": false
   }

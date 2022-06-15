@@ -3,7 +3,7 @@
     "displayName": "StarkNet",
     "methods": [],
     "version": "0.1.0-alpha",
-    "url": "https://cairo-compiler-plugin.surge.sh/",
+    "url": "https://d2vlv184tvzarc.cloudfront.net/",
     "description": "Compile and deploy contracts with Cairo, a native smart contract language for StarkNet.",
     "icon": "https://res.cloudinary.com/lianahus/image/upload/v1643013278/webp/StarkNetLogo_2_izzamu.webp",
     "location": "sidePanel",

@@ -15,5 +15,9 @@
 	"location": "sidePanel",
 	"url": "ipfs://QmRxBixQBAtUpYUygoWfoc4ayKngwf59rg27LGNoXs59DU",
 	"documentation": "https://github.com/ethereum/sourcify",
-	"targets":["remix","vscode"]
+	"targets":["remix","vscode"],
+	"repo": "https://github.com/sourcifyeth/remix-sourcify/issues",
+	"maintainedBy": "sourcifyeth",
+	"authorContact": "",
+	"verified": false
 }

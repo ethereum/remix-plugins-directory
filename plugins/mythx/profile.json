@@ -11,7 +11,7 @@
   "location": "sidePanel",
   "url": "https://cloudflare-ipfs.com/ipfs/QmXCnRiYuL5heT1CRsKSXYkYbmH7jmfpE8fzXnRUEStS6g/",
   "repo":"https://github.com/aquiladev/remix-mythx-plugin",
-  "issues": "https://github.com/aquiladev/remix-mythx-plugin/issues",
-  "author_email":"",
+  "maintainedBy": "",
+  "authorContact":"",
   "verified":false
 }

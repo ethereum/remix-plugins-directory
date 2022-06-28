@@ -11,6 +11,7 @@
   "url": "https://remix-etherscan.surge.sh",
   "repo":"https://github.com/Machinalabs/remix-etherscan-plugin",
   "documentation": "https://remix-etherscan-plugin.readthedocs.io/en/latest",
-  "issues": "https://github.com/Machinalabs/remix-etherscan-plugin/issues",
-  "author_email":""
+  "maintainedBy": "",
+  "authorContact":"",
+  "verified":false
 }

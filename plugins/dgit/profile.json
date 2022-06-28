@@ -13,7 +13,8 @@
    "verified":true,
    "url":"https://dgit3remix.web.app/",
    "repo":"https://github.com/bunsenstraat/remix-storage-plugin",
-   "issues":"https://github.com/bunsenstraat/remix-storage-plugin/issues",
+   "maintainedBy":"Remix",
+   "authorContact": "",
    "documentation":"https://github.com/bunsenstraat/remix-storage-plugin",
-   "author_email":""
+   "authorContact":""
 }

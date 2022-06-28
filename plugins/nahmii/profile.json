@@ -10,7 +10,7 @@
     "location": "sidePanel",
     "url": "https://remix-nahmii-compiler-plugin.surge.sh",
     "repo":"https://github.com/nahmii-community/remix-nahmii-compiler-plugin",
-    "issues": "https://github.com/nahmii-community/remix-nahmii-compiler-plugin/issues",
-    "author_email":"",
+    "maintainedBy": "",
+    "authorContact":"",
     "verified":false
 }

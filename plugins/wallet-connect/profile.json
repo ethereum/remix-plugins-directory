@@ -11,7 +11,7 @@
     "location": "mainPanel",
     "documentation":"",
     "repo": "https://github.com/yann300/remix-walletconnect/issues",
-    "issues": "https://github.com/yann300/remix-walletconnect",
-    "author_email": "",
+    "maintainedBy": "Remix",
+    "authorContact": "",
     "verified": false
   }

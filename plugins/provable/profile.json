@@ -8,7 +8,8 @@
       "network": ["providerChanged"]
     },
     "url": "https://remix-plugin.provable.xyz",
-    "author_email":"",
+    "authorContact":"",
+    "maintainedBy": "",
     "verified":false,
     "documentation": "https://docs.oraclize.it/#development-tools-remix-ide-provable-plugin",
     "description": "request real-world data for your contracts",

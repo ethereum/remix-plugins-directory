@@ -8,8 +8,8 @@
   "icon": "https://dexfair.github.io/celo-remix-plugin/icon.png",
   "repo":"https://github.com/dexfair/celo-remix-plugin",
   "documentation": "https://github.com/dexfair/celo-remix-plugin#celo-plugin-for-remix",
-  "issues": "https://github.com/dexfair/celo-remix-plugin/issues",
-  "author_email":"",
+  "maintainedBy": "",
+  "authorContact":"",
   "verified":false,
   "version": "0.1.0-beta",
   "location": "sidePanel"

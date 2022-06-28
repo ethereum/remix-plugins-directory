@@ -13,6 +13,7 @@
   "url": "https://machinalabs-remix-gas-profiler-v2-plugin.surge.sh",
   "repo":"https://github.com/EdsonAlcala/remix-gas-profiler",
   "documentation": "https://github.com/EdsonAlcala/remix-gas-profiler",
-  "issues": "https://github.com/EdsonAlcala/remix-gas-profiler/issues",
-  "author_email":""
+  "maintainedBy": "",
+  "authorContact":"",
+  "verified":false
 }

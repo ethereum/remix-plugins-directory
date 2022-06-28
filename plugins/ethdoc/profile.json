@@ -10,8 +10,8 @@
   "location": "sidePanel",
   "documentation": "https://remix-ethdoc-plugin.readthedocs.io/en/latest/",
   "repo":"https://github.com/Machinalabs/remix-ethdoc-plugin",
-  "issues":"https://github.com/Machinalabs/remix-ethdoc-plugin/issues",
-  "author_email":"",
+  "maintainedBy":"",
+  "authorContact":"",
   "url": "https://machinalabs-remix-ethdoc-plugin-v2.surge.sh",
   "verified":false,
   "targets":["remix","vscode"]

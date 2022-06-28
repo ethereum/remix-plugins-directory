@@ -10,6 +10,7 @@
     "url": "ipfs://QmTX5ktywUaHSiEzdxf91C5gpE2MShpD1KxNmCd3Dzy1pR",
     "repo":"https://github.com/bunsenstraat/flattener",
     "documentation": "https://github.com/bunsenstraat/flattener",
-    "issues": "https://github.com/bunsenstraat/flattener/issues",
-    "author_email":""
+    "maintainedBy": "Remix",
+    "authorContact":"",
+    "verified":false
   }

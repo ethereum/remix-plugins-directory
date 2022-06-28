@@ -11,6 +11,7 @@
   "url": "https://machinalabs-remix-viewer-plugin.surge.sh",
   "documentation":"https://remix-ethdoc-plugin.readthedocs.io/en/latest/",
   "repo":"https://github.com/Machinalabs/remix-ethdoc-plugin/",
-  "issues":"https://github.com/Machinalabs/remix-ethdoc-plugin/issues",
-  "author_email":""
+  "maintainedBy":"",
+  "authorContact":"",
+  "verified":false
 }

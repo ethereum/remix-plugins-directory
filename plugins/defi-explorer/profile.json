@@ -13,6 +13,5 @@
   "repo":"https://github.com/Machinalabs/remix-defi-explorer-plugin",
   "maintainedBy": "",
   "authorContact":"",
-  "verified":false,
   "targets":["remix","vscode"]
 }

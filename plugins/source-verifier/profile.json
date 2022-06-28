@@ -18,6 +18,5 @@
 	"targets":["remix","vscode"],
 	"repo": "https://github.com/sourcifyeth/remix-sourcify/issues",
 	"maintainedBy": "sourcifyeth",
-	"authorContact": "",
-	"verified": false
+	"authorContact": ""
 }

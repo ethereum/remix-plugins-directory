@@ -11,6 +11,5 @@
   "targets":["remix","vscode"],
   "repo": "https://github.com/protofire/remix-solhint-plugin",
   "maintainedBy": "protofire",
-  "authorContact": "",
-  "verified": false
+  "authorContact": ""
 }

@@ -12,6 +12,5 @@
  "repo":"https://github.com/bunsenstraat/remix-learneth-plugin",
  "maintainedBy": "Remix",
  "authorContact":"",
- "verified":true,
  "targets":["remix","vscode"]
 }

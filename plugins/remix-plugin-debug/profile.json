@@ -10,7 +10,6 @@
     "repo":"https://github.com/pldespaigne/remix-debug-plugin",
     "maintainedBy": "",
     "authorContact":"",
-    "verified":false,
     "icon": "https://remix-debug-a.surge.sh/icon.png",
     "location": "sidePanel"
   }

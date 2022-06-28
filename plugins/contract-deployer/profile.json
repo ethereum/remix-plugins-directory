@@ -8,7 +8,6 @@
     "documentation": "https://github.com/hexdivision/remix-contract-deployer-plugin#getting-started-with-contract-deployer-plugin",
     "maintainedBy": "",
     "authorContact":"",
-    "verified":false,
     "description": "Deploy a compiled contract to the same address on multiple networks",
     "icon": "https://contract-deployer-plugin.surge.sh/smart-contracts-gray.svg",
     "location": "sidePanel"

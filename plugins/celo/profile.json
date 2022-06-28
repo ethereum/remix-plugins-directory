@@ -10,7 +10,6 @@
   "documentation": "https://github.com/dexfair/celo-remix-plugin#celo-plugin-for-remix",
   "maintainedBy": "",
   "authorContact":"",
-  "verified":false,
   "version": "0.1.0-beta",
   "location": "sidePanel"
 }

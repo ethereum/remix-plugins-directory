@@ -11,7 +11,6 @@
     "repo":"https://github.com/oneclickdapp/remix-plugin-one-click-dapp",
     "maintainedBy": "",
     "authorContact":"",
-    "verified":false,
     "description": "A free tool to generate smart contract interfaces.",
     "documentation": "https://github.com/oneclickdapp/remix-plugin-one-click-dapp",
     "icon": "https://remix.oneclickdapp.com/icon.png",

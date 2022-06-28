@@ -7,7 +7,6 @@
     "repo":"https://gitlab.com/lexon-foundation/lexon-remix",
     "maintainedBy": "",
     "authorContact":"",
-    "verified":false,
     "documentation":"https://gitlab.com/lexon-foundation/lexon-remix",
     "description": "Compile Lexon contracts",
     "kind": "compiler",

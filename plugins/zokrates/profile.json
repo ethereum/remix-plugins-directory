@@ -12,6 +12,5 @@
     "targets": ["remix", "vscode"],
     "repo": "https://github.com/Zokrates/zokrates-remix-plugin",
     "maintainedBy": "",
-    "authorContact": "",
-    "verified": false
+    "authorContact": ""
   }

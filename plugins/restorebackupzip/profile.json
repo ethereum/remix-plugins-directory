@@ -12,6 +12,5 @@
     "targets":["remix"],
     "repo":"https://github.com/bunsenstraat/restorezip",
     "maintainedBy": "",
-    "authorContact":"",
-    "verified":true
+    "authorContact":""
 }

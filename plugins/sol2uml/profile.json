@@ -12,6 +12,5 @@
   "targets": ["remix","vscode"],
   "repo": "https://github.com/aquiladev/remix-sol2uml",
   "maintainedBy": "aquiladev",
-  "authorContact": "",
-  "verified": false
+  "authorContact": ""
 }

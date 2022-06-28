@@ -8,7 +8,6 @@
   "repo":"https://github.com/PureStake/moonbeam-remix-plugin",
   "maintainedBy": "Purestake",
   "authorContact":"",
-  "verified":false,
   "icon": "https://purestake.github.io/moonbeam-remix-plugin/icon.png",
   "documentation": "https://github.com/purestake/moonbeam-remix-plugin",
   "version": "0.0.1",

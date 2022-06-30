@@ -9,7 +9,7 @@
   "location": "sidePanel",
   "targets":["remix","vscode"],
   "documentation": "https://docs.tenderly.co/simulations-and-forks/integrations#remix",
-  "repo":"https://github.com/Tenderly/remix-tenderly",
+  "repo": "https://github.com/Tenderly/remix-tenderly",
   "maintainedBy": "",
-  "authorContact":""
+  "authorContact": ""
 }

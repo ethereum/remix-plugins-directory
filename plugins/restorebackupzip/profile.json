@@ -10,7 +10,7 @@
     "location": "mainPanel",
     "url": "https://restorebackupremix.web.app",
     "targets":["remix"],
-    "repo":"https://github.com/bunsenstraat/restorezip",
+    "repo": "https://github.com/bunsenstraat/restorezip",
     "maintainedBy": "",
-    "authorContact":""
+    "authorContact": ""
 }

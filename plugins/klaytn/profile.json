@@ -9,7 +9,7 @@
   "documentation": "https://github.com/klaytn-ozys/plug-and-klay",
   "version": "1.0.0",
   "location": "sidePanel",
-  "repo":"https://github.com/klaytn-ozys/plug-and-klay",
+  "repo": "https://github.com/klaytn-ozys/plug-and-klay",
   "maintainedBy": "",
-  "authorContact":""
+  "authorContact": ""
 }

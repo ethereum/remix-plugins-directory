@@ -7,10 +7,9 @@
     "version": "0.1.0-alpha",
     "url": "https://remix-debug-a.surge.sh",
     "documentation": "https://github.com/pldespaigne/remix-debug-plugin#-instalation",
-    "repo":"https://github.com/pldespaigne/remix-debug-plugin",
-    "issues": "https://github.com/pldespaigne/remix-debug-plugin/issues",
-    "author_email":"",
-    "verified":false,
+    "repo": "https://github.com/pldespaigne/remix-debug-plugin",
+    "maintainedBy": "",
+    "authorContact": "",
     "icon": "https://remix-debug-a.surge.sh/icon.png",
     "location": "sidePanel"
   }

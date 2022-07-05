@@ -10,8 +10,7 @@
   "icon": "https://remix-mythx-plugin.surge.sh/logo.png",
   "location": "sidePanel",
   "url": "https://cloudflare-ipfs.com/ipfs/QmXCnRiYuL5heT1CRsKSXYkYbmH7jmfpE8fzXnRUEStS6g/",
-  "repo":"https://github.com/aquiladev/remix-mythx-plugin",
-  "issues": "https://github.com/aquiladev/remix-mythx-plugin/issues",
-  "author_email":"",
-  "verified":false
+  "repo": "https://github.com/aquiladev/remix-mythx-plugin",
+  "maintainedBy": "",
+  "authorContact": ""
 }

@@ -3,10 +3,13 @@
   "displayName": "Solhint Linter",
   "methods": [],
   "version": "0.0.2",
-  "documentation":"https://protofire.github.io/solhint/docs/rules.html",
+  "documentation": "https://protofire.github.io/solhint/docs/rules.html",
   "url": "https://solhint.web.app",
   "description": "Linter for Solidity",
   "icon": "https://raw.githubusercontent.com/protofire/solhint/master/solhint-icon.png",
   "location": "sidePanel",
-  "targets":["remix","vscode"]
+  "targets":["remix","vscode"],
+  "repo": "https://github.com/protofire/remix-solhint-plugin",
+  "maintainedBy": "protofire",
+  "authorContact": ""
 }

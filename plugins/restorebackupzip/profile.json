@@ -9,5 +9,8 @@
     "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/OOjs_UI_icon_upload.svg/20px-OOjs_UI_icon_upload.svg.png",
     "location": "mainPanel",
     "url": "https://restorebackupremix.web.app",
-    "targets":["remix"]
+    "targets":["remix"],
+    "repo": "https://github.com/bunsenstraat/restorezip",
+    "maintainedBy": "",
+    "authorContact": ""
 }

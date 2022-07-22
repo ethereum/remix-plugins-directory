@@ -9,7 +9,7 @@
   "kind": "none",
   "icon": "https://remix-mythx-plugin.surge.sh/logo.png",
   "location": "sidePanel",
-  "url": "https://ipfs2.ethdevops.io/ipfs/QmXCnRiYuL5heT1CRsKSXYkYbmH7jmfpE8fzXnRUEStS6g/",
+  "url": "ipfs://QmXCnRiYuL5heT1CRsKSXYkYbmH7jmfpE8fzXnRUEStS6g/",
   "repo": "https://github.com/aquiladev/remix-mythx-plugin",
   "maintainedBy": "",
   "authorContact": ""

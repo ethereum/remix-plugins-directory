@@ -2,7 +2,7 @@
     "name": "vyper",
     "displayName": "Vyper",
     "methods": ["getCompilationResult", "compile"],
-    "url": "ipfs://QmWEzo1JomFMkPEuUFxeszuB6GB3bLkJncDS4tVxhp88g4",
+    "url": "ipfs://QmPgjoPoJ5GFJAKYJyH4Mt24V246Cd4pJ54LJ8A3jyD8PB",
     "documentation": "https://github.com/GrandSchtroumpf/vyper-remix",
     "description": "Compile vyper contracts",
     "kind": "compiler",

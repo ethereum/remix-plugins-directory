@@ -148,7 +148,7 @@
 		],
 		"version": "0.1.0",
 		"description": "Flattens compiled smart contracts",
-		"icon": "https://raw.githubusercontent.com/Destiner/remix-flattener/master/logo.svg",
+		"icon": "https://raw.githubusercontent.com/bunsenstraat/flattener/master/flattener-logo.webp",
 		"location": "sidePanel",
 		"url": "ipfs://QmTX5ktywUaHSiEzdxf91C5gpE2MShpD1KxNmCd3Dzy1pR",
 		"repo": "https://github.com/bunsenstraat/flattener",

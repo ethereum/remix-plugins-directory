@@ -5,7 +5,7 @@
     "methods": ["flattenAndSave", "flatten", "flattenFile", "flattenFileCustomAction"],
     "version": "0.1.0",
     "description": "Flattens compiled smart contracts",
-    "icon": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1NzYgNTEyIj48IS0tISBGb250IEF3ZXNvbWUgUHJvIDYuMS4yIGJ5IEBmb250YXdlc29tZSAtIGh0dHBzOi8vZm9udGF3ZXNvbWUuY29tIExpY2Vuc2UgLSBodHRwczovL2ZvbnRhd2Vzb21lLmNvbS9saWNlbnNlIChDb21tZXJjaWFsIExpY2Vuc2UpIENvcHlyaWdodCAyMDIyIEZvbnRpY29ucywgSW5jLiAtLT48cGF0aCBkPSJNNDggMzJDMjEuNSAzMiAwIDUzLjUgMCA4MHY2NEMwIDE1Mi45IDcuMTI1IDE2MCAxNiAxNjBIOTZWODBDOTYgNTMuNSA3NC41IDMyIDQ4IDMyek0yNTYgMzgwLjZWMzIwaDIyNFYxMjhjMC01My00My05Ni05Ni05NkgxMTEuNkMxMjEuOCA0NS4zOCAxMjggNjEuODggMTI4IDgwVjM4NGMwIDM4Ljg4IDM0LjYyIDY5LjYzIDc0Ljc1IDYzLjEzQzIzNC4zIDQ0MiAyNTYgNDEyLjUgMjU2IDM4MC42ek0yODggMzUydjMyYzAgNTIuODgtNDMgOTYtOTYgOTZoMjcyYzYxLjg4IDAgMTEyLTUwLjEzIDExMi0xMTJjMC04Ljg3NS03LjEyNS0xNi0xNi0xNkgyODh6Ii8+PC9zdmc+",
+    "icon": "https://raw.githubusercontent.com/bunsenstraat/flattener/master/flattener-logo.webp"
     "location": "sidePanel",
     "url": "ipfs://QmTX5ktywUaHSiEzdxf91C5gpE2MShpD1KxNmCd3Dzy1pR",
     "repo": "https://github.com/bunsenstraat/flattener",

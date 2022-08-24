@@ -510,7 +510,7 @@
 			"getCompilationResult",
 			"compile"
 		],
-		"url": "ipfs://QmPgjoPoJ5GFJAKYJyH4Mt24V246Cd4pJ54LJ8A3jyD8PB",
+		"url": "ipfs://QmbmPzUg7ghTKcF2eo64zm1k1LKdibYfqYmiqXkHKXks8r",
 		"documentation": "https://github.com/GrandSchtroumpf/vyper-remix",
 		"description": "Compile vyper contracts",
 		"kind": "compiler",

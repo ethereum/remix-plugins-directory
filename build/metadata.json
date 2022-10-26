@@ -337,18 +337,6 @@
 		"location": "sidePanel"
 	},
 	{
-		"name": "quorum",
-		"displayName": "Quorum Network",
-		"description": "Deploy and interact with private contracts on a Quorum network.",
-		"events": [],
-		"methods": [],
-		"url": "//remix-plugin.goquorum.com/",
-		"icon": "//remix-plugin.goquorum.com/tab_icon.png",
-		"documentation": "https://docs.goquorum.com/en/latest/RemixPlugin/Overview/",
-		"version": "0.1.4-beta",
-		"location": "sidePanel"
-	},
-	{
 		"name": "restorebackupzip",
 		"displayName": "Restore Backup Zip",
 		"description": "Use this to restore your Remix backup zip files to the new workspaces.",

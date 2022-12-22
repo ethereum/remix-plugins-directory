@@ -160,24 +160,6 @@
 		"authorContact": ""
 	},
 	{
-		"name": "gasProfiler",
-		"displayName": "Gas Profiler",
-		"events": [],
-		"methods": [],
-		"version": "0.2.0-alpha",
-		"description": "Profile gas costs",
-		"icon": "https://res.cloudinary.com/key-solutions/image/upload/v1565781702/gas-profiler_nxmsal.png",
-		"location": "sidePanel",
-		"canActivate": [
-			"debugger"
-		],
-		"url": "https://machinalabs-remix-gas-profiler-v2-plugin.surge.sh",
-		"repo": "https://github.com/EdsonAlcala/remix-gas-profiler",
-		"documentation": "https://github.com/EdsonAlcala/remix-gas-profiler",
-		"maintainedBy": "",
-		"authorContact": ""
-	},
-	{
 		"name": "gitdiff",
 		"displayName": "DGIT Diff",
 		"methods": [],

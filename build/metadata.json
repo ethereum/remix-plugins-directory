@@ -494,6 +494,21 @@
 		"authorContact": ""
 	},
 	{
+		"name": "wds-code-remix",
+		"displayName": "CODE BY WELLDONE STUDIO",
+		"description": "Multi-Chain Deploy and Run Transactions",
+		"events": [],
+		"methods": [],
+		"url": "https://remix-plugin.welldonestudio.io",
+		"icon": "https://remix-plugin.welldonestudio.io/icon.png",
+		"repo": "https://github.com/dsrvlabs/wds-code-remix",
+		"documentation": "https://docs.welldonestudio.io/code",
+		"maintainedBy": "DSRV",
+		"authorContact": "",
+		"version": "0.1.0-beta",
+		"location": "sidePanel"
+	},
+	{
 		"name": "ZoKrates",
 		"displayName": "ZoKrates",
 		"description": "ZoKrates toolbox for zkSNARKs on Ethereum",

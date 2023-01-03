@@ -7,7 +7,7 @@
     "notifications": {
       "solidity": ["compilationFinished"]
     },
-    "url": "ipfs://Qmf8FPKviVKrfbUwEevYXv6so5svEb9kumG4K6ZPhxPKAg",
+    "url": "https://ipfs-cluster.ethdevops.io/ipfs/Qmf8FPKviVKrfbUwEevYXv6so5svEb9kumG4K6ZPhxPKAg",
     "repo": "https://github.com/oneclickdapp/remix-plugin-one-click-dapp",
     "maintainedBy": "",
     "authorContact": "",

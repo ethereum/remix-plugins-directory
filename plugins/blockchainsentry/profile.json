@@ -1,0 +1,15 @@
+{
+  "name": "Blockchainsentry",
+  "displayName": "BlockChainSentry",
+  "description": "BlockChainSentry VMS is an Ethereum based BlockChain Vulnerability Management System that scans and pinpoints vulnerabilities in a Smart Contract.The results of the vulnerability scan are displayed on a user-friendly dashboard that also provide guidance on remediation.",
+  "documentation": "https://remix.blockchainsentry.com/docs",
+  "version": "0.1.1",
+  "events": [],
+  "methods": [],
+  "kind": "none",
+  "icon": "https://remix.blockchainsentry.com/static/media/logo12.1d1d1a6d.png",
+  "location": "sidePanel",
+  "url": "https://remix.blockchainsentry.com/",
+  "maintainedBy": "",
+  "authorContact": "hello@blockchainsentry.com"
+}

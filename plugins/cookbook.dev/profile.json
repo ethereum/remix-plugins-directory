@@ -10,7 +10,6 @@
   "location": "sidePanel",
   "documentation": "https://www.cookbook.dev",
   "url": "https://www.cookbook.dev/remix-plugin",
-  "repo": "https://www.cookbook.dev",
   "maintainedBy": "JamJomJim",
   "authorContact": "james@cookbook.dev",
   "targets": ["remix", "vscode"]

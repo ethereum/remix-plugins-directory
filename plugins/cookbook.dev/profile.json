@@ -1,0 +1,17 @@
+{
+  "name": "cookbook.dev",
+  "displayName": "Cookbook.dev",
+  "description": "Find any smart contract.",
+  "version": "0.1.0",
+  "events": [],
+  "methods": ["openGist"],
+  "kind": "none",
+  "icon": "https://www.cookbook.dev/img/logo.svg",
+  "location": "sidePanel",
+  "documentation": "https://www.cookbook.dev",
+  "url": "https://www.cookbook.dev",
+  "repo": "https://www.cookbook.dev",
+  "maintainedBy": "JamJomJim",
+  "authorContact": "james@cookbook.dev",
+  "targets": ["remix", "vscode"]
+}

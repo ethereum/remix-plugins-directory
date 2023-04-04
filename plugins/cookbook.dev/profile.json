@@ -4,7 +4,7 @@
   "description": "Find any smart contract.",
   "version": "0.1.0",
   "events": [],
-  "methods": ["openGist"],
+  "methods": ["openContract"],
   "kind": "none",
   "icon": "https://www.cookbook.dev/img/logo.svg",
   "location": "sidePanel",

@@ -1,6 +1,6 @@
 {
 	"name": "sourcify",
-	"displayName": "Sourcify",
+	"displayName": "Contract verification - Sourcify",
 	"description": "Solidity contract and metadata verification service",
 	"version": "0.8.7",
 	"methods": [

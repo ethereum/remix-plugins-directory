@@ -1,0 +1,14 @@
+{
+    "name": "Starknet-cairo1-compiler",
+    "displayName": "Starknet",
+    "methods": [],
+    "version": "0.1.0-alpha",
+    "url": "https://cairo-remix-test.nethermind.io/",
+    "description": "Compile and deploy contracts with Cairo, a native smart contract language for Starknet.",
+    "icon": "https://res.cloudinary.com/lianahus/image/upload/v1643013278/webp/StarkNetLogo_2_izzamu.webp",
+    "location": "sidePanel",
+    "documentation": "https://github.com/NethermindEth/starknet-remix-plugin",
+    "repo": "https://github.com/NethermindEth/starknet-remix-plugin",
+    "maintainedBy": "Nethermind",
+    "authorContact": "rohit@nethermind.io"
+  }

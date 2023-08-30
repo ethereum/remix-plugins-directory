@@ -1,16 +1,16 @@
 {
-  "name": "cookbook.dev",
+  "name": "cookbookdev",
   "displayName": "Cookbook.dev",
-  "description": "Find any smart contract.",
-  "version": "0.1.0",
+  "description": "Find any smart contract, protocol, and library.",
+  "version": "0.1.2",
   "events": [],
-  "methods": ["openContract"],
+  "methods": ["openContract", "openProtocol"],
   "kind": "none",
   "icon": "https://www.cookbook.dev/img/logo.svg",
   "location": "sidePanel",
   "documentation": "https://www.cookbook.dev",
   "url": "https://www.cookbook.dev/remix-plugin",
-  "maintainedBy": "JamJomJim",
-  "authorContact": "james@cookbook.dev",
+  "maintainedBy": "TylerSehr",
+  "authorContact": "tyler@cookbook.dev",
   "targets": ["remix", "vscode"]
 }

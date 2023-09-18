@@ -324,7 +324,7 @@
 		"authorContact": ""
 	},
 	{
-		"name": "Starknet-cairo1-compiler",
+		"name": "Starknet",
 		"displayName": "Starknet",
 		"methods": [],
 		"version": "0.1.0-alpha",

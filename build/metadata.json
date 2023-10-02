@@ -31,19 +31,42 @@
 	{
 		"name": "cookbook.dev",
 		"displayName": "Cookbook.dev",
-		"description": "Find any smart contract.",
-		"version": "0.1.0",
+		"description": "Find any smart contract, protocol, and library.",
+		"version": "0.1.2",
 		"events": [],
 		"methods": [
-			"openContract"
+			"openContract",
+			"openProtocol"
 		],
 		"kind": "none",
 		"icon": "https://www.cookbook.dev/img/logo.svg",
 		"location": "sidePanel",
 		"documentation": "https://www.cookbook.dev",
 		"url": "https://www.cookbook.dev/remix-plugin",
-		"maintainedBy": "JamJomJim",
-		"authorContact": "james@cookbook.dev",
+		"maintainedBy": "TylerSehr",
+		"authorContact": "tyler@cookbook.dev",
+		"targets": [
+			"remix",
+			"vscode"
+		]
+	},
+	{
+		"name": "cookbookdev",
+		"displayName": "Cookbook.dev",
+		"description": "Find any smart contract, protocol, and library.",
+		"version": "0.1.2",
+		"events": [],
+		"methods": [
+			"openContract",
+			"openProtocol"
+		],
+		"kind": "none",
+		"icon": "https://www.cookbook.dev/img/logo.svg",
+		"location": "sidePanel",
+		"documentation": "https://www.cookbook.dev",
+		"url": "https://www.cookbook.dev/remix-plugin",
+		"maintainedBy": "TylerSehr",
+		"authorContact": "tyler@cookbook.dev",
 		"targets": [
 			"remix",
 			"vscode"

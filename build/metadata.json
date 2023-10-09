@@ -29,28 +29,6 @@
 		"location": "sidePanel"
 	},
 	{
-		"name": "cookbook.dev",
-		"displayName": "Cookbook.dev",
-		"description": "Find any smart contract, protocol, and library.",
-		"version": "0.1.2",
-		"events": [],
-		"methods": [
-			"openContract",
-			"openProtocol"
-		],
-		"kind": "none",
-		"icon": "https://www.cookbook.dev/img/logo.svg",
-		"location": "sidePanel",
-		"documentation": "https://www.cookbook.dev",
-		"url": "https://www.cookbook.dev/remix-plugin",
-		"maintainedBy": "TylerSehr",
-		"authorContact": "tyler@cookbook.dev",
-		"targets": [
-			"remix",
-			"vscode"
-		]
-	},
-	{
 		"name": "cookbookdev",
 		"displayName": "Cookbook.dev",
 		"description": "Find any smart contract, protocol, and library.",
@@ -145,6 +123,21 @@
 		"authorContact": ""
 	},
 	{
+		"name": "klaytn-remix-plugin",
+		"displayName": "Klaytn",
+		"description": "Deploy and Run Transactions with Klaytn.",
+		"events": [],
+		"methods": [],
+		"url": "//klaytn-remix-plugin.ozys.io",
+		"icon": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzIiIGhlaWdodD0iMzIiIHZpZXdCb3g9IjAgMCAzMiAzMiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0xNi41MzEgMUMxOS44NjAzIDEuMTEyMDIgMjMuMDU2NyAyLjMzMzcgMjUuNjEyNCA0LjQ3MDk3TDguODgxMDYgMjEuMjA1NkwxNi41MzEgMVpNMTcuOTEwNyAxNS45OTZMMjcuNTE5OSA2LjM4MzQ3QzI5Ljc2OSA5LjA4MTA3IDMxLjAwMDggMTIuNDgyNSAzMS4wMDA4IDE1Ljk5NTJDMzEuMDAwOCAxOS41MDc5IDI5Ljc2OSAyMi45MDkyIDI3LjUxOTkgMjUuNjA2OEwxNy45MTA3IDE1Ljk5NlpNMTIuNzcwNiAzLjMwNjA3TDEuMDMgMTUuMDUwOEMwLjc4ODkzNyAxOC44MjQ3IDEuOTg0MjggMjIuNTUwMSA0LjM3NTkyIDI1LjQ3ODZMMTIuNzcwNiAzLjMwNjA3Wk02LjM5MjI2IDI3LjUxODVMMTYuMDAxNSAxNy45MDU5TDI1LjYwOTggMjcuNTE4NUMyMi45MTMgMjkuNzY4NCAxOS41MTI3IDMxLjAwMDcgMTYuMDAxIDMxLjAwMDdDMTIuNDg5NCAzMS4wMDA3IDkuMDg5MDYgMjkuNzY4NCA2LjM5MjI2IDI3LjUxODVaIiBmaWxsPSJ3aGl0ZSIvPgo8L3N2Zz4K",
+		"documentation": "https://github.com/klaytn-ozys/plug-and-klay",
+		"version": "1.0.0",
+		"location": "sidePanel",
+		"repo": "https://github.com/klaytn-ozys/plug-and-klay",
+		"maintainedBy": "",
+		"authorContact": ""
+	},
+	{
 		"name": "LearnEth",
 		"displayName": "LearnEth",
 		"description": "Learn Ethereum with Remix!",
@@ -190,12 +183,12 @@
 		"description": "Deploy and interact with Moonbeam.",
 		"events": [],
 		"methods": [],
-		"url": "https://purestake.github.io/moonbeam-remix-plugin",
-		"repo": "https://github.com/PureStake/moonbeam-remix-plugin",
-		"maintainedBy": "Purestake",
-		"authorContact": "",
-		"icon": "https://purestake.github.io/moonbeam-remix-plugin/icon.png",
-		"documentation": "https://github.com/purestake/moonbeam-remix-plugin",
+		"url": "https://moonbeam-foundation.github.io/moonbeam-remix-plugin",
+		"repo": "https://github.com/moonbeam-foundation/moonbeam-remix-plugin",
+		"maintainedBy": "Moonbeam Foundation",
+		"authorContact": "alberto@papermoon.io",
+		"icon": "https://moonbeam-foundation.github.io/moonbeam-remix-plugin/icon.png",
+		"documentation": "https://github.com/moonbeam-foundation/moonbeam-remix-plugin",
 		"version": "0.0.1",
 		"location": "sidePanel"
 	},
@@ -332,7 +325,7 @@
 		"authorContact": ""
 	},
 	{
-		"name": "Starknet-cairo1-compiler",
+		"name": "Starknet",
 		"displayName": "Starknet",
 		"methods": [],
 		"version": "0.1.0-alpha",

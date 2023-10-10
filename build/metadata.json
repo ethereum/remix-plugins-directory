@@ -39,7 +39,7 @@
 			"openProtocol"
 		],
 		"kind": "none",
-		"icon": "https://www.cookbook.dev/img/logo.svg",
+		"icon": "https://www.cookbook.dev/img/cookbook-logo.png",
 		"location": "sidePanel",
 		"documentation": "https://www.cookbook.dev",
 		"url": "https://www.cookbook.dev/remix-plugin",

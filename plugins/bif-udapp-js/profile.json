@@ -1,0 +1,14 @@
+{
+  "description": "部署、调用星火链网的 js 合约",
+  "displayName": "星火链网 JS 合约部署与调用",
+  "events": [],
+  "icon": "https://bif-udapp-js.remix-project.cn/assets/img/bif-udapp-js.webp",
+  "location": "sidePanel",
+  "methods": [],
+  "name": "bif-udapp-js",
+  "url": "https://bif-udapp-js.remix-project.cn/",
+  "repo": "https://github.com/caict-4iot-dev/remix-bif-plugins",
+  "documentation": "https://github.com/caict-4iot-dev/remix-bif-plugins/blob/main/apps/udapp-js/README.md",
+  "maintainedBy": "caict-4iot-dev",
+  "version": "0.1.0"
+}

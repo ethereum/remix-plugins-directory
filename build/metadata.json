@@ -39,7 +39,7 @@
 			"openProtocol"
 		],
 		"kind": "none",
-		"icon": "https://www.cookbook.dev/img/logo.svg",
+		"icon": "https://www.cookbook.dev/img/cookbook-logo.png",
 		"location": "sidePanel",
 		"documentation": "https://www.cookbook.dev",
 		"url": "https://www.cookbook.dev/remix-plugin",
@@ -178,21 +178,6 @@
 		"location": "sidePanel"
 	},
 	{
-		"name": "moonbeam-remix-plugin",
-		"displayName": "Moonbeam Plugin",
-		"description": "Deploy and interact with Moonbeam.",
-		"events": [],
-		"methods": [],
-		"url": "https://moonbeam-foundation.github.io/moonbeam-remix-plugin",
-		"repo": "https://github.com/moonbeam-foundation/moonbeam-remix-plugin",
-		"maintainedBy": "Moonbeam Foundation",
-		"authorContact": "alberto@papermoon.io",
-		"icon": "https://moonbeam-foundation.github.io/moonbeam-remix-plugin/icon.png",
-		"documentation": "https://github.com/moonbeam-foundation/moonbeam-remix-plugin",
-		"version": "0.0.1",
-		"location": "sidePanel"
-	},
-	{
 		"name": "mythx",
 		"displayName": "MythX Security Verification",
 		"description": "Perform Static and Dynamic Security Analysis using the MythX Cloud Service",
@@ -328,8 +313,8 @@
 		"name": "Starknet",
 		"displayName": "Starknet",
 		"methods": [],
-		"version": "0.1.0-alpha",
-		"url": "https://cairo-remix-test.nethermind.io/",
+		"version": "0.2.2",
+		"url": "https://cairo-remix.nethermind.io/",
 		"description": "Compile and deploy contracts with Cairo, a native smart contract language for Starknet.",
 		"icon": "https://res.cloudinary.com/lianahus/image/upload/v1643013278/webp/StarkNetLogo_2_izzamu.webp",
 		"location": "sidePanel",
@@ -418,6 +403,20 @@
 		"authorContact": "",
 		"version": "0.1.0-beta",
 		"location": "sidePanel"
+	},
+	{
+		"name": "zkSync",
+		"displayName": "zkSync",
+		"methods": [],
+		"version": "0.1.0",
+		"url": "https://zksync-plugin.nethermind.io/",
+		"description": "Compile and deploy smart contracts for zkSync Era.",
+		"icon": "https://zksync-plugin.nethermind.io/icon.webp",
+		"location": "sidePanel",
+		"documentation": "https://github.com/NethermindEth/zksync-remix-plugin",
+		"repo": "https://github.com/NethermindEth/zksync-remix-plugin",
+		"maintainedBy": "Nethermind",
+		"authorContact": "rohit@nethermind.io"
 	},
 	{
 		"name": "ZoKrates",

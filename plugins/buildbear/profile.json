@@ -1,0 +1,15 @@
+{
+  "name": "buildbear",
+  "displayName": "BuildBear",
+  "methods": [],
+  "version": "0.1.0",
+  "url": "https://remix.buildbear.io/",
+  "description": "Create a Private Sandbox for various EVM and EVM-compatible blockchain networks, complete with a Faucet and Explorer.",
+  "icon": "https://www.buildbear.io/remix-logo.webp",
+  "location": "sidePanel",
+  "targets": ["remix", "vscode"],
+  "documentation": "https://docs.buildbear.io/docs/BuildBear-Remix-Plugin",
+  "repo": "https://github.com/BuildBearLabs/buildbear-remix-plugin",
+  "maintainedBy": "BuildBear Team",
+  "authorContact": "team@buildbear.io"
+}

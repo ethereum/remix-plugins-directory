@@ -9,6 +9,6 @@
     "maintainedBy": "",
     "authorContact": "",
     "description": "Deploy a compiled contract to the same address on multiple networks",
-    "icon": "https://contract-deployer-plugin.surge.sh/smart-contracts-gray.svg",
+    "icon": "data:image/webp;base64,UklGRmYCAABXRUJQVlA4TFkCAAAvVoAVEL+goG0jx8f9YI+fIBS0bcO43At7R0HbNozLvbB3DESS4ZOoon8ZKwGCSZpqOwaVbddMAAsAgMN/H8kDrP8AwPof0JJtt25cnQYPIbYtmU5TsOc/VkC0IjK5j6+I/k8ATq7sXQHA2FsAwNirACDs/hrnNSuZlf1lvSa0OZTZqCFM97ncE473PBFFt01E+rBNY4VP70cLUp7F7kRJrg5lFl9upTe3zQJeg+bqcHv05Upgc2iRuVcmWeDLLDYHud8qvHAWObnO5zR46xPOg88e0ZnwJge/Mg+XMapLekTe3mb7I7OzjrE5iHZ8XjGGJgfR0yrCX5fjGkD0pIrwh9fjkhxET6kIfzgCF3GQfMKK8IdjUMXhfsIr+OEoXE77cjvHof2WMlKd1XtW7U+0DFTE7frRBr/rKGo4fPctgsM6hgo6X7ljSehsQwi630cq6N4GeODDctDQn/L1xEnJ+gzekcK/Sl6aw3a5BV5JsjqJvp0oSZrbL/ftjD47RNW96b+dXG51e8DPalDGWFzKrrgUbc6CzdnlcgKARlLFWbQ4VJIluffluDvIbgl+jWgO0gxhuZ4mdyw8LMFx4/X46BI94rNLdAQ+OmRh77PjpRyC2oL0zOxXC15PfnwZMpd1XXhiLuuqPPFCV/8/US6lFI2Kj7SUUnSkFQBqoPBRA4D7vz43M7M1oJlZi6qZWRnp6v87u/r934F6AubYPluw6OBvlz5bUTl4digfCZIORnOSP6gARAdbHVrfAi86FsVh1457CoCmQ5UAUjUoht5XGzkFAKy1lhADAA==",
     "location": "sidePanel"
   }

@@ -1,6 +1,6 @@
 {
-  "description": "部署、调用星火链网的 solidity 合约",
-  "displayName": "星火链网 Solidity 合约部署与调用",
+  "description": "Deploy Solidity contracts & Run Transactions on Xinghuo BIF",
+  "displayName": "Deploy & Run Solidity on Xinghuo BIF",
   "events": [],
   "icon": "//remix.bitfactory.cn/udapp/assets/img/bif-udapp.webp",
   "location": "sidePanel",

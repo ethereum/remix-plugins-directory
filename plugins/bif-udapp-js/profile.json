@@ -1,6 +1,6 @@
 {
-  "description": "部署、调用星火链网的 js 合约",
-  "displayName": "星火链网 JS 合约部署与调用",
+  "description": "Deploy JS Contracts & Run Transactions on Xinghuo BIF",
+  "displayName": "Deploy & Run JS on Xinghuo BIF",
   "events": [],
   "icon": "//remix.bitfactory.cn/udapp-js/assets/img/bif-udapp-js.webp",
   "location": "sidePanel",

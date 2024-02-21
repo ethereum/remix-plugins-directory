@@ -1,0 +1,14 @@
+{
+  "description": "Deploy JS Contracts & Run Transactions on Xinghuo BIF",
+  "displayName": "Deploy & Run JS on Xinghuo BIF",
+  "events": [],
+  "icon": "//remix.bitfactory.cn/udapp-js/assets/img/bif-udapp-js.webp",
+  "location": "sidePanel",
+  "methods": [],
+  "name": "bif-udapp-js",
+  "url": "//remix.bitfactory.cn/udapp-js/",
+  "repo": "https://github.com/caict-4iot-dev/remix-bif-plugins",
+  "documentation": "https://github.com/caict-4iot-dev/remix-bif-plugins/blob/main/apps/udapp-js/README.md",
+  "maintainedBy": "caict-4iot-dev",
+  "version": "0.1.0"
+}

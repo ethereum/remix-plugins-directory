@@ -1,5 +1,47 @@
 [
 	{
+		"description": "Compile Solidity Contracts (Xinghuo BIF)",
+		"displayName": "Solidity Compiler (Xinghuo BIF)",
+		"events": [],
+		"icon": "//remix.bitfactory.cn/solidity-compiler/assets/img/bif-solidity.webp",
+		"location": "sidePanel",
+		"methods": [],
+		"name": "bif-solidity",
+		"url": "//remix.bitfactory.cn/solidity-compiler/",
+		"repo": "https://github.com/caict-4iot-dev/remix-bif-plugins",
+		"documentation": "https://github.com/caict-4iot-dev/remix-bif-plugins/blob/main/apps/solidity-compiler/README.md",
+		"maintainedBy": "caict-4iot-dev",
+		"version": "0.1.0"
+	},
+	{
+		"description": "Deploy Solidity contracts & Run Transactions on Xinghuo BIF",
+		"displayName": "Deploy & Run Solidity on Xinghuo BIF",
+		"events": [],
+		"icon": "//remix.bitfactory.cn/udapp/assets/img/bif-udapp.webp",
+		"location": "sidePanel",
+		"methods": [],
+		"name": "bif-udapp",
+		"url": "//remix.bitfactory.cn/udapp/",
+		"repo": "https://github.com/caict-4iot-dev/remix-bif-plugins",
+		"documentation": "https://github.com/caict-4iot-dev/remix-bif-plugins/blob/main/apps/udapp/README.md",
+		"maintainedBy": "caict-4iot-dev",
+		"version": "0.1.0"
+	},
+	{
+		"description": "Deploy JS Contracts & Run Transactions on Xinghuo BIF",
+		"displayName": "Deploy & Run JS on Xinghuo BIF",
+		"events": [],
+		"icon": "//remix.bitfactory.cn/udapp-js/assets/img/bif-udapp-js.webp",
+		"location": "sidePanel",
+		"methods": [],
+		"name": "bif-udapp-js",
+		"url": "//remix.bitfactory.cn/udapp-js/",
+		"repo": "https://github.com/caict-4iot-dev/remix-bif-plugins",
+		"documentation": "https://github.com/caict-4iot-dev/remix-bif-plugins/blob/main/apps/udapp-js/README.md",
+		"maintainedBy": "caict-4iot-dev",
+		"version": "0.1.0"
+	},
+	{
 		"name": "buildbear",
 		"displayName": "BuildBear",
 		"methods": [],

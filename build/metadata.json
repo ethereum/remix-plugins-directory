@@ -113,9 +113,9 @@
 	},
 	{
 		"name": "dapp-draft",
-		"displayName": "Dapp Draft",
-		"description": "Edit and deploy your own dapp!",
-		"version": "0.1.0",
+		"displayName": "Quick Dapp",
+		"description": "Edit & deploy a Dapp",
+		"version": "0.2.0",
 		"methods": [
 			"edit"
 		],
@@ -124,8 +124,8 @@
 		"location": "mainPanel",
 		"url": "https://remix-dapp-draft-plugin.pages.dev/",
 		"repo": "https://github.com/drafish/remix-dapp-draft-plugin",
-		"maintainedBy": "Remix CC",
-		"authorContact": "",
+		"maintainedBy": "Remix",
+		"authorContact": "https://github.com/drafish",
 		"targets": [
 			"remix"
 		]

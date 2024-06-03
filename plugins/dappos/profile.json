@@ -1,0 +1,11 @@
+{
+  "name": "dappos",
+  "displayName": "Dappos",
+  "methods": [],
+  "version": "1.0.0-alpha",
+  "url": "https://remix-dappos-plugin.surge.sh/",
+  "description": "Build frontend interfaces for smart contracts with no-code",
+  "icon": "https://remix-dappos-plugin.surge.sh/icon.png",
+  "location": "sidePanel",
+  "documentation": "https://documentation.dappos.io/remix-ide-plugin/intro"
+}

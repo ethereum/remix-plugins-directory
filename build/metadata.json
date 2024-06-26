@@ -109,7 +109,8 @@
 		"targets": [
 			"remix",
 			"vscode"
-		]
+		],
+		"repo": "https://github.com/Breakthrough-Labs/cookbook-remix-plugin"
 	},
 	{
 		"name": "dapp-draft",

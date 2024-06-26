@@ -12,5 +12,6 @@
   "url": "https://www.cookbook.dev/remix-plugin",
   "maintainedBy": "TylerSehr",
   "authorContact": "tyler@cookbook.dev",
-  "targets": ["remix", "vscode"]
+  "targets": ["remix", "vscode"],
+  "repo": "https://github.com/Breakthrough-Labs/cookbook-remix-plugin"
 }

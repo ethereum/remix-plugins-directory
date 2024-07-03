@@ -1,0 +1,14 @@
+{
+  "name": "sentio-remix-plugin",
+  "displayName": "Sentio",
+  "description": "Search and view function related transactions directly in Remix, service is provided by Sentio",
+  "events": [],
+  "methods": [],
+  "url": "https://remix.sentio.xyz/index.html",
+  "icon": "https://remix.sentio.xyz/plugin-logo.webp",
+  "documentation": "https://docs.sentio.xyz/docs/remix-ide-plugin",
+  "version": "1.0.0",
+  "location": "sidePanel",
+  "maintainedBy": "sentio team",
+  "authorContact": "support@sentio.xyz"
+}

@@ -1,7 +1,7 @@
 {
   "name": "klaytn-remix-plugin",
-  "displayName": "Klaytn",
-  "description": "Deploy and Run Transactions with Klaytn.",
+  "displayName": "Kaia",
+  "description": "Deploy and Run Transactions with Kaia.",
   "events": [],
   "methods": [],
   "url": "//klaytn-remix-plugin.ozys.io",
@@ -10,6 +10,6 @@
   "version": "1.0.0",
   "location": "sidePanel",
   "repo": "https://github.com/klaytn-ozys/plug-and-klay",
-  "maintainedBy": "",
-  "authorContact": ""
+  "maintainedBy": "Ozys Co., Ltd",
+  "authorContact": "support@ozys.io"
 }

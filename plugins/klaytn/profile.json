@@ -1,15 +1,15 @@
 {
   "name": "klaytn-remix-plugin",
-  "displayName": "Klaytn",
-  "description": "Deploy and Run Transactions with Klaytn.",
+  "displayName": "Kaia",
+  "description": "Deploy and Run Transactions with Kaia.",
   "events": [],
   "methods": [],
   "url": "//klaytn-remix-plugin.ozys.io",
-  "icon": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzIiIGhlaWdodD0iMzIiIHZpZXdCb3g9IjAgMCAzMiAzMiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0xNi41MzEgMUMxOS44NjAzIDEuMTEyMDIgMjMuMDU2NyAyLjMzMzcgMjUuNjEyNCA0LjQ3MDk3TDguODgxMDYgMjEuMjA1NkwxNi41MzEgMVpNMTcuOTEwNyAxNS45OTZMMjcuNTE5OSA2LjM4MzQ3QzI5Ljc2OSA5LjA4MTA3IDMxLjAwMDggMTIuNDgyNSAzMS4wMDA4IDE1Ljk5NTJDMzEuMDAwOCAxOS41MDc5IDI5Ljc2OSAyMi45MDkyIDI3LjUxOTkgMjUuNjA2OEwxNy45MTA3IDE1Ljk5NlpNMTIuNzcwNiAzLjMwNjA3TDEuMDMgMTUuMDUwOEMwLjc4ODkzNyAxOC44MjQ3IDEuOTg0MjggMjIuNTUwMSA0LjM3NTkyIDI1LjQ3ODZMMTIuNzcwNiAzLjMwNjA3Wk02LjM5MjI2IDI3LjUxODVMMTYuMDAxNSAxNy45MDU5TDI1LjYwOTggMjcuNTE4NUMyMi45MTMgMjkuNzY4NCAxOS41MTI3IDMxLjAwMDcgMTYuMDAxIDMxLjAwMDdDMTIuNDg5NCAzMS4wMDA3IDkuMDg5MDYgMjkuNzY4NCA2LjM5MjI2IDI3LjUxODVaIiBmaWxsPSJ3aGl0ZSIvPgo8L3N2Zz4K",
+  "icon": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzIiIGhlaWdodD0iMzIiIHZpZXdCb3g9IjAgMCAyNDggMzYwIiBmaWxsPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8cGF0aCBkPSJNMTI2Ljc4NCA4OS4zNjgyQzEyNi43ODQgNzUuMDIyNyAxMzguNDcxIDYzLjMzNTkgMTUyLjgxNyA2My4zMzU5SDE5OS4zOThWMEgxNzYuMTA3SDE1Mi44MTdDMTAzLjQ2NiAwIDYzLjQ0ODUgNDAuMDE3NyAKNjMuNDQ4NSA4OS4zNjgyQzYzLjQ0ODUgMTAyLjI0NiA2Ni4xOTAyIDExNC40ODcgNzEuMDkyIDEyNS41MzZDMzIuNzYzNyAxNDEuNzM3IDcuMzEzMDIgMTc2LjE2MSAxLjM4NjUzIDIxOS43MjNDLTUuNTM2OTQgCjI2Ny41NTEgMTMuNjI3MiAzMTkuMTQ0IDU1LjM2MTkgMzQ0LjA2OUM5Mi42MTAyIDM2Ny41MjYgMTUwLjg1IDM2NS45NzUgMTgyLjMxMSAzMzMuNDM0VjM1NS4wMzZIMjQ3LjE0MlYxMTUuNEgxNTIuODQ0QzEzOC40OTkgCjExNS40IDEyNi43ODQgMTAzLjcxNCAxMjYuNzg0IDg5LjM2ODJaTTE4My43NTEgMTc4Ljc2NFYyMzguOTE1QzE4My43NTEgMjcyLjE0OCAxNTYuODA1IDI5OS4wNjYgMTIzLjYgMjk5LjA2NkM5MC4zOTQ3IDI5OS4wNjYgNjMuNDQ4NSAKMjcyLjEyIDYzLjQ0ODUgMjM4LjkxNUM2My40NDg1IDIwNS43MSA5MC4zOTQ3IDE3OC43NjQgMTIzLjYgMTc4Ljc2NEgxODMuNzUxWiIgZmlsbD0id2hpdGUiLz4KPC9zdmc+Cg==",
   "documentation": "https://github.com/klaytn-ozys/plug-and-klay",
   "version": "1.0.0",
   "location": "sidePanel",
   "repo": "https://github.com/klaytn-ozys/plug-and-klay",
-  "maintainedBy": "",
-  "authorContact": ""
+  "maintainedBy": "Ozys Co., Ltd",
+  "authorContact": "support@ozys.io"
 }

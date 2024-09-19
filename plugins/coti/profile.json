@@ -7,7 +7,7 @@
     "url": "https://remix.coti.io",
     "icon": "https://remix.coti.io/coti-plugin-logo.png",
     "documentation": "https://docs.coti.io/coti-v2-documentation/developer-tooling/coti-remix-plugin",
-    "version": "1.0.0",
+    "version": "0.1.1-beta",
     "location": "sidePanel",
     "maintainedBy": "COTI team",
     "authorContact": "product@coti.io"

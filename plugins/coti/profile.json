@@ -1,0 +1,15 @@
+{
+    "name": "coti-remix-plugin",
+    "displayName": "COTI",
+    "description": "Deploy and interact with contracts on the COTI privacy-preserving network",
+    "events": [],
+    "methods": [],
+    "url": "https://remix.coti.io",
+    "icon": "https://remix.coti.io/coti-plugin-logo.png",
+    "documentation": "https://docs.coti.io/coti-v2-documentation/developer-tooling/coti-remix-plugin",
+    "version": "0.1.1-beta",
+    "location": "sidePanel",
+    "maintainedBy": "COTI team",
+    "authorContact": "product@coti.io"
+  }
+  

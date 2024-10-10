@@ -1,0 +1,14 @@
+{
+    "name": "zkSync",
+    "displayName": "zkSync",
+    "methods": [],
+    "version": "0.1.0",
+    "url": "https://zksync-plugin.nethermind.io/",
+    "description": "Compile and deploy smart contracts for zkSync Era.",
+    "icon": "https://zksync-plugin.nethermind.io/icon.webp",
+    "location": "sidePanel",
+    "documentation": "https://github.com/NethermindEth/zksync-remix-plugin",
+    "repo": "https://github.com/NethermindEth/zksync-remix-plugin",
+    "maintainedBy": "Nethermind",
+    "authorContact": "rohit@nethermind.io"
+  }

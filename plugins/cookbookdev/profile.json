@@ -1,0 +1,17 @@
+{
+  "name": "cookbookdev",
+  "displayName": "Cookbook.dev",
+  "description": "Find any smart contract, protocol, and library.",
+  "version": "0.1.3",
+  "events": [],
+  "methods": ["openContract", "openProtocol", "openPattern"],
+  "kind": "none",
+  "icon": "https://www.cookbook.dev/img/cookbook.webp",
+  "location": "sidePanel",
+  "documentation": "https://www.cookbook.dev",
+  "url": "https://www.cookbook.dev/remix-plugin",
+  "maintainedBy": "TylerSehr",
+  "authorContact": "tyler@cookbook.dev",
+  "targets": ["remix", "vscode"],
+  "repo": "https://github.com/Breakthrough-Labs/cookbook-remix-plugin"
+}

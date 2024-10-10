@@ -1,0 +1,14 @@
+{
+  "description": "Compile Solidity Contracts (Xinghuo BIF)",
+  "displayName": "Solidity Compiler (Xinghuo BIF)",
+  "events": [],
+  "icon": "//remix.bitfactory.cn/solidity-compiler/assets/img/bif-solidity.webp",
+  "location": "sidePanel",
+  "methods": [],
+  "name": "bif-solidity",
+  "url": "//remix.bitfactory.cn/solidity-compiler/",
+  "repo": "https://github.com/caict-4iot-dev/remix-bif-plugins",
+  "documentation": "https://github.com/caict-4iot-dev/remix-bif-plugins/blob/main/apps/solidity-compiler/README.md",
+  "maintainedBy": "caict-4iot-dev",
+  "version": "0.1.0"
+}

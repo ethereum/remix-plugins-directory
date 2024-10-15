@@ -1,0 +1,15 @@
+{
+  "name": "arbitrum-stylus",
+  "displayName": "ARBITRUM STYLUS BY WELLDONE STUDIO",
+  "description": "Deployment and execution of smart contracts via Arbitrum Stylus",
+  "events": [],
+  "methods": [],
+  "url": "https://remix-plugin-arbitrum.welldonestudio.io",
+  "icon": "https://remix-plugin.welldonestudio.io/icon.png",
+  "repo": "https://github.com/dsrvlabs/arbitrum-stylus",
+  "documentation": "https://docs.welldonestudio.io/code",
+  "maintainedBy": "DSRV",
+  "authorContact": "",
+  "version": "0.1.0-beta",
+  "location": "sidePanel"
+}

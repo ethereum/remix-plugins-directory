@@ -1,0 +1,15 @@
+{
+  "name": "defender-deploy",
+  "displayName": "DEFENDER DEPLOY",
+  "description": "Secure Deployments using OpenZeppelin Defender",
+  "events": [],
+  "methods": [],
+  "url": "https://defeder-remix-deploy.netlify.app/",
+  "icon": "https://www.openzeppelin.com/hubfs/iso-openzeppelin.svg",
+  "repo": "https://github.com/OpenZeppelin/defender-remix-plugin",
+  "documentation": "https://docs.openzeppelin.com/defender/remix-plugin",
+  "maintainedBy": "OpenZeppelin Defender team",
+  "authorContact": "",
+  "version": "0.1.0-beta",
+  "location": "sidePanel"
+}

@@ -161,6 +161,21 @@
 		]
 	},
 	{
+		"name": "defender-deploy",
+		"displayName": "Defender Deploy",
+		"description": "Secure Deployments using OpenZeppelin Defender",
+		"events": [],
+		"methods": [],
+		"url": "https://defeder-remix-deploy.netlify.app/",
+		"icon": "https://defeder-remix-deploy.netlify.app/logo.png",
+		"repo": "https://github.com/OpenZeppelin/defender-remix-plugin",
+		"documentation": "https://docs.openzeppelin.com/defender/remix-plugin",
+		"maintainedBy": "OpenZeppelin Defender team",
+		"authorContact": "",
+		"version": "0.1.0-beta",
+		"location": "sidePanel"
+	},
+	{
 		"name": "klaytn-remix-plugin",
 		"displayName": "Kaia",
 		"description": "Deploy and Run Transactions with Kaia.",

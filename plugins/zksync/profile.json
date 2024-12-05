@@ -1,14 +1,14 @@
 {
-    "name": "zkSync",
-    "displayName": "zkSync",
-    "methods": [],
-    "version": "0.1.0",
-    "url": "https://zksync-plugin.nethermind.io/",
-    "description": "Compile and deploy smart contracts for zkSync Era.",
-    "icon": "https://zksync-plugin.nethermind.io/icon.webp",
-    "location": "sidePanel",
-    "documentation": "https://github.com/NethermindEth/zksync-remix-plugin",
-    "repo": "https://github.com/NethermindEth/zksync-remix-plugin",
-    "maintainedBy": "Nethermind",
-    "authorContact": "rohit@nethermind.io"
-  }
+  "name": "ZKsync",
+  "displayName": "ZKsync",
+  "methods": [],
+  "version": "0.1.0",
+  "url": "https://zksync-remix-plugin.zksync.io/",
+  "description": "Compile and deploy smart contracts for ZKsync chains.",
+  "icon": "https://zksync-remix-plugin.zksync.io/icon.webp",
+  "location": "sidePanel",
+  "documentation": "https://github.com/matter-labs/zksync-remix-plugin",
+  "repo": "https://github.com/matter-labs/zksync-remix-plugin",
+  "maintainedBy": "Matter Labs",
+  "authorContact": "hello@matterlabs.dev"
+}

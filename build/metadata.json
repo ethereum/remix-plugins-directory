@@ -168,7 +168,7 @@
 		"methods": [],
 		"url": "https://defeder-remix-deploy.netlify.app/",
 		"icon": "https://defeder-remix-deploy.netlify.app/logo.png",
-		"repo": "https://github.com/OpenZeppelin/defender-remix-plugin",
+		"repo": "https://github.com/OpenZeppelin/defender-deploy-plugin",
 		"documentation": "https://docs.openzeppelin.com/defender/remix-plugin",
 		"maintainedBy": "OpenZeppelin Defender team",
 		"authorContact": "",

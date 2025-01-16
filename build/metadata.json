@@ -119,7 +119,7 @@
 		"location": "sidePanel",
 		"documentation": "https://www.cookbook.dev",
 		"url": "https://www.cookbook.dev/remix-plugin",
-		"maintainedBy": "TylerSehr",
+		"maintainedBy": "Cookbook",
 		"authorContact": "tyler@cookbook.dev",
 		"targets": [
 			"remix",

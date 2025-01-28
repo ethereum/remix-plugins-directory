@@ -1,0 +1,15 @@
+{
+    "name": "zama-httpz-plugin",
+    "displayName": "Zama HTTPZ plugin",
+    "description": "Interaction tool for Zama's HTTPZ confidential smart contracts.",
+    "version": "0.1.0",
+    "events": [],
+    "methods": [],
+    "kind": "none",
+    "icon": "https://avatars.githubusercontent.com/u/57671822",
+    "location": "sidePanel",
+    "url": "https://remix.zama.ai/",
+    "repo": "https://github.com/zama-ai/httpz-remix-plugin",
+    "maintainedBy": "https://github.com/zama-ai",
+    "authorContact": ""
+}

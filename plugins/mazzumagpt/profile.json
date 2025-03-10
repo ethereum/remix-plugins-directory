@@ -1,0 +1,12 @@
+{
+    "name": "mazzumagpt-remix-plugin",
+    "displayName": "MazzumaGPT Plugin",
+    "description": "Generate smart contract code using AI with MazzumaGPT.",
+    "events": [],
+    "methods": [],
+    "url": "https://remix-plugin.mazzuma.com",
+    "icon": "https://cdn.teamcyst.com/resources/mazzuma.png",
+    "documentation": "https://mazzumagpt.gitbook.io",
+    "version": "0.1.0.0",
+    "location": "sidePanel"
+  }

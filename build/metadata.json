@@ -75,21 +75,6 @@
 		"authorContact": "team@buildbear.io"
 	},
 	{
-		"name": "celo-remix-plugin",
-		"displayName": "Celo",
-		"description": "Deploy and Run Transactions with Celo.",
-		"events": [],
-		"methods": [],
-		"url": "https://dexfair.github.io/celo-remix-plugin",
-		"icon": "https://dexfair.github.io/celo-remix-plugin/icon.png",
-		"repo": "https://github.com/dexfair/celo-remix-plugin",
-		"documentation": "https://github.com/dexfair/celo-remix-plugin#celo-plugin-for-remix",
-		"maintainedBy": "",
-		"authorContact": "",
-		"version": "0.1.0-beta",
-		"location": "sidePanel"
-	},
-	{
 		"name": "contract_deployer",
 		"displayName": "Contract Deployer",
 		"methods": [],

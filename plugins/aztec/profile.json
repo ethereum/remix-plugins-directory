@@ -1,0 +1,15 @@
+{
+    "name": "aztec-network",
+    "displayName": "Aztec",
+    "description": "Compile, deploy, and interact with smart contracts written in Noir for the Aztec network.",
+    "version": "0.1.0-alpha",
+    "url": "https://hsy822.github.io",
+    "location": "sidePanel",
+    "icon": "https://hsy822.github.io/icon.png",
+    "documentation": "https://github.com/hsy822/aztec-remix-plugin#readme",
+    "repo": "https://github.com/hsy822/aztec-remix-plugin",
+    "maintainedBy": "Sooyoung",
+    "authorContact": "bitcommune@gmail.com",
+    "methods": [],
+    "events": []
+  }

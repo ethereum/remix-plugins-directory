@@ -1,0 +1,12 @@
+{
+  "name": "hashkey-remix-plugin",
+  "displayName": "Hashkey Remix Plugin",
+  "description": "Deploy and interact with Hashkey.",
+  "events": [],
+  "methods": [],
+  "url": " https://github.com/leo-shi-dacheng/hashkey-remix-plugin",
+  "icon": "https://github.com/leo-shi-dacheng/hashkey-remix-plugin/banner.png",
+  "documentation": "https://github.com/leo-shi-dacheng/hashkey-remix-plugin/blob/master/src/components/Tutorial.tsx",
+  "version": "0.2.0-beta",
+  "location": "sidePanel"
+}
